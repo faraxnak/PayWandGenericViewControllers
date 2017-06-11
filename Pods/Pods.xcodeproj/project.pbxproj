@@ -1,0 +1,2825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		030D441EF7561E9AEEF329E3C0434D2B /* APCustomBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2E0A8D66AC49CB588F8A6016E2A00 /* APCustomBlurView.swift */; };
+		0345FC782F90E9DF2F086973F44E216B /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2E868D80E8DB32590EB295F038AF0 /* Date+Formatter.swift */; };
+		05316E7D30AA2C9EFCB992BABF8EDF54 /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DEA2C5ECE9B343917689BAE0670AA8 /* NVActivityIndicatorAnimationCubeTransition.swift */; };
+		0768890904945343C17C77E9D5AE4D3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF68971E9E8D3CCC2C90F69ACBED0449 /* Foundation.framework */; };
+		0AEDBAA7547F9D40C010EA3BFFEE78D2 /* NVActivityIndicatorAnimationOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672743E11BF292FDD5DC92AE905864FA /* NVActivityIndicatorAnimationOrbit.swift */; };
+		0D7C9188AC601B5B46FC38D800785BA4 /* EasyPeasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E320BD2D8B57F2913D0C5909D8FAC6C6 /* EasyPeasy.framework */; };
+		0DC98CD86D69D7E824DC8A52602CE731 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF68971E9E8D3CCC2C90F69ACBED0449 /* Foundation.framework */; };
+		0DD46A9876D07B79D473C6D3FC4946D2 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 652C1D7F98E8C7AD90EA1AFC47BDFCED /* NSArray+PureLayout.m */; };
+		0E4D484CDC66423F39D398ED28B9A37F /* DimensionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA068828E3282D3B9D4565B79184FC4 /* DimensionAttribute.swift */; };
+		113B38FE7FFB4D6CACE050EED89870C3 /* TtroGooeyTabbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E065D499CDE4D827AF797D82DFC9508D /* TtroGooeyTabbar-dummy.m */; };
+		11CC870D7575EA847C0D48375B771336 /* DateInRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3F5AE0E8E047C5B730B207DF4BEBE /* DateInRegion.swift */; };
+		1611B76B1C12381A7D139F7C1CFD4140 /* Pods-PayWandGenericViewControllers-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEAF502BFC66920560EC7A65A5AA9385 /* Pods-PayWandGenericViewControllers-dummy.m */; };
+		17A000C589618A2BC6ED15BF231A665D /* Date+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335A2F86646055630AD52696CA7D84F2 /* Date+Compare.swift */; };
+		1852FB3D090CE6BC4E82D5E6C4B30592 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B48105944B2BDADCF887616BB0DEC7F /* UIKit.framework */; };
+		1C3BF79F0332D9CD83DE6E2B37941C6D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904078B7BD069B9B731931D55DB23C45 /* UIColorExtension.swift */; };
+		1CE392132BD0722143A8E38F4152188B /* DateTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2EC6BD4E39D19698628A04D6C9865B /* DateTimeInterval.swift */; };
+		1D2FF4D810821FA697B82E9BE08B029F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F141C73A2F33A9862605BFAB09B7035 /* Item.swift */; };
+		1EFA38A9B401515DEA501D1CDC0A8EB9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6C18A3C31B2B9A096B7B019C5FD0AE /* Extensions.swift */; };
+		1F98403FA7386FBD5C04706DA198E178 /* PositionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA5A15D83DEA2F4052C9AD7C64CBB9 /* PositionAttribute+AppKit.swift */; };
+		1FD494199615D5ED85E3D06DE5C5982F /* NVActivityIndicatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39611C4FD1FCDCBBC6672EA085D943A6 /* NVActivityIndicatorPresenter.swift */; };
+		20954D57A9A0A2CCE608530975BD9880 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DC520FEE82B24E68684E7AA157B7AD /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */; };
+		20F2F8B31260F2869F2502026771BF8C /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CAAB4371AD91473BF905B2079ECC7E /* NVActivityIndicatorAnimationBallZigZag.swift */; };
+		23504EB67CCF0CBAEE5BD231A077BCDA /* TtroAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8E260C887053F202AE5E51772982B4 /* TtroAlertViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		238EDC1AB26BE7C697EF58F21B949C88 /* EasyPeasy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D2D5064258D0E0E157CF655A7D7F74 /* EasyPeasy-dummy.m */; };
+		2422F1C5ED696FBFE3C9CCC92F23A8E3 /* SwiftyButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA8EF89CC3B41B0BC8C9D65712A870C /* SwiftyButton.framework */; };
+		263FEC4C14F5C7F2E27DB414EB60B6BB /* TabbarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81CBBE11886DFE655213CBB6882C947 /* TabbarMenu.swift */; };
+		280F776B032DE83953AB90607C17EF5F /* SwiftyButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA8EF89CC3B41B0BC8C9D65712A870C /* SwiftyButton.framework */; };
+		28642F3F452B45602C5E42F8046E7D67 /* Pods-PayWandGenericViewControllers-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD09370FAD36FF46599E1B00D6FF463 /* Pods-PayWandGenericViewControllers-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B2323F72B3257C9E64E4C464430805A /* NVActivityIndicatorAnimationBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0193AFEB87689A0291F2907AD5C413 /* NVActivityIndicatorAnimationBlank.swift */; };
+		2EA20B5C8416D7B2825E0E7ED81B46AC /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7D19AB949A70CB6D54421563CAD58 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */; };
+		31F60DBB6662B43BB7182A94B1063E40 /* CompoundAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC4AC329F4D6482D01FD7AF6681E8F /* CompoundAttribute.swift */; };
+		32A5CF7C9046F0D677E1D6DFF66EF549 /* EasyPeasy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B144F4CE5BAB8DE24F5D685E3862BCB /* EasyPeasy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3474E4E655382B527D799C55021A3567 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E91053F54AFD500A706F210CC6633B /* Attribute.swift */; };
+		35550F0F2D3072F048821AA8567F7C14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B48105944B2BDADCF887616BB0DEC7F /* UIKit.framework */; };
+		38B6901090564F8ED7EA4ED9049A0F79 /* PayWandBasicElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D50C230997B4CA78C8F0ECA8A11C9DB /* PayWandBasicElements.framework */; };
+		3AC21F3169752D1281FC06F07D35F515 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF68971E9E8D3CCC2C90F69ACBED0449 /* Foundation.framework */; };
+		3BF00FC98DC28EB65FD64CD61CBE469F /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C588FA7758710ABCE03973DC913BB0 /* NVActivityIndicatorAnimationBallGridBeat.swift */; };
+		3E96A99904A986F8FD44A27954293080 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF68971E9E8D3CCC2C90F69ACBED0449 /* Foundation.framework */; };
+		40BA887491B7F50E505A97278EC207FA /* SwiftDate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D35BC16D55AF24236603BF3085950F45 /* SwiftDate-dummy.m */; };
+		42DDC034671649DDD83A834774825CBB /* PositionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D32A813FF1D87A6E8DB6C02372E4469 /* PositionAttribute.swift */; };
+		4341A0D36B4C3BB7A1CBEA1F64666C97 /* DateInRegionFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C124E51CE2244959A79B611ABBF978A /* DateInRegionFormatter.swift */; };
+		44B2644538FBA736963EE6D7FC685A1A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AB04280613E9A8F115DA00CBFDA506 /* Constant.swift */; };
+		4527D8AEC05B5154B1BA9ACE37141D5C /* GooeyTabbarMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8604728104F9375E31ACE302DC9602E1 /* GooeyTabbarMenuItem.swift */; };
+		48AD84F7956F1A5E5DABAD3114576032 /* UIView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE604B1615F00AF8D92F4368402E1304 /* UIView+Easy.swift */; };
+		494F9E381DBFBC086109B616B3809F29 /* TtroAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DC5593FE8A4F9E9BBE0692D154E238 /* TtroAlertViewController.swift */; };
+		4D0B1FCC5EAABEAE01151A65B9F4D897 /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F7F8239B47FD7297269E88599F9F8 /* AnimatedButton.swift */; };
+		4D7F64AC19454C57F7C900664F31EC04 /* NVActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FB7AE9619D9C35388BF9218DBF1166 /* NVActivityIndicatorView-dummy.m */; };
+		4E5794977CF4F355B206DFC7A3E41D9A /* UIColor_Hex_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526640D36376A4D21DA315930A2114FC /* UIColor_Hex_Swift.framework */; };
+		4EABA9E5962D10933AFDD853C1692F76 /* PayWandBasicElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D50C230997B4CA78C8F0ECA8A11C9DB /* PayWandBasicElements.framework */; };
+		5271D85DBCB1BF6D1A6697BD752D5F5B /* Pods-PayWandGenericViewControllersTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0730D6848E016CCE6F93E3B8C887F3D1 /* Pods-PayWandGenericViewControllersTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		528852BBA10BDD4CF993006141B60763 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E10A4FE1A8BA3EB2E7A3A5C859A9A2 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53E4F34CD1AEA9C02BD27EB54488E897 /* DateInRegion+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF365D32E4151481F0BB73F7C8CE42 /* DateInRegion+Formatter.swift */; };
+		559F0FFA9CD1EB4EC8C4CE76B0A80C1A /* DateComponents+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B28BBF086E834FEE0CA97B47AA49F /* DateComponents+Extension.swift */; };
+		55B877E31E2CC41C2E0DC6F73D0451B3 /* SwiftyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9437D63AAE735A21F7AA73855B2E41A /* SwiftyButton-dummy.m */; };
+		55C78A8925CC7E1F2B5194398B914833 /* Item+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C880B89EEEE24E02359CCC8C041A9A4A /* Item+AppKit.swift */; };
+		560813B8BF7566CD9A9671BC6AAF7763 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF68971E9E8D3CCC2C90F69ACBED0449 /* Foundation.framework */; };
+		57D46053523694399834EA1172A911CE /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5343CBEF1C04A92E0B8CCDBF9E934980 /* NVActivityIndicatorAnimationBallPulseSync.swift */; };
+		584B53C655CCC4AF7C7F44A174D34F40 /* DimensionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8740F1BA05BF28484F6AE6C8F2C3A19E /* DimensionAttribute+UIKit.swift */; };
+		5AC48C172934C77A2C2F6B8E9186CDB2 /* TtroLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1FDE5D0A8D0AEF7566B56ECC2E63D7 /* TtroLabel.swift */; };
+		5D532B7890FDE784E73634DD54BFF824 /* Pods-PayWandGenericViewControllersTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F32060395AA3234A496FF3AB8A3B7A /* Pods-PayWandGenericViewControllersTests-dummy.m */; };
+		6103E9903EB4E06491FC5DCF246FCAA5 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1260D8E16218479C5EF06D574DED19F6 /* NVActivityIndicatorAnimationBallRotate.swift */; };
+		6151CAD1CAD7F34BFD688580ABA02686 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14AC7D61C049E0AE074683FD1CEC60B /* NVActivityIndicatorAnimationBallGridPulse.swift */; };
+		61A5DBA8B391FC6F8FCB55A6DF698272 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 621A8ED921F0E93EF2DA15B81860D501 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		637AECF468E9AFA67663A6FE12D670B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF68971E9E8D3CCC2C90F69ACBED0449 /* Foundation.framework */; };
+		648EFEC4186BA6BA3818656A4969416A /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D9DBE53F0CC491436549769C0996C /* ALView+PureLayout.m */; };
+		65D5C549D8FD76FE2B79B09CA445B265 /* SwiftDate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF98DDC9B734FAC351E72809A4907898 /* SwiftDate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66A1D1994E2DA7303C41872B5E0C05A8 /* NVActivityIndicatorAnimationLineScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D6BECC0A6E32A6D5B19D78A035EB31 /* NVActivityIndicatorAnimationLineScale.swift */; };
+		6AFB4E22A96B1FD008C5720D8E6EAEED /* SwiftyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DC3ACD0453D662A618FEFA4309BDD7 /* SwiftyButton.swift */; };
+		734896A911D37758CC661CBAAD673DA1 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BD6C39ACC28A064B4704882DD379C8 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
+		75D31E92C41C3783E9EBDC4944412FE9 /* DateInRegion+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69DFE181D2D722E174E3E81710BAB12 /* DateInRegion+Components.swift */; };
+		7693B72E6F0E317692B5457B14DFD304 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF68971E9E8D3CCC2C90F69ACBED0449 /* Foundation.framework */; };
+		76DBBB98A6C38DCC9255A58F686144F3 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6FD67FA008C0C7AF5F05F06CA3FC47 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */; };
+		7A2A986D9D33119409DF60A78E18D056 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF68971E9E8D3CCC2C90F69ACBED0449 /* Foundation.framework */; };
+		7FB6D10DAFAFA9B6B0AFDF8B7114A133 /* ISO8601DateTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969F021AFA6269E354559C17883B6A1 /* ISO8601DateTimeFormatter.swift */; };
+		7FD80237B2B9D85C9B5FAA2B95DADF7F /* ReferenceAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D36584476CC0DF3A782571464825A13 /* ReferenceAttribute.swift */; };
+		8096DA33029663AFC5436E6CF17B5EBA /* DateInRegion+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC5B7F536DBF39CB4A909E6A945EDE /* DateInRegion+Math.swift */; };
+		81625BA0A685D5A3C4CCC99DA3F3E42E /* SwiftDate.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 61EA62A99CAA3176A99C483C3D320425 /* SwiftDate.bundle */; };
+		82182CE8F228C83F26CA94BE11C2B17A /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BAF07E78E4E3247FEEEFFF02BA057D /* NVActivityIndicatorShape.swift */; };
+		87239F28D8164CD4C545459F1CFD12A9 /* TtroAlertViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B391D96FA55E1E0957A081DCC9300A /* TtroAlertViewController-dummy.m */; };
+		883A058B9815B3CFD89DDFDB1CAA0DA2 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 048CB4525D549CEABF20FDFCF603599C /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AE014E6246D550FF0290C45D4821F22 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E752081DF2A1F0B26A03D1A292C28 /* NVActivityIndicatorAnimationBallPulseRise.swift */; };
+		8CB4FD30B0E4C10C3449F7F0263D1537 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = C63A96DF4F53A526ACBE481F8EAEAC6F /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D961959484FC1FF71D46A27E889A75A /* NVActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE58BAC01E1B23A131F47B7BC551565 /* NVActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E0E660019420B111D1B730A20D55AAE /* UILayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F358233BB641E71C7CD75F48EA079BB /* UILayoutGuide+Easy.swift */; };
+		8E9360C02A77DCA0D1F9D8415CF059AF /* SwiftyCustomContentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338E44EE9D25B1E0E8B67157A6A5C1C /* SwiftyCustomContentButton.swift */; };
+		8EB0AD01FFFBD40A81836BFFC0D94416 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90030A578248C767FF2313DA53D0D81 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */; };
+		8F79989E412A5B21058E3B6A137B2968 /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A40B9ECC98A2F3C1148E4726510F7F /* NVActivityIndicatorAnimationLineScalePulseOut.swift */; };
+		9053EBA2CB510BFE30A7B32C12B8070E /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7893E3510070675019188026BAC67186 /* Node.swift */; };
+		907E04FC63C5DE533FA10E9EA0CA9862 /* TtroAlertViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 062D60AC88C4BA7D7FB4C880454C292E /* TtroAlertViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92A34DDF760EF960F95C39C8618BA1A9 /* NVActivityIndicatorAnimationBallPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C672356666F5124E39AA9E686773 /* NVActivityIndicatorAnimationBallPulse.swift */; };
+		9907E9EF4FDDA27EAF8B0267299A12E0 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871FB3523713DD9D983ADE2D474773A5 /* NVActivityIndicatorAnimationBallBeat.swift */; };
+		9976DCB033041F8981560B850E5EF434 /* NVActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EF0FCD224528A6EFD2BC372CB2D5E7 /* NVActivityIndicatorView.swift */; };
+		9D5800496526AA7608455476C53AE0A6 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88089729F8B523D5E5175A37A4C915B0 /* Priority.swift */; };
+		A28BC96BFBF5928CFD4C70A1314A5901 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E16BC88479980A4C26C637D6E7524DC /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */; };
+		A3F6E4C54884F1E28AF85795ACB1FB64 /* SwiftyButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0854AC542F623B8A5D6221FD7C77787 /* SwiftyButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A40733D4BB77E3F0309F8A46A034A250 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC08F84AAC280CA9B40F432CE7258CF /* NVActivityIndicatorAnimationBallRotateChase.swift */; };
+		A5F56CCEAD85BF57AF7D00B2B34F1729 /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8150527299853AC4565BACBF5A1969C1 /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A61A54646708C458650EC61D0B0D6512 /* SwiftyButton+ResizableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808FFE2A69A00BC72874C3A9E37E39FC /* SwiftyButton+ResizableImage.swift */; };
+		A7CC295E4383A5F0A07EA42CAE243276 /* PayWandBasicElements-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BA04823C9971C63232C57FE71444779 /* PayWandBasicElements-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA03B45AE77FB5039236B42EBE5F309E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DB30025D45763C73910BD9FD9C93DD /* QuartzCore.framework */; };
+		AB7C2D179D130003609035B8F38C3B45 /* NVActivityIndicatorViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067991857453604FC135E4384F19204 /* NVActivityIndicatorViewable.swift */; };
+		ADB834733176E56DEB566ED88894696B /* EasyPeasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E320BD2D8B57F2913D0C5909D8FAC6C6 /* EasyPeasy.framework */; };
+		AF15CB2E0C6D3037138FA70AC7DAE23D /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1708929575B9E5DDF6F8A74192DD9B58 /* Animator.swift */; };
+		B0B37F76060CCD8CB05A9958CBB9C143 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E3AB82F520DACD133A32B4FEBF6932 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1D8105FDFFB088D18B64B0D40C32378 /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FED662679C030C4772307CE1528A2E /* NVActivityIndicatorAnimationSemiCircleSpin.swift */; };
+		B7556966881E82AA8A9CFA621017A86A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF68971E9E8D3CCC2C90F69ACBED0449 /* Foundation.framework */; };
+		B820EB8902E948072290C657D8B1C3BE /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294F5D30ACB1789B45491F44D78AE97 /* NVActivityIndicatorAnimationBallTrianglePath.swift */; };
+		B8D6F5B87E52645970B4CA522592E3C0 /* DateInRegion+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C91BC37E850CE0042AC525E7EA4A0A /* DateInRegion+Compare.swift */; };
+		B9729ABF7B34465ACDF3622F299AF463 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B833F174C02CD2368C2D12DA97BF92 /* NVActivityIndicatorAnimationBallClipRotate.swift */; };
+		BB2A8CB1C1E8A95904D20134E3154191 /* EasyPeasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E320BD2D8B57F2913D0C5909D8FAC6C6 /* EasyPeasy.framework */; };
+		BBDD5A2F124A7538D60BFC9B9B91C0EB /* DimensionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAE8CCC6C615E5D5EC02ACACCE761FC /* DimensionAttribute+AppKit.swift */; };
+		BBFF37A30E38C4D31DB5D42E8FB86A0C /* UIColor_Hex_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526640D36376A4D21DA315930A2114FC /* UIColor_Hex_Swift.framework */; };
+		BC5AB76802C3AF039CFB6102E2E89AD7 /* Item+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D497F51BBFEBCE00F68A80CF59226FAA /* Item+UIKit.swift */; };
+		BDE08CF39E2681D22406774048A18217 /* Date+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866DFCCD0070E313CDEACCDDB5B4DE52 /* Date+Math.swift */; };
+		C1D7E766C0C1AC248248F47E664E3628 /* TtroGooeyTabbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58F6DB505F9DCC28E555D708746ADFA8 /* TtroGooeyTabbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3680F12DE1E444D4312F4113E6366EE /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15777D98E3D837365EA4AD95D16A91CE /* NVActivityIndicatorAnimationAudioEqualizer.swift */; };
+		C3F1CF25A547A3761DD89DB494CECF60 /* NSLayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE562ADBDE82ABCF47FE49FA4D148C /* NSLayoutGuide+Easy.swift */; };
+		C428A9586858A60A1E8B89C86189426A /* CalendarName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766C4ECA5DFA915DA92EFFB73BA1972F /* CalendarName.swift */; };
+		C734A10BCD08D18C493E0687344EA257 /* TimeZoneName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F3307DCE0A499897F5A9FCD5B3A7C /* TimeZoneName.swift */; };
+		C7604258E5E7FD6C1659545514F34E85 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9436C43213C7F7B6E7E578D10D9C07A9 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7947F5BE7C0E0A0EC11320520AD26C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF68971E9E8D3CCC2C90F69ACBED0449 /* Foundation.framework */; };
+		C860DF1DA2767DC93B882EED79A30518 /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F9DB939A15908196C8A6D46961A061 /* UIColor_Hex_Swift-dummy.m */; };
+		C95C8312DBA615BA67B27518E9F5A0A5 /* PayWandBasicElements-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98DAF62964A16AA99A5F00799112513A /* PayWandBasicElements-dummy.m */; };
+		CCF8C5BDA51404F535B734C8FD7A5B0D /* PositionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6961667C4BF37C5F0193ADD2C24F603 /* PositionAttribute+UIKit.swift */; };
+		CD21360061606DF7E88CFBE52894E97E /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E5AFFBF2EBB9C34CC50EA8EA1DF56E /* NVActivityIndicatorAnimationLineScaleParty.swift */; };
+		CF4F24D1BAD0B2CE716F6202195EDB8F /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD852DF74E9F58122C43897F0BAE2AA6 /* TimeInterval+Extensions.swift */; };
+		CF4FAB8A8102DC7EDBE53F8772A339ED /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E21985619A721EF8C28BB9211E963D /* Date+Components.swift */; };
+		D043585B57EB4F52A3E8DC796E938B6E /* NVActivityIndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D78530F319399DE5F2DC66EA2098B6 /* NVActivityIndicatorAnimationDelegate.swift */; };
+		D15B0B69C3600211D70274089BD59AFF /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39A9B48EF508EE8BB867221CF643DE /* Region.swift */; };
+		D19EE707FE40D8B0E4C006D4517C7C17 /* NVActivityIndicatorAnimationPacman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF3AEEDF0AC38F80DDC3BA119C64B5 /* NVActivityIndicatorAnimationPacman.swift */; };
+		D26ECF6D846C3291E945D1FD1165D4DD /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2846759EA2950E8112C697F6941F3 /* Context.swift */; };
+		D3BA3D1B8D62D17B6F721B8D550570D9 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650D611E4CF6A780C85E44A55AD8DF5D /* PureLayout.framework */; };
+		D3FE0105D139D86B7B459747B5D3A895 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C39E90AAD5F5B66675E9AA1B13794FE /* Extensions.swift */; };
+		D7C7525D0BC01EDCE9F5F1D81145280E /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7266208108260FDE268B2F61F739C2 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */; };
+		D83409947752D7FCDAAE8B5F7734875D /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A3F0452BCA50ED08447B4431EC712 /* PureLayout-dummy.m */; };
+		DDA435B3FE27F50C8F7D2FB5899B324E /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD30F8E1DE8E2143233956BE6FE89D1 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF266AFDAF2AE528FF2DBB02057F705C /* LocaleName.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED621E48A0B4DF666B6EE06F1DC3CCB /* LocaleName.swift */; };
+		E02861D212636F4FE44250C89EB0F20A /* TtroButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A112B8C52EE0FDC4D43AF4C8B579C /* TtroButton.swift */; };
+		E7660CF9C13E9125426DF33177BDE0BD /* SwiftyButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA8EF89CC3B41B0BC8C9D65712A870C /* SwiftyButton.framework */; };
+		E8988848228638F22718E81F898BF7AE /* TtroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94098E810C7F4473508FA4531C0F46E /* TtroTextField.swift */; };
+		ED5BE9F3F74614A80C0AF064BB9C1D2A /* NVActivityIndicatorAnimationBallScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C35C7BD6A9A7A51176889D9CA17F46 /* NVActivityIndicatorAnimationBallScale.swift */; };
+		EDB236F3139700DAA77B89630C40382F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF68971E9E8D3CCC2C90F69ACBED0449 /* Foundation.framework */; };
+		EDBF36EADC92B724658C64FCE5437B63 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F55224293E4F3979A389359652437C2 /* Commons.swift */; };
+		EE3F7936D0001C21F6125A3A0D1F33FF /* TtroDigitEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB8BA80D2210B4E63B04088F1D19479 /* TtroDigitEntry.swift */; };
+		EEE1478B79092EB209968D14D213C2F9 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C9EF07C4A63E627D80E527DD20B985 /* NVActivityIndicatorAnimationSquareSpin.swift */; };
+		F12440C59BCC14AB45EEE2651323876C /* UIColor_Hex_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526640D36376A4D21DA315930A2114FC /* UIColor_Hex_Swift.framework */; };
+		F39915BF9B78F9A7F550FC6775A4BD4A /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F0A8B606BC0F204DA6A16FEFA93F8 /* NSLayoutConstraint+PureLayout.m */; };
+		F5C1F19D5C37890DB4E19D515DD56EAC /* TtroAlertPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7D9FC1FFEB87717681424537FE3AF /* TtroAlertPage.swift */; };
+		F74A71F0DE9D10DC638F244189B10DF0 /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26E821BD8D9DFE7737C8AABF1FB4242 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */; };
+		F7D73313DFD7F85D77D06156C5B80895 /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BBCF4228874718574CF7D9C232266D /* NVActivityIndicatorAnimationBallScaleRipple.swift */; };
+		FB0599825B1BF01C9DFB01081C2708AC /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662A1336135C7B17CF35B8735830D754 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */; };
+		FB45CA1317275242EAE843BAB59D0F68 /* UIColor_Hex_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C989E41BA407722FE4BF945658FDB9E /* UIColor_Hex_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD816CC4636C84850BEBC1C84A160C65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B48105944B2BDADCF887616BB0DEC7F /* UIKit.framework */; };
+		FE600361B8F8D819D07EE55AD1BA9BCF /* NSView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364449079949D7823552F56D6BB1D63B /* NSView+Easy.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11E281619C3633462CD0672CBEA3155A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74B491776FD29FB4995459DB10041B08;
+			remoteInfo = SwiftDate;
+		};
+		12209939F82AFC6E53A18F9850C4D1CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5221EA08C01208C608AC6ECB17B9F2E;
+			remoteInfo = EasyPeasy;
+		};
+		244B1085EDFEDE7E06B25B3C33DEE300 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76946471F39266E99B8704680A1D75FB;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		284BE5C6406440CDE57F342000FDF30E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74B491776FD29FB4995459DB10041B08;
+			remoteInfo = SwiftDate;
+		};
+		33A3084F8F165E9B4099619044E63639 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1259A79E9C0160F09B8C80FBE4FA91D0;
+			remoteInfo = SwiftyButton;
+		};
+		3B36174A727993E3B0842135C4FF0D5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9AE5A1DEE9A4D0E1C2EA362FE045145;
+			remoteInfo = TtroAlertViewController;
+		};
+		3B6DDB49470C873778F0B71641CAB1BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EDFE4052B5DE7D509935AC0774CB135;
+			remoteInfo = NVActivityIndicatorView;
+		};
+		5A551B50205EB09B300ECEF4A4558F9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76946471F39266E99B8704680A1D75FB;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		5EC84F5A8D2A06878A65F32A089C7F4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4253F87176115CA05D9012798046971;
+			remoteInfo = PureLayout;
+		};
+		79D05CA56F3371BF2DA41F0E991FC7B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4253F87176115CA05D9012798046971;
+			remoteInfo = PureLayout;
+		};
+		8563BA1C68605DF414082E3816C711F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60DAEEB1932B65A1B49F4B4E7B0C0048;
+			remoteInfo = PayWandBasicElements;
+		};
+		888C37957DB63FD77FF19E24FE3CFF79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5221EA08C01208C608AC6ECB17B9F2E;
+			remoteInfo = EasyPeasy;
+		};
+		8C162FF9DEAF359D14D698EFD2E66B29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4253F87176115CA05D9012798046971;
+			remoteInfo = PureLayout;
+		};
+		8F37468D736D124ACC8CB10737DC5D9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1259A79E9C0160F09B8C80FBE4FA91D0;
+			remoteInfo = SwiftyButton;
+		};
+		982F3E0AAD0EC84F798A1D8B1978BC9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1259A79E9C0160F09B8C80FBE4FA91D0;
+			remoteInfo = SwiftyButton;
+		};
+		A2A60C9BB58E0EE97051F88A50AA39FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60DAEEB1932B65A1B49F4B4E7B0C0048;
+			remoteInfo = PayWandBasicElements;
+		};
+		BCCF435F528E763F2851D92E7F320838 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EDFE4052B5DE7D509935AC0774CB135;
+			remoteInfo = NVActivityIndicatorView;
+		};
+		C462F63A57863F53D9F2F021CCE311CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5221EA08C01208C608AC6ECB17B9F2E;
+			remoteInfo = EasyPeasy;
+		};
+		C4811D7591595C3E55A8F4F0A1F16F0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10CF6CBE738F59AB055523E3AEA5F33D;
+			remoteInfo = TtroGooeyTabbar;
+		};
+		C7906B8AD5A90A941DF42BD072DD3BF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76946471F39266E99B8704680A1D75FB;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		C9D19947698D2A0FCCA83EC7458F8870 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76946471F39266E99B8704680A1D75FB;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		D264F26F69EACAB07D36158808621137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60DAEEB1932B65A1B49F4B4E7B0C0048;
+			remoteInfo = PayWandBasicElements;
+		};
+		E34D71214092E78EDF25794E9F58D367 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1259A79E9C0160F09B8C80FBE4FA91D0;
+			remoteInfo = SwiftyButton;
+		};
+		EA5B379EB9F754B0A4CE012750A01B4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5221EA08C01208C608AC6ECB17B9F2E;
+			remoteInfo = EasyPeasy;
+		};
+		F2E5C3B4736DB3093FF12A6A4F0F9788 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9AE5A1DEE9A4D0E1C2EA362FE045145;
+			remoteInfo = TtroAlertViewController;
+		};
+		F3B477C4F0B5C1F7E655460C9BBAA4A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5221EA08C01208C608AC6ECB17B9F2E;
+			remoteInfo = EasyPeasy;
+		};
+		FB73965606FEDAC19345DCFBDA15ACB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1259A79E9C0160F09B8C80FBE4FA91D0;
+			remoteInfo = SwiftyButton;
+		};
+		FB7A1EB12B206D07FB6709246A02638E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60DAEEB1932B65A1B49F4B4E7B0C0048;
+			remoteInfo = PayWandBasicElements;
+		};
+		FD59A796B5C2BC80307347D6F2657113 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76946471F39266E99B8704680A1D75FB;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		FE1EADD6B32AC500C98E3A020780330A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10CF6CBE738F59AB055523E3AEA5F33D;
+			remoteInfo = TtroGooeyTabbar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		004529F1068F78DFD73350BA1F7FE614 /* Pods-PayWandGenericViewControllersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayWandGenericViewControllersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		02A19496E7B43142E881F9B60F2A63CD /* Pods_PayWandGenericViewControllersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PayWandGenericViewControllersTests.framework; path = "Pods-PayWandGenericViewControllersTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02AC08203214D1904420738D8E8025F7 /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
+		03D0C672356666F5124E39AA9E686773 /* NVActivityIndicatorAnimationBallPulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulse.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulse.swift; sourceTree = "<group>"; };
+		042F0A8B606BC0F204DA6A16FEFA93F8 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		048CB4525D549CEABF20FDFCF603599C /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		05DC3ACD0453D662A618FEFA4309BDD7 /* SwiftyButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyButton.swift; path = SwiftyButton/SwiftyButton.swift; sourceTree = "<group>"; };
+		05E3AB82F520DACD133A32B4FEBF6932 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		062D60AC88C4BA7D7FB4C880454C292E /* TtroAlertViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TtroAlertViewController-umbrella.h"; sourceTree = "<group>"; };
+		0730D6848E016CCE6F93E3B8C887F3D1 /* Pods-PayWandGenericViewControllersTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PayWandGenericViewControllersTests-umbrella.h"; sourceTree = "<group>"; };
+		0773F56A23F378A2614717CD1B884666 /* Pods-PayWandGenericViewControllersTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayWandGenericViewControllersTests-resources.sh"; sourceTree = "<group>"; };
+		0A4F186C4F5C5396DC62374626A0B93C /* EasyPeasy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EasyPeasy.modulemap; sourceTree = "<group>"; };
+		0C2EC6BD4E39D19698628A04D6C9865B /* DateTimeInterval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTimeInterval.swift; path = Sources/SwiftDate/DateTimeInterval.swift; sourceTree = "<group>"; };
+		0D36584476CC0DF3A782571464825A13 /* ReferenceAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceAttribute.swift; path = EasyPeasy/ReferenceAttribute.swift; sourceTree = "<group>"; };
+		0F55224293E4F3979A389359652437C2 /* Commons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Commons.swift; path = Sources/SwiftDate/Commons.swift; sourceTree = "<group>"; };
+		11C35C7BD6A9A7A51176889D9CA17F46 /* NVActivityIndicatorAnimationBallScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScale.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScale.swift; sourceTree = "<group>"; };
+		1260D8E16218479C5EF06D574DED19F6 /* NVActivityIndicatorAnimationBallRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotate.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotate.swift; sourceTree = "<group>"; };
+		15777D98E3D837365EA4AD95D16A91CE /* NVActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationAudioEqualizer.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
+		1708929575B9E5DDF6F8A74192DD9B58 /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		177E752081DF2A1F0B26A03D1A292C28 /* NVActivityIndicatorAnimationBallPulseRise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulseRise.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseRise.swift; sourceTree = "<group>"; };
+		17B391D96FA55E1E0957A081DCC9300A /* TtroAlertViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TtroAlertViewController-dummy.m"; sourceTree = "<group>"; };
+		18BAF07E78E4E3247FEEEFFF02BA057D /* NVActivityIndicatorShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorShape.swift; path = NVActivityIndicatorView/NVActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		18CE562ADBDE82ABCF47FE49FA4D148C /* NSLayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutGuide+Easy.swift"; path = "EasyPeasy/NSLayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		1A05183295577E8331E8AB3483682B56 /* NVActivityIndicatorView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NVActivityIndicatorView.xcconfig; sourceTree = "<group>"; };
+		1A39A9B48EF508EE8BB867221CF643DE /* Region.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Region.swift; path = Sources/SwiftDate/Region.swift; sourceTree = "<group>"; };
+		1B144F4CE5BAB8DE24F5D685E3862BCB /* EasyPeasy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-umbrella.h"; sourceTree = "<group>"; };
+		1C989E41BA407722FE4BF945658FDB9E /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
+		1F6FD67FA008C0C7AF5F05F06CA3FC47 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallZigZagDeflect.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZagDeflect.swift; sourceTree = "<group>"; };
+		1F9D9DBE53F0CC491436549769C0996C /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		20C588FA7758710ABCE03973DC913BB0 /* NVActivityIndicatorAnimationBallGridBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridBeat.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridBeat.swift; sourceTree = "<group>"; };
+		2189B30C91C08125D97BFC2046E5AA68 /* SwiftyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyButton.modulemap; sourceTree = "<group>"; };
+		22FB7AE9619D9C35388BF9218DBF1166 /* NVActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NVActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
+		23A2E0A8D66AC49CB588F8A6016E2A00 /* APCustomBlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APCustomBlurView.swift; sourceTree = "<group>"; };
+		25DC5593FE8A4F9E9BBE0692D154E238 /* TtroAlertViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroAlertViewController.swift; sourceTree = "<group>"; };
+		27F41F1073D953F388D158D8C876CBE2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ADBA7AF9E8C73C7D0D9219506C3AC42 /* Pods-PayWandGenericViewControllers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayWandGenericViewControllers.debug.xcconfig"; sourceTree = "<group>"; };
+		2C1FDE5D0A8D0AEF7566B56ECC2E63D7 /* TtroLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroLabel.swift; sourceTree = "<group>"; };
+		2EF7D9FC1FFEB87717681424537FE3AF /* TtroAlertPage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroAlertPage.swift; sourceTree = "<group>"; };
+		2FEF3AEEDF0AC38F80DDC3BA119C64B5 /* NVActivityIndicatorAnimationPacman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationPacman.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationPacman.swift; sourceTree = "<group>"; };
+		31E91053F54AFD500A706F210CC6633B /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = EasyPeasy/Attribute.swift; sourceTree = "<group>"; };
+		32C6969A87ADC6E07BEA1DB96BFB2640 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3307CFFB152FA4B74C58473E38309AB4 /* SwiftyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-prefix.pch"; sourceTree = "<group>"; };
+		335A2F86646055630AD52696CA7D84F2 /* Date+Compare.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Compare.swift"; path = "Sources/SwiftDate/Date+Compare.swift"; sourceTree = "<group>"; };
+		3504EC59C29EFEFF8AAB82ECBA55EE84 /* SwiftDate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDate-prefix.pch"; sourceTree = "<group>"; };
+		364449079949D7823552F56D6BB1D63B /* NSView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+Easy.swift"; path = "EasyPeasy/NSView+Easy.swift"; sourceTree = "<group>"; };
+		36B14BAFD154AD31779593861F09D7DF /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
+		36FED662679C030C4772307CE1528A2E /* NVActivityIndicatorAnimationSemiCircleSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationSemiCircleSpin.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSemiCircleSpin.swift; sourceTree = "<group>"; };
+		39149035DD818C8226C24978F56A8781 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIColor_Hex_Swift.framework; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39611C4FD1FCDCBBC6672EA085D943A6 /* NVActivityIndicatorPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorPresenter.swift; path = NVActivityIndicatorView/NVActivityIndicatorPresenter.swift; sourceTree = "<group>"; };
+		3BA2E868D80E8DB32590EB295F038AF0 /* Date+Formatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Formatter.swift"; path = "Sources/SwiftDate/Date+Formatter.swift"; sourceTree = "<group>"; };
+		3BE58BAC01E1B23A131F47B7BC551565 /* NVActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NVActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
+		3C5914A71AE0FEEB759457180EF579DF /* Pods-PayWandGenericViewControllers.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PayWandGenericViewControllers.modulemap"; sourceTree = "<group>"; };
+		3CC3F5AE0E8E047C5B730B207DF4BEBE /* DateInRegion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInRegion.swift; path = Sources/SwiftDate/DateInRegion.swift; sourceTree = "<group>"; };
+		3E44FEDC357830B5A1CFAD69432A399E /* Pods-PayWandGenericViewControllers-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PayWandGenericViewControllers-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3F4A112B8C52EE0FDC4D43AF4C8B579C /* TtroButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroButton.swift; sourceTree = "<group>"; };
+		40D2D5064258D0E0E157CF655A7D7F74 /* EasyPeasy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyPeasy-dummy.m"; sourceTree = "<group>"; };
+		4367D77C4265302EE142C3693EB29699 /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NVActivityIndicatorView.framework; path = NVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		480A3F0452BCA50ED08447B4431EC712 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		4969F021AFA6269E354559C17883B6A1 /* ISO8601DateTimeFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTimeFormatter.swift; path = Sources/SwiftDate/ISO8601DateTimeFormatter.swift; sourceTree = "<group>"; };
+		49F9DB939A15908196C8A6D46961A061 /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
+		4B48105944B2BDADCF887616BB0DEC7F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4C29DFF487C83C84099C212C6CD9B2B6 /* TtroAlertViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TtroAlertViewController.modulemap; sourceTree = "<group>"; };
+		4D32A813FF1D87A6E8DB6C02372E4469 /* PositionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositionAttribute.swift; path = EasyPeasy/PositionAttribute.swift; sourceTree = "<group>"; };
+		526640D36376A4D21DA315930A2114FC /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5343CBEF1C04A92E0B8CCDBF9E934980 /* NVActivityIndicatorAnimationBallPulseSync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallPulseSync.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseSync.swift; sourceTree = "<group>"; };
+		58F6DB505F9DCC28E555D708746ADFA8 /* TtroGooeyTabbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TtroGooeyTabbar-umbrella.h"; sourceTree = "<group>"; };
+		5B292B7CBD1DE402F928F5C86C43288A /* EasyPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyPeasy.framework; path = EasyPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C39E90AAD5F5B66675E9AA1B13794FE /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/SwiftDate/Extensions.swift; sourceTree = "<group>"; };
+		5D50C230997B4CA78C8F0ECA8A11C9DB /* PayWandBasicElements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PayWandBasicElements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA284D750F175D0B3C5B8EFC0C602E8 /* SwiftyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyButton.framework; path = SwiftyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FAE8CCC6C615E5D5EC02ACACCE761FC /* DimensionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+AppKit.swift"; path = "EasyPeasy/DimensionAttribute+AppKit.swift"; sourceTree = "<group>"; };
+		61E10A4FE1A8BA3EB2E7A3A5C859A9A2 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		61EA62A99CAA3176A99C483C3D320425 /* SwiftDate.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SwiftDate.bundle; path = Sources/SwiftDate/SwiftDate.bundle; sourceTree = "<group>"; };
+		621A8ED921F0E93EF2DA15B81860D501 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		63A40B9ECC98A2F3C1148E4726510F7F /* NVActivityIndicatorAnimationLineScalePulseOut.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOut.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOut.swift; sourceTree = "<group>"; };
+		645878F2620306D45FCF90EB543FCC69 /* Pods_PayWandGenericViewControllers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PayWandGenericViewControllers.framework; path = "Pods-PayWandGenericViewControllers.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		650D611E4CF6A780C85E44A55AD8DF5D /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		652C1D7F98E8C7AD90EA1AFC47BDFCED /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		662A1336135C7B17CF35B8735830D754 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; sourceTree = "<group>"; };
+		672743E11BF292FDD5DC92AE905864FA /* NVActivityIndicatorAnimationOrbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationOrbit.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationOrbit.swift; sourceTree = "<group>"; };
+		680D2CB8972C7A23EFE14FA5FF7B046D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68BBCF4228874718574CF7D9C232266D /* NVActivityIndicatorAnimationBallScaleRipple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleRipple.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRipple.swift; sourceTree = "<group>"; };
+		6BA04823C9971C63232C57FE71444779 /* PayWandBasicElements-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PayWandBasicElements-umbrella.h"; sourceTree = "<group>"; };
+		6EBF365D32E4151481F0BB73F7C8CE42 /* DateInRegion+Formatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Formatter.swift"; path = "Sources/SwiftDate/DateInRegion+Formatter.swift"; sourceTree = "<group>"; };
+		70EF0FCD224528A6EFD2BC372CB2D5E7 /* NVActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorView.swift; path = NVActivityIndicatorView/NVActivityIndicatorView.swift; sourceTree = "<group>"; };
+		71F95D41C05D8D7CCABFFEAC77284A3E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		731F0EB4D13C8AFC9A9B091AD3F0392E /* Pods-PayWandGenericViewControllersTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PayWandGenericViewControllersTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		73E21985619A721EF8C28BB9211E963D /* Date+Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Components.swift"; path = "Sources/SwiftDate/Date+Components.swift"; sourceTree = "<group>"; };
+		74CAAB4371AD91473BF905B2079ECC7E /* NVActivityIndicatorAnimationBallZigZag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallZigZag.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZag.swift; sourceTree = "<group>"; };
+		755D545C16D13B37B92284F4B0BFE4FE /* TtroGooeyTabbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TtroGooeyTabbar-prefix.pch"; sourceTree = "<group>"; };
+		766C4ECA5DFA915DA92EFFB73BA1972F /* CalendarName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarName.swift; path = Sources/SwiftDate/CalendarName.swift; sourceTree = "<group>"; };
+		779DB185B438931662AE549E67EF3B83 /* TtroGooeyTabbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TtroGooeyTabbar.xcconfig; sourceTree = "<group>"; };
+		7893E3510070675019188026BAC67186 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = EasyPeasy/Node.swift; sourceTree = "<group>"; };
+		79A6C6031FCB92B3B1586565EDA01BE8 /* Pods-PayWandGenericViewControllers-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PayWandGenericViewControllers-acknowledgements.plist"; sourceTree = "<group>"; };
+		7C124E51CE2244959A79B611ABBF978A /* DateInRegionFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInRegionFormatter.swift; path = Sources/SwiftDate/DateInRegionFormatter.swift; sourceTree = "<group>"; };
+		7E16BC88479980A4C26C637D6E7524DC /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationTriangleSkewSpin.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationTriangleSkewSpin.swift; sourceTree = "<group>"; };
+		7F141C73A2F33A9862605BFAB09B7035 /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Item.swift; path = EasyPeasy/Item.swift; sourceTree = "<group>"; };
+		808FFE2A69A00BC72874C3A9E37E39FC /* SwiftyButton+ResizableImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyButton+ResizableImage.swift"; path = "SwiftyButton/SwiftyButton+ResizableImage.swift"; sourceTree = "<group>"; };
+		8150527299853AC4565BACBF5A1969C1 /* HEXColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HEXColor.h; path = HEXColor/HEXColor.h; sourceTree = "<group>"; };
+		83178BB5A1F1F84A227186396E46CDB1 /* TtroAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TtroAlertViewController.framework; path = TtroAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		844F3307DCE0A499897F5A9FCD5B3A7C /* TimeZoneName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeZoneName.swift; path = Sources/SwiftDate/TimeZoneName.swift; sourceTree = "<group>"; };
+		858FD944B5F6DEC63503150C876E98FF /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C27CF65F30A50C5F36795F81CA26CD /* PayWandBasicElements-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PayWandBasicElements-prefix.pch"; sourceTree = "<group>"; };
+		8604728104F9375E31ACE302DC9602E1 /* GooeyTabbarMenuItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GooeyTabbarMenuItem.swift; sourceTree = "<group>"; };
+		866DFCCD0070E313CDEACCDDB5B4DE52 /* Date+Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Math.swift"; path = "Sources/SwiftDate/Date+Math.swift"; sourceTree = "<group>"; };
+		871FB3523713DD9D983ADE2D474773A5 /* NVActivityIndicatorAnimationBallBeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallBeat.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallBeat.swift; sourceTree = "<group>"; };
+		8740F1BA05BF28484F6AE6C8F2C3A19E /* DimensionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+UIKit.swift"; path = "EasyPeasy/DimensionAttribute+UIKit.swift"; sourceTree = "<group>"; };
+		88089729F8B523D5E5175A37A4C915B0 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = EasyPeasy/Priority.swift; sourceTree = "<group>"; };
+		8DCEB18A19D8CD1E379C48BF8B36EBCC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F3AFD1AB37DA2B381C8E887A03658C5 /* Pods-PayWandGenericViewControllers-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayWandGenericViewControllers-resources.sh"; sourceTree = "<group>"; };
+		8F69A2E1B7F2DD85EE4116A23C918B5B /* Pods-PayWandGenericViewControllersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayWandGenericViewControllersTests.release.xcconfig"; sourceTree = "<group>"; };
+		904078B7BD069B9B731931D55DB23C45 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
+		9067991857453604FC135E4384F19204 /* NVActivityIndicatorViewable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorViewable.swift; path = NVActivityIndicatorView/NVActivityIndicatorViewable.swift; sourceTree = "<group>"; };
+		91F18DCC8BA59851B0983D2103249756 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		9294F5D30ACB1789B45491F44D78AE97 /* NVActivityIndicatorAnimationBallTrianglePath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallTrianglePath.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallTrianglePath.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93DC5B7F536DBF39CB4A909E6A945EDE /* DateInRegion+Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Math.swift"; path = "Sources/SwiftDate/DateInRegion+Math.swift"; sourceTree = "<group>"; };
+		9436C43213C7F7B6E7E578D10D9C07A9 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		96C9EF07C4A63E627D80E527DD20B985 /* NVActivityIndicatorAnimationSquareSpin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationSquareSpin.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSquareSpin.swift; sourceTree = "<group>"; };
+		96D2764D1F1F60AE1FE32F9C0071F892 /* NVActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NVActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
+		97DB30025D45763C73910BD9FD9C93DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		983B28BBF086E834FEE0CA97B47AA49F /* DateComponents+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateComponents+Extension.swift"; path = "Sources/SwiftDate/DateComponents+Extension.swift"; sourceTree = "<group>"; };
+		98DAF62964A16AA99A5F00799112513A /* PayWandBasicElements-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PayWandBasicElements-dummy.m"; sourceTree = "<group>"; };
+		99485A1ECCDDD06EC52786E23554844E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A855BE868880062C908F527B879D500 /* PayWandBasicElements.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PayWandBasicElements.modulemap; sourceTree = "<group>"; };
+		9B0193AFEB87689A0291F2907AD5C413 /* NVActivityIndicatorAnimationBlank.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBlank.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBlank.swift; sourceTree = "<group>"; };
+		9C59410DA35764A0D7DEDF958C30A142 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		9CF7D19AB949A70CB6D54421563CAD58 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotateMultiple.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
+		9F358233BB641E71C7CD75F48EA079BB /* UILayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutGuide+Easy.swift"; path = "EasyPeasy/UILayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		A0BD6C39ACC28A064B4704882DD379C8 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineSpinFadeLoader.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineSpinFadeLoader.swift; sourceTree = "<group>"; };
+		A2E5AFFBF2EBB9C34CC50EA8EA1DF56E /* NVActivityIndicatorAnimationLineScaleParty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScaleParty.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScaleParty.swift; sourceTree = "<group>"; };
+		A6B833F174C02CD2368C2D12DA97BF92 /* NVActivityIndicatorAnimationBallClipRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotate.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotate.swift; sourceTree = "<group>"; };
+		A8C08096F5AB6C7A7888BCA517363219 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA66FBD6FD04FE475800400D5AFCCD0C /* Pods-PayWandGenericViewControllersTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayWandGenericViewControllersTests-frameworks.sh"; sourceTree = "<group>"; };
+		ABEDDF273FE9C115A63D398C4461D2D4 /* TtroAlertViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TtroAlertViewController-prefix.pch"; sourceTree = "<group>"; };
+		AD852DF74E9F58122C43897F0BAE2AA6 /* TimeInterval+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TimeInterval+Extensions.swift"; path = "Sources/SwiftDate/TimeInterval+Extensions.swift"; sourceTree = "<group>"; };
+		AEAF502BFC66920560EC7A65A5AA9385 /* Pods-PayWandGenericViewControllers-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PayWandGenericViewControllers-dummy.m"; sourceTree = "<group>"; };
+		AFA068828E3282D3B9D4565B79184FC4 /* DimensionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimensionAttribute.swift; path = EasyPeasy/DimensionAttribute.swift; sourceTree = "<group>"; };
+		B0C0AB42FEA8269A5F59AFACAAA76843 /* Pods-PayWandGenericViewControllers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayWandGenericViewControllers.release.xcconfig"; sourceTree = "<group>"; };
+		B1C91BC37E850CE0042AC525E7EA4A0A /* DateInRegion+Compare.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Compare.swift"; path = "Sources/SwiftDate/DateInRegion+Compare.swift"; sourceTree = "<group>"; };
+		B1F32060395AA3234A496FF3AB8A3B7A /* Pods-PayWandGenericViewControllersTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PayWandGenericViewControllersTests-dummy.m"; sourceTree = "<group>"; };
+		B2661859ED743750782E6FCEAFAB3C1B /* NVActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NVActivityIndicatorView.modulemap; sourceTree = "<group>"; };
+		B26E821BD8D9DFE7737C8AABF1FB4242 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallScaleMultiple.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleMultiple.swift; sourceTree = "<group>"; };
+		B284BAAB0A09D3DED47E1452BC0283C1 /* TtroGooeyTabbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TtroGooeyTabbar.modulemap; sourceTree = "<group>"; };
+		B69DFE181D2D722E174E3E81710BAB12 /* DateInRegion+Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Components.swift"; path = "Sources/SwiftDate/DateInRegion+Components.swift"; sourceTree = "<group>"; };
+		B94098E810C7F4473508FA4531C0F46E /* TtroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroTextField.swift; sourceTree = "<group>"; };
+		C1DC4AC329F4D6482D01FD7AF6681E8F /* CompoundAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundAttribute.swift; path = EasyPeasy/CompoundAttribute.swift; sourceTree = "<group>"; };
+		C2CCA7CB892D0F83D3878F6AEE9D3DF0 /* SwiftyButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyButton.xcconfig; sourceTree = "<group>"; };
+		C3AB04280613E9A8F115DA00CBFDA506 /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = EasyPeasy/Constant.swift; sourceTree = "<group>"; };
+		C63A96DF4F53A526ACBE481F8EAEAC6F /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		C6961667C4BF37C5F0193ADD2C24F603 /* PositionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+UIKit.swift"; path = "EasyPeasy/PositionAttribute+UIKit.swift"; sourceTree = "<group>"; };
+		C880B89EEEE24E02359CCC8C041A9A4A /* Item+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+AppKit.swift"; path = "EasyPeasy/Item+AppKit.swift"; sourceTree = "<group>"; };
+		C889BEB0A27415EB1A22B1EA9900B74B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9AF8D4B6842D1DCF4C0B4FC842B2751 /* EasyPeasy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-prefix.pch"; sourceTree = "<group>"; };
+		CC489B2790090CCFF37111299E06965D /* SwiftDate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftDate.xcconfig; sourceTree = "<group>"; };
+		CD8E260C887053F202AE5E51772982B4 /* TtroAlertViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TtroAlertViewController.h; sourceTree = "<group>"; };
+		CE223D515438281B438ECDA661B5D583 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PureLayout.modulemap; sourceTree = "<group>"; };
+		CED621E48A0B4DF666B6EE06F1DC3CCB /* LocaleName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocaleName.swift; path = Sources/SwiftDate/LocaleName.swift; sourceTree = "<group>"; };
+		D0854AC542F623B8A5D6221FD7C77787 /* SwiftyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-umbrella.h"; sourceTree = "<group>"; };
+		D0BF4D747A1DE01E0C873624D0331C49 /* Pods-PayWandGenericViewControllersTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PayWandGenericViewControllersTests.modulemap"; sourceTree = "<group>"; };
+		D2DEA2C5ECE9B343917689BAE0670AA8 /* NVActivityIndicatorAnimationCubeTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationCubeTransition.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCubeTransition.swift; sourceTree = "<group>"; };
+		D2F3E6C938C16ED229B32A9CB30773DA /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
+		D35BC16D55AF24236603BF3085950F45 /* SwiftDate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftDate-dummy.m"; sourceTree = "<group>"; };
+		D3DC520FEE82B24E68684E7AA157B7AD /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallClipRotatePulse.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotatePulse.swift; sourceTree = "<group>"; };
+		D497F51BBFEBCE00F68A80CF59226FAA /* Item+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+UIKit.swift"; path = "EasyPeasy/Item+UIKit.swift"; sourceTree = "<group>"; };
+		D4C4AD685AE212343BA4E19890FC0B24 /* EasyPeasy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyPeasy.xcconfig; sourceTree = "<group>"; };
+		D680A871E99AB4B77C0FA194EBD3B32C /* SwiftDate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftDate.modulemap; sourceTree = "<group>"; };
+		D6ECE8119A6AE70F9357EE7E7FD4595A /* PayWandBasicElements.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PayWandBasicElements.xcconfig; sourceTree = "<group>"; };
+		D7D59531BDDE08ACB94341544ACBC949 /* PayWandBasicElements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PayWandBasicElements.framework; path = PayWandBasicElements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D6BECC0A6E32A6D5B19D78A035EB31 /* NVActivityIndicatorAnimationLineScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScale.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScale.swift; sourceTree = "<group>"; };
+		DA8F7F8239B47FD7297269E88599F9F8 /* AnimatedButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
+		DCD09370FAD36FF46599E1B00D6FF463 /* Pods-PayWandGenericViewControllers-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PayWandGenericViewControllers-umbrella.h"; sourceTree = "<group>"; };
+		DF98DDC9B734FAC351E72809A4907898 /* SwiftDate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDate-umbrella.h"; sourceTree = "<group>"; };
+		DFC2846759EA2950E8112C697F6941F3 /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = EasyPeasy/Context.swift; sourceTree = "<group>"; };
+		E065D499CDE4D827AF797D82DFC9508D /* TtroGooeyTabbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TtroGooeyTabbar-dummy.m"; sourceTree = "<group>"; };
+		E14AC7D61C049E0AE074683FD1CEC60B /* NVActivityIndicatorAnimationBallGridPulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallGridPulse.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridPulse.swift; sourceTree = "<group>"; };
+		E320BD2D8B57F2913D0C5909D8FAC6C6 /* EasyPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BA5A15D83DEA2F4052C9AD7C64CBB9 /* PositionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+AppKit.swift"; path = "EasyPeasy/PositionAttribute+AppKit.swift"; sourceTree = "<group>"; };
+		E6D78530F319399DE5F2DC66EA2098B6 /* NVActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationDelegate.swift; path = NVActivityIndicatorView/NVActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
+		E81CBBE11886DFE655213CBB6882C947 /* TabbarMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbarMenu.swift; sourceTree = "<group>"; };
+		EA6C18A3C31B2B9A096B7B019C5FD0AE /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EA7266208108260FDE268B2F61F739C2 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallSpinFadeLoader.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallSpinFadeLoader.swift; sourceTree = "<group>"; };
+		EE694A88432814102CBFA5D01BB86A48 /* TtroGooeyTabbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TtroGooeyTabbar.framework; path = TtroGooeyTabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF68971E9E8D3CCC2C90F69ACBED0449 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F338E44EE9D25B1E0E8B67157A6A5C1C /* SwiftyCustomContentButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCustomContentButton.swift; path = SwiftyButton/SwiftyCustomContentButton.swift; sourceTree = "<group>"; };
+		F5CB8B54E8506783E912B6746E85648A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F64DB8BB8A0FB94044627E4D7D41002D /* TtroAlertViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TtroAlertViewController.xcconfig; sourceTree = "<group>"; };
+		F90030A578248C767FF2313DA53D0D81 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; sourceTree = "<group>"; };
+		F9437D63AAE735A21F7AA73855B2E41A /* SwiftyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyButton-dummy.m"; sourceTree = "<group>"; };
+		F9BDFAC499605C213FDAA8B0B4581772 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2EA40D91D398FC7EB27F39CC19CE77 /* SwiftDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftDate.framework; path = SwiftDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC5C800A04EE828AED8D5BAA453E1E7 /* Pods-PayWandGenericViewControllersTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PayWandGenericViewControllersTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FDB8BA80D2210B4E63B04088F1D19479 /* TtroDigitEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroDigitEntry.swift; sourceTree = "<group>"; };
+		FDC08F84AAC280CA9B40F432CE7258CF /* NVActivityIndicatorAnimationBallRotateChase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotateChase.swift; path = NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotateChase.swift; sourceTree = "<group>"; };
+		FDD30F8E1DE8E2143233956BE6FE89D1 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		FE604B1615F00AF8D92F4368402E1304 /* UIView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Easy.swift"; path = "EasyPeasy/UIView+Easy.swift"; sourceTree = "<group>"; };
+		FF11C92CA7D61D7FDA352BB98E181321 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFA8EF89CC3B41B0BC8C9D65712A870C /* SwiftyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08A7DEFC5F82D1DCE00A44243CD1AF93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC21F3169752D1281FC06F07D35F515 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E64FA70E9DF60DB7FCCA890CCF0879 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637AECF468E9AFA67663A6FE12D670B7 /* Foundation.framework in Frameworks */,
+				35550F0F2D3072F048821AA8567F7C14 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48F9DF5408EFD506F73C6F817712CF1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADB834733176E56DEB566ED88894696B /* EasyPeasy.framework in Frameworks */,
+				3E96A99904A986F8FD44A27954293080 /* Foundation.framework in Frameworks */,
+				38B6901090564F8ED7EA4ED9049A0F79 /* PayWandBasicElements.framework in Frameworks */,
+				280F776B032DE83953AB90607C17EF5F /* SwiftyButton.framework in Frameworks */,
+				BBFF37A30E38C4D31DB5D42E8FB86A0C /* UIColor_Hex_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D939A1EB1BEFBABFB75E708B18E7236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC98CD86D69D7E824DC8A52602CE731 /* Foundation.framework in Frameworks */,
+				D3BA3D1B8D62D17B6F721B8D550570D9 /* PureLayout.framework in Frameworks */,
+				1852FB3D090CE6BC4E82D5E6C4B30592 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		707AC0B1B4461CE6629737959E76E959 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB2A8CB1C1E8A95904D20134E3154191 /* EasyPeasy.framework in Frameworks */,
+				B7556966881E82AA8A9CFA621017A86A /* Foundation.framework in Frameworks */,
+				2422F1C5ED696FBFE3C9CCC92F23A8E3 /* SwiftyButton.framework in Frameworks */,
+				F12440C59BCC14AB45EEE2651323876C /* UIColor_Hex_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		988FD6C0DD546C6385D6558B885773F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0768890904945343C17C77E9D5AE4D3A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4FD8B5704F3E7D5A8921AAF44650CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7693B72E6F0E317692B5457B14DFD304 /* Foundation.framework in Frameworks */,
+				AA03B45AE77FB5039236B42EBE5F309E /* QuartzCore.framework in Frameworks */,
+				FD816CC4636C84850BEBC1C84A160C65 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC24EEEE83FF68090FE613948B95942A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB236F3139700DAA77B89630C40382F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC2DD4AA33F5E949187AC5B06D5F0F6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D7C9188AC601B5B46FC38D800785BA4 /* EasyPeasy.framework in Frameworks */,
+				C7947F5BE7C0E0A0EC11320520AD26C4 /* Foundation.framework in Frameworks */,
+				4EABA9E5962D10933AFDD853C1692F76 /* PayWandBasicElements.framework in Frameworks */,
+				E7660CF9C13E9125426DF33177BDE0BD /* SwiftyButton.framework in Frameworks */,
+				4E5794977CF4F355B206DFC7A3E41D9A /* UIColor_Hex_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF817CC7EF332F9E5DF4F2953E2DAB6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560813B8BF7566CD9A9671BC6AAF7763 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30D1FC5FCB7A69A1AC25D0903C71774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A2A986D9D33119409DF60A78E18D056 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0098878EC07D5E51AB6E6C0BFFBDB108 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				05E3AB82F520DACD133A32B4FEBF6932 /* ALView+PureLayout.h */,
+				1F9D9DBE53F0CC491436549769C0996C /* ALView+PureLayout.m */,
+				FDD30F8E1DE8E2143233956BE6FE89D1 /* NSArray+PureLayout.h */,
+				652C1D7F98E8C7AD90EA1AFC47BDFCED /* NSArray+PureLayout.m */,
+				048CB4525D549CEABF20FDFCF603599C /* NSLayoutConstraint+PureLayout.h */,
+				042F0A8B606BC0F204DA6A16FEFA93F8 /* NSLayoutConstraint+PureLayout.m */,
+				C63A96DF4F53A526ACBE481F8EAEAC6F /* PureLayout.h */,
+				9436C43213C7F7B6E7E578D10D9C07A9 /* PureLayout+Internal.h */,
+				61E10A4FE1A8BA3EB2E7A3A5C859A9A2 /* PureLayoutDefines.h */,
+				7722DA7CB3D59086D1D98D0221593FF1 /* Support Files */,
+			);
+			name = PureLayout;
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		06303408A205318DA873C1C0D49C92D2 /* SwiftDate */ = {
+			isa = PBXGroup;
+			children = (
+				766C4ECA5DFA915DA92EFFB73BA1972F /* CalendarName.swift */,
+				0F55224293E4F3979A389359652437C2 /* Commons.swift */,
+				335A2F86646055630AD52696CA7D84F2 /* Date+Compare.swift */,
+				73E21985619A721EF8C28BB9211E963D /* Date+Components.swift */,
+				3BA2E868D80E8DB32590EB295F038AF0 /* Date+Formatter.swift */,
+				866DFCCD0070E313CDEACCDDB5B4DE52 /* Date+Math.swift */,
+				983B28BBF086E834FEE0CA97B47AA49F /* DateComponents+Extension.swift */,
+				3CC3F5AE0E8E047C5B730B207DF4BEBE /* DateInRegion.swift */,
+				B1C91BC37E850CE0042AC525E7EA4A0A /* DateInRegion+Compare.swift */,
+				B69DFE181D2D722E174E3E81710BAB12 /* DateInRegion+Components.swift */,
+				6EBF365D32E4151481F0BB73F7C8CE42 /* DateInRegion+Formatter.swift */,
+				93DC5B7F536DBF39CB4A909E6A945EDE /* DateInRegion+Math.swift */,
+				7C124E51CE2244959A79B611ABBF978A /* DateInRegionFormatter.swift */,
+				0C2EC6BD4E39D19698628A04D6C9865B /* DateTimeInterval.swift */,
+				5C39E90AAD5F5B66675E9AA1B13794FE /* Extensions.swift */,
+				4969F021AFA6269E354559C17883B6A1 /* ISO8601DateTimeFormatter.swift */,
+				CED621E48A0B4DF666B6EE06F1DC3CCB /* LocaleName.swift */,
+				1A39A9B48EF508EE8BB867221CF643DE /* Region.swift */,
+				AD852DF74E9F58122C43897F0BAE2AA6 /* TimeInterval+Extensions.swift */,
+				844F3307DCE0A499897F5A9FCD5B3A7C /* TimeZoneName.swift */,
+				C4B1EACD8D78612522798B735912D551 /* Resources */,
+				F468C0E5CE386BF0DDD21B8A35B33056 /* Support Files */,
+			);
+			name = SwiftDate;
+			path = SwiftDate;
+			sourceTree = "<group>";
+		};
+		075C20810C7F9439F3786D7D5CF45527 /* TtroAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B97C376BE93FC86CB7FBEA613E0DADB8 /* Support Files */,
+				E7F8D5AA97AB93243CBFB7AFF1E79614 /* TtroAlertViewController */,
+			);
+			name = TtroAlertViewController;
+			path = ../../TtroAlertViewController;
+			sourceTree = "<group>";
+		};
+		23EE9811557FFF880E6F0F13A9155BF1 /* Pods-PayWandGenericViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5CB8B54E8506783E912B6746E85648A /* Info.plist */,
+				3C5914A71AE0FEEB759457180EF579DF /* Pods-PayWandGenericViewControllers.modulemap */,
+				3E44FEDC357830B5A1CFAD69432A399E /* Pods-PayWandGenericViewControllers-acknowledgements.markdown */,
+				79A6C6031FCB92B3B1586565EDA01BE8 /* Pods-PayWandGenericViewControllers-acknowledgements.plist */,
+				AEAF502BFC66920560EC7A65A5AA9385 /* Pods-PayWandGenericViewControllers-dummy.m */,
+				8F3AFD1AB37DA2B381C8E887A03658C5 /* Pods-PayWandGenericViewControllers-resources.sh */,
+				DCD09370FAD36FF46599E1B00D6FF463 /* Pods-PayWandGenericViewControllers-umbrella.h */,
+				2ADBA7AF9E8C73C7D0D9219506C3AC42 /* Pods-PayWandGenericViewControllers.debug.xcconfig */,
+				B0C0AB42FEA8269A5F59AFACAAA76843 /* Pods-PayWandGenericViewControllers.release.xcconfig */,
+			);
+			name = "Pods-PayWandGenericViewControllers";
+			path = "Target Support Files/Pods-PayWandGenericViewControllers";
+			sourceTree = "<group>";
+		};
+		2E204F09CF48BE7445BD0E8FC81F50E6 /* SwiftyButton */ = {
+			isa = PBXGroup;
+			children = (
+				05DC3ACD0453D662A618FEFA4309BDD7 /* SwiftyButton.swift */,
+				808FFE2A69A00BC72874C3A9E37E39FC /* SwiftyButton+ResizableImage.swift */,
+				EA577D449101EB3BBBBBB6A4373DCE10 /* CustomContent */,
+				BB6D05C05867B88724DD0723378EA3D5 /* Support Files */,
+			);
+			name = SwiftyButton;
+			path = SwiftyButton;
+			sourceTree = "<group>";
+		};
+		30FBBAE5192253D751626C7732748BAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C566712DB93E4D25C6FB787358AE83D /* EasyPeasy */,
+				4703E4BD63CE6FCA0256DC4F75E52A29 /* NVActivityIndicatorView */,
+				0098878EC07D5E51AB6E6C0BFFBDB108 /* PureLayout */,
+				06303408A205318DA873C1C0D49C92D2 /* SwiftDate */,
+				2E204F09CF48BE7445BD0E8FC81F50E6 /* SwiftyButton */,
+				632B9439BD86A75D87192DA823048EE7 /* UIColor_Hex_Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3AE6D02754EA4F04E0832E6E8BB8E8F7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EF68971E9E8D3CCC2C90F69ACBED0449 /* Foundation.framework */,
+				97DB30025D45763C73910BD9FD9C93DD /* QuartzCore.framework */,
+				4B48105944B2BDADCF887616BB0DEC7F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4703E4BD63CE6FCA0256DC4F75E52A29 /* NVActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				15777D98E3D837365EA4AD95D16A91CE /* NVActivityIndicatorAnimationAudioEqualizer.swift */,
+				871FB3523713DD9D983ADE2D474773A5 /* NVActivityIndicatorAnimationBallBeat.swift */,
+				A6B833F174C02CD2368C2D12DA97BF92 /* NVActivityIndicatorAnimationBallClipRotate.swift */,
+				9CF7D19AB949A70CB6D54421563CAD58 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */,
+				D3DC520FEE82B24E68684E7AA157B7AD /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */,
+				20C588FA7758710ABCE03973DC913BB0 /* NVActivityIndicatorAnimationBallGridBeat.swift */,
+				E14AC7D61C049E0AE074683FD1CEC60B /* NVActivityIndicatorAnimationBallGridPulse.swift */,
+				03D0C672356666F5124E39AA9E686773 /* NVActivityIndicatorAnimationBallPulse.swift */,
+				177E752081DF2A1F0B26A03D1A292C28 /* NVActivityIndicatorAnimationBallPulseRise.swift */,
+				5343CBEF1C04A92E0B8CCDBF9E934980 /* NVActivityIndicatorAnimationBallPulseSync.swift */,
+				1260D8E16218479C5EF06D574DED19F6 /* NVActivityIndicatorAnimationBallRotate.swift */,
+				FDC08F84AAC280CA9B40F432CE7258CF /* NVActivityIndicatorAnimationBallRotateChase.swift */,
+				11C35C7BD6A9A7A51176889D9CA17F46 /* NVActivityIndicatorAnimationBallScale.swift */,
+				B26E821BD8D9DFE7737C8AABF1FB4242 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */,
+				68BBCF4228874718574CF7D9C232266D /* NVActivityIndicatorAnimationBallScaleRipple.swift */,
+				662A1336135C7B17CF35B8735830D754 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */,
+				EA7266208108260FDE268B2F61F739C2 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */,
+				9294F5D30ACB1789B45491F44D78AE97 /* NVActivityIndicatorAnimationBallTrianglePath.swift */,
+				74CAAB4371AD91473BF905B2079ECC7E /* NVActivityIndicatorAnimationBallZigZag.swift */,
+				1F6FD67FA008C0C7AF5F05F06CA3FC47 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */,
+				9B0193AFEB87689A0291F2907AD5C413 /* NVActivityIndicatorAnimationBlank.swift */,
+				D2DEA2C5ECE9B343917689BAE0670AA8 /* NVActivityIndicatorAnimationCubeTransition.swift */,
+				E6D78530F319399DE5F2DC66EA2098B6 /* NVActivityIndicatorAnimationDelegate.swift */,
+				D9D6BECC0A6E32A6D5B19D78A035EB31 /* NVActivityIndicatorAnimationLineScale.swift */,
+				A2E5AFFBF2EBB9C34CC50EA8EA1DF56E /* NVActivityIndicatorAnimationLineScaleParty.swift */,
+				63A40B9ECC98A2F3C1148E4726510F7F /* NVActivityIndicatorAnimationLineScalePulseOut.swift */,
+				F90030A578248C767FF2313DA53D0D81 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */,
+				A0BD6C39ACC28A064B4704882DD379C8 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */,
+				672743E11BF292FDD5DC92AE905864FA /* NVActivityIndicatorAnimationOrbit.swift */,
+				2FEF3AEEDF0AC38F80DDC3BA119C64B5 /* NVActivityIndicatorAnimationPacman.swift */,
+				36FED662679C030C4772307CE1528A2E /* NVActivityIndicatorAnimationSemiCircleSpin.swift */,
+				96C9EF07C4A63E627D80E527DD20B985 /* NVActivityIndicatorAnimationSquareSpin.swift */,
+				7E16BC88479980A4C26C637D6E7524DC /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */,
+				39611C4FD1FCDCBBC6672EA085D943A6 /* NVActivityIndicatorPresenter.swift */,
+				18BAF07E78E4E3247FEEEFFF02BA057D /* NVActivityIndicatorShape.swift */,
+				70EF0FCD224528A6EFD2BC372CB2D5E7 /* NVActivityIndicatorView.swift */,
+				9067991857453604FC135E4384F19204 /* NVActivityIndicatorViewable.swift */,
+				DA57BFDE61F7DEC3B6ADBC8581489247 /* Support Files */,
+			);
+			name = NVActivityIndicatorView;
+			path = NVActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		491096DE99631B182A8037D9B7C97225 /* PayWandBasicElements */ = {
+			isa = PBXGroup;
+			children = (
+				EB421C56721020CE3D6DEB3DB4478E26 /* PayWandBasicElements */,
+				FF7B4BB4A8833F1E3CFBC7194BFF0C50 /* Support Files */,
+			);
+			name = PayWandBasicElements;
+			path = ../../PayWandBasicElements;
+			sourceTree = "<group>";
+		};
+		4ED8EE2D4BB53B21ACE38D92B732A431 /* TtroGooeyTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				ED6589F60961292D41D1FFBFF8E35DE2 /* Support Files */,
+				D94D5C74696752BEA88263AC2BAD1266 /* TtroGooeyTabbar */,
+			);
+			name = TtroGooeyTabbar;
+			path = ../../TtroGooeyTabbar;
+			sourceTree = "<group>";
+		};
+		50D0B17BE27423BD98DC9AA277FFF13C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				491096DE99631B182A8037D9B7C97225 /* PayWandBasicElements */,
+				075C20810C7F9439F3786D7D5CF45527 /* TtroAlertViewController */,
+				4ED8EE2D4BB53B21ACE38D92B732A431 /* TtroGooeyTabbar */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		632B9439BD86A75D87192DA823048EE7 /* UIColor_Hex_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				8150527299853AC4565BACBF5A1969C1 /* HEXColor.h */,
+				904078B7BD069B9B731931D55DB23C45 /* UIColorExtension.swift */,
+				70B26DCBC6CD3A2152C3E72705429B51 /* Support Files */,
+			);
+			name = UIColor_Hex_Swift;
+			path = UIColor_Hex_Swift;
+			sourceTree = "<group>";
+		};
+		70B26DCBC6CD3A2152C3E72705429B51 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				32C6969A87ADC6E07BEA1DB96BFB2640 /* Info.plist */,
+				36B14BAFD154AD31779593861F09D7DF /* UIColor_Hex_Swift.modulemap */,
+				02AC08203214D1904420738D8E8025F7 /* UIColor_Hex_Swift.xcconfig */,
+				49F9DB939A15908196C8A6D46961A061 /* UIColor_Hex_Swift-dummy.m */,
+				D2F3E6C938C16ED229B32A9CB30773DA /* UIColor_Hex_Swift-prefix.pch */,
+				1C989E41BA407722FE4BF945658FDB9E /* UIColor_Hex_Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor_Hex_Swift";
+			sourceTree = "<group>";
+		};
+		764C2464E26CC58C0C227E133445A976 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E320BD2D8B57F2913D0C5909D8FAC6C6 /* EasyPeasy.framework */,
+				5D50C230997B4CA78C8F0ECA8A11C9DB /* PayWandBasicElements.framework */,
+				650D611E4CF6A780C85E44A55AD8DF5D /* PureLayout.framework */,
+				FFA8EF89CC3B41B0BC8C9D65712A870C /* SwiftyButton.framework */,
+				526640D36376A4D21DA315930A2114FC /* UIColor_Hex_Swift.framework */,
+				3AE6D02754EA4F04E0832E6E8BB8E8F7 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7722DA7CB3D59086D1D98D0221593FF1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				71F95D41C05D8D7CCABFFEAC77284A3E /* Info.plist */,
+				CE223D515438281B438ECDA661B5D583 /* PureLayout.modulemap */,
+				91F18DCC8BA59851B0983D2103249756 /* PureLayout.xcconfig */,
+				480A3F0452BCA50ED08447B4431EC712 /* PureLayout-dummy.m */,
+				9C59410DA35764A0D7DEDF958C30A142 /* PureLayout-prefix.pch */,
+				621A8ED921F0E93EF2DA15B81860D501 /* PureLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				50D0B17BE27423BD98DC9AA277FFF13C /* Development Pods */,
+				764C2464E26CC58C0C227E133445A976 /* Frameworks */,
+				30FBBAE5192253D751626C7732748BAB /* Pods */,
+				97CA5AA8BBED5DA66DF6A00A4DB62E02 /* Products */,
+				88D73BE0A0451DEC88ED2590080010FA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		88D73BE0A0451DEC88ED2590080010FA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				23EE9811557FFF880E6F0F13A9155BF1 /* Pods-PayWandGenericViewControllers */,
+				91FCB4C0E5A685A54CEA9917E1F0DC75 /* Pods-PayWandGenericViewControllersTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		91FCB4C0E5A685A54CEA9917E1F0DC75 /* Pods-PayWandGenericViewControllersTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9BDFAC499605C213FDAA8B0B4581772 /* Info.plist */,
+				D0BF4D747A1DE01E0C873624D0331C49 /* Pods-PayWandGenericViewControllersTests.modulemap */,
+				FBC5C800A04EE828AED8D5BAA453E1E7 /* Pods-PayWandGenericViewControllersTests-acknowledgements.markdown */,
+				731F0EB4D13C8AFC9A9B091AD3F0392E /* Pods-PayWandGenericViewControllersTests-acknowledgements.plist */,
+				B1F32060395AA3234A496FF3AB8A3B7A /* Pods-PayWandGenericViewControllersTests-dummy.m */,
+				AA66FBD6FD04FE475800400D5AFCCD0C /* Pods-PayWandGenericViewControllersTests-frameworks.sh */,
+				0773F56A23F378A2614717CD1B884666 /* Pods-PayWandGenericViewControllersTests-resources.sh */,
+				0730D6848E016CCE6F93E3B8C887F3D1 /* Pods-PayWandGenericViewControllersTests-umbrella.h */,
+				004529F1068F78DFD73350BA1F7FE614 /* Pods-PayWandGenericViewControllersTests.debug.xcconfig */,
+				8F69A2E1B7F2DD85EE4116A23C918B5B /* Pods-PayWandGenericViewControllersTests.release.xcconfig */,
+			);
+			name = "Pods-PayWandGenericViewControllersTests";
+			path = "Target Support Files/Pods-PayWandGenericViewControllersTests";
+			sourceTree = "<group>";
+		};
+		97CA5AA8BBED5DA66DF6A00A4DB62E02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B292B7CBD1DE402F928F5C86C43288A /* EasyPeasy.framework */,
+				4367D77C4265302EE142C3693EB29699 /* NVActivityIndicatorView.framework */,
+				D7D59531BDDE08ACB94341544ACBC949 /* PayWandBasicElements.framework */,
+				645878F2620306D45FCF90EB543FCC69 /* Pods_PayWandGenericViewControllers.framework */,
+				02A19496E7B43142E881F9B60F2A63CD /* Pods_PayWandGenericViewControllersTests.framework */,
+				858FD944B5F6DEC63503150C876E98FF /* PureLayout.framework */,
+				FA2EA40D91D398FC7EB27F39CC19CE77 /* SwiftDate.framework */,
+				5EA284D750F175D0B3C5B8EFC0C602E8 /* SwiftyButton.framework */,
+				83178BB5A1F1F84A227186396E46CDB1 /* TtroAlertViewController.framework */,
+				EE694A88432814102CBFA5D01BB86A48 /* TtroGooeyTabbar.framework */,
+				39149035DD818C8226C24978F56A8781 /* UIColor_Hex_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C566712DB93E4D25C6FB787358AE83D /* EasyPeasy */ = {
+			isa = PBXGroup;
+			children = (
+				31E91053F54AFD500A706F210CC6633B /* Attribute.swift */,
+				C1DC4AC329F4D6482D01FD7AF6681E8F /* CompoundAttribute.swift */,
+				C3AB04280613E9A8F115DA00CBFDA506 /* Constant.swift */,
+				DFC2846759EA2950E8112C697F6941F3 /* Context.swift */,
+				AFA068828E3282D3B9D4565B79184FC4 /* DimensionAttribute.swift */,
+				5FAE8CCC6C615E5D5EC02ACACCE761FC /* DimensionAttribute+AppKit.swift */,
+				8740F1BA05BF28484F6AE6C8F2C3A19E /* DimensionAttribute+UIKit.swift */,
+				7F141C73A2F33A9862605BFAB09B7035 /* Item.swift */,
+				C880B89EEEE24E02359CCC8C041A9A4A /* Item+AppKit.swift */,
+				D497F51BBFEBCE00F68A80CF59226FAA /* Item+UIKit.swift */,
+				7893E3510070675019188026BAC67186 /* Node.swift */,
+				18CE562ADBDE82ABCF47FE49FA4D148C /* NSLayoutGuide+Easy.swift */,
+				364449079949D7823552F56D6BB1D63B /* NSView+Easy.swift */,
+				4D32A813FF1D87A6E8DB6C02372E4469 /* PositionAttribute.swift */,
+				E6BA5A15D83DEA2F4052C9AD7C64CBB9 /* PositionAttribute+AppKit.swift */,
+				C6961667C4BF37C5F0193ADD2C24F603 /* PositionAttribute+UIKit.swift */,
+				88089729F8B523D5E5175A37A4C915B0 /* Priority.swift */,
+				0D36584476CC0DF3A782571464825A13 /* ReferenceAttribute.swift */,
+				9F358233BB641E71C7CD75F48EA079BB /* UILayoutGuide+Easy.swift */,
+				FE604B1615F00AF8D92F4368402E1304 /* UIView+Easy.swift */,
+				FF91AC8B539EABBA20BFC3E7051E212F /* Support Files */,
+			);
+			name = EasyPeasy;
+			path = EasyPeasy;
+			sourceTree = "<group>";
+		};
+		B97C376BE93FC86CB7FBEA613E0DADB8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				27F41F1073D953F388D158D8C876CBE2 /* Info.plist */,
+				4C29DFF487C83C84099C212C6CD9B2B6 /* TtroAlertViewController.modulemap */,
+				F64DB8BB8A0FB94044627E4D7D41002D /* TtroAlertViewController.xcconfig */,
+				17B391D96FA55E1E0957A081DCC9300A /* TtroAlertViewController-dummy.m */,
+				ABEDDF273FE9C115A63D398C4461D2D4 /* TtroAlertViewController-prefix.pch */,
+				062D60AC88C4BA7D7FB4C880454C292E /* TtroAlertViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../PayWandGenericViewControllers/Pods/Target Support Files/TtroAlertViewController";
+			sourceTree = "<group>";
+		};
+		BB6D05C05867B88724DD0723378EA3D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99485A1ECCDDD06EC52786E23554844E /* Info.plist */,
+				2189B30C91C08125D97BFC2046E5AA68 /* SwiftyButton.modulemap */,
+				C2CCA7CB892D0F83D3878F6AEE9D3DF0 /* SwiftyButton.xcconfig */,
+				F9437D63AAE735A21F7AA73855B2E41A /* SwiftyButton-dummy.m */,
+				3307CFFB152FA4B74C58473E38309AB4 /* SwiftyButton-prefix.pch */,
+				D0854AC542F623B8A5D6221FD7C77787 /* SwiftyButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyButton";
+			sourceTree = "<group>";
+		};
+		C4B1EACD8D78612522798B735912D551 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				61EA62A99CAA3176A99C483C3D320425 /* SwiftDate.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D94D5C74696752BEA88263AC2BAD1266 /* TtroGooeyTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				DA8F7F8239B47FD7297269E88599F9F8 /* AnimatedButton.swift */,
+				8604728104F9375E31ACE302DC9602E1 /* GooeyTabbarMenuItem.swift */,
+				E81CBBE11886DFE655213CBB6882C947 /* TabbarMenu.swift */,
+			);
+			name = TtroGooeyTabbar;
+			path = TtroGooeyTabbar;
+			sourceTree = "<group>";
+		};
+		DA57BFDE61F7DEC3B6ADBC8581489247 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8C08096F5AB6C7A7888BCA517363219 /* Info.plist */,
+				B2661859ED743750782E6FCEAFAB3C1B /* NVActivityIndicatorView.modulemap */,
+				1A05183295577E8331E8AB3483682B56 /* NVActivityIndicatorView.xcconfig */,
+				22FB7AE9619D9C35388BF9218DBF1166 /* NVActivityIndicatorView-dummy.m */,
+				96D2764D1F1F60AE1FE32F9C0071F892 /* NVActivityIndicatorView-prefix.pch */,
+				3BE58BAC01E1B23A131F47B7BC551565 /* NVActivityIndicatorView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NVActivityIndicatorView";
+			sourceTree = "<group>";
+		};
+		E7F8D5AA97AB93243CBFB7AFF1E79614 /* TtroAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1708929575B9E5DDF6F8A74192DD9B58 /* Animator.swift */,
+				2EF7D9FC1FFEB87717681424537FE3AF /* TtroAlertPage.swift */,
+				CD8E260C887053F202AE5E51772982B4 /* TtroAlertViewController.h */,
+				25DC5593FE8A4F9E9BBE0692D154E238 /* TtroAlertViewController.swift */,
+			);
+			name = TtroAlertViewController;
+			path = TtroAlertViewController;
+			sourceTree = "<group>";
+		};
+		EA577D449101EB3BBBBBB6A4373DCE10 /* CustomContent */ = {
+			isa = PBXGroup;
+			children = (
+				F338E44EE9D25B1E0E8B67157A6A5C1C /* SwiftyCustomContentButton.swift */,
+			);
+			name = CustomContent;
+			sourceTree = "<group>";
+		};
+		EB421C56721020CE3D6DEB3DB4478E26 /* PayWandBasicElements */ = {
+			isa = PBXGroup;
+			children = (
+				23A2E0A8D66AC49CB588F8A6016E2A00 /* APCustomBlurView.swift */,
+				EA6C18A3C31B2B9A096B7B019C5FD0AE /* Extensions.swift */,
+				3F4A112B8C52EE0FDC4D43AF4C8B579C /* TtroButton.swift */,
+				FDB8BA80D2210B4E63B04088F1D19479 /* TtroDigitEntry.swift */,
+				2C1FDE5D0A8D0AEF7566B56ECC2E63D7 /* TtroLabel.swift */,
+				B94098E810C7F4473508FA4531C0F46E /* TtroTextField.swift */,
+			);
+			name = PayWandBasicElements;
+			path = PayWandBasicElements;
+			sourceTree = "<group>";
+		};
+		ED6589F60961292D41D1FFBFF8E35DE2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF11C92CA7D61D7FDA352BB98E181321 /* Info.plist */,
+				B284BAAB0A09D3DED47E1452BC0283C1 /* TtroGooeyTabbar.modulemap */,
+				779DB185B438931662AE549E67EF3B83 /* TtroGooeyTabbar.xcconfig */,
+				E065D499CDE4D827AF797D82DFC9508D /* TtroGooeyTabbar-dummy.m */,
+				755D545C16D13B37B92284F4B0BFE4FE /* TtroGooeyTabbar-prefix.pch */,
+				58F6DB505F9DCC28E555D708746ADFA8 /* TtroGooeyTabbar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../PayWandGenericViewControllers/Pods/Target Support Files/TtroGooeyTabbar";
+			sourceTree = "<group>";
+		};
+		F468C0E5CE386BF0DDD21B8A35B33056 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				680D2CB8972C7A23EFE14FA5FF7B046D /* Info.plist */,
+				D680A871E99AB4B77C0FA194EBD3B32C /* SwiftDate.modulemap */,
+				CC489B2790090CCFF37111299E06965D /* SwiftDate.xcconfig */,
+				D35BC16D55AF24236603BF3085950F45 /* SwiftDate-dummy.m */,
+				3504EC59C29EFEFF8AAB82ECBA55EE84 /* SwiftDate-prefix.pch */,
+				DF98DDC9B734FAC351E72809A4907898 /* SwiftDate-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftDate";
+			sourceTree = "<group>";
+		};
+		FF7B4BB4A8833F1E3CFBC7194BFF0C50 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DCEB18A19D8CD1E379C48BF8B36EBCC /* Info.plist */,
+				9A855BE868880062C908F527B879D500 /* PayWandBasicElements.modulemap */,
+				D6ECE8119A6AE70F9357EE7E7FD4595A /* PayWandBasicElements.xcconfig */,
+				98DAF62964A16AA99A5F00799112513A /* PayWandBasicElements-dummy.m */,
+				85C27CF65F30A50C5F36795F81CA26CD /* PayWandBasicElements-prefix.pch */,
+				6BA04823C9971C63232C57FE71444779 /* PayWandBasicElements-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../PayWandGenericViewControllers/Pods/Target Support Files/PayWandBasicElements";
+			sourceTree = "<group>";
+		};
+		FF91AC8B539EABBA20BFC3E7051E212F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F186C4F5C5396DC62374626A0B93C /* EasyPeasy.modulemap */,
+				D4C4AD685AE212343BA4E19890FC0B24 /* EasyPeasy.xcconfig */,
+				40D2D5064258D0E0E157CF655A7D7F74 /* EasyPeasy-dummy.m */,
+				C9AF8D4B6842D1DCF4C0B4FC842B2751 /* EasyPeasy-prefix.pch */,
+				1B144F4CE5BAB8DE24F5D685E3862BCB /* EasyPeasy-umbrella.h */,
+				C889BEB0A27415EB1A22B1EA9900B74B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EasyPeasy";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		02FA6CE2BF1FA52BD4B617F95C0C6B57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D5C549D8FD76FE2B79B09CA445B265 /* SwiftDate-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BE1B5EDE8487171034827BA4CB48963 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7CC295E4383A5F0A07EA42CAE243276 /* PayWandBasicElements-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EA9E9AE5BBCDE4EB1F4BB86D9717E2B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F56CCEAD85BF57AF7D00B2B34F1729 /* HEXColor.h in Headers */,
+				FB45CA1317275242EAE843BAB59D0F68 /* UIColor_Hex_Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67A3A3EAADC03BFD6E429CCE6A00E02A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28642F3F452B45602C5E42F8046E7D67 /* Pods-PayWandGenericViewControllers-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A997E6E8C8D90774BDD7E72EB07D7E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A5CF7C9046F0D677E1D6DFF66EF549 /* EasyPeasy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813B7DC066ED432F7C367CA4D0CFA65B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907E04FC63C5DE533FA10E9EA0CA9862 /* TtroAlertViewController-umbrella.h in Headers */,
+				23504EB67CCF0CBAEE5BD231A077BCDA /* TtroAlertViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A013C4F3B47D24CD642642008BB80561 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D961959484FC1FF71D46A27E889A75A /* NVActivityIndicatorView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A189265578FBB97CA462B08E44D4AAC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5271D85DBCB1BF6D1A6697BD752D5F5B /* Pods-PayWandGenericViewControllersTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7388E8E7113394B81E7D98615C0DFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F6E4C54884F1E28AF85795ACB1FB64 /* SwiftyButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B11E57C576878603CED88D70E630C0BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D7E766C0C1AC248248F47E664E3628 /* TtroGooeyTabbar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB861304A039E9D83854859B951AEBE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B37F76060CCD8CB05A9958CBB9C143 /* ALView+PureLayout.h in Headers */,
+				DDA435B3FE27F50C8F7D2FB5899B324E /* NSArray+PureLayout.h in Headers */,
+				883A058B9815B3CFD89DDFDB1CAA0DA2 /* NSLayoutConstraint+PureLayout.h in Headers */,
+				C7604258E5E7FD6C1659545514F34E85 /* PureLayout+Internal.h in Headers */,
+				61A5DBA8B391FC6F8FCB55A6DF698272 /* PureLayout-umbrella.h in Headers */,
+				8CB4FD30B0E4C10C3449F7F0263D1537 /* PureLayout.h in Headers */,
+				528852BBA10BDD4CF993006141B60763 /* PureLayoutDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		10CF6CBE738F59AB055523E3AEA5F33D /* TtroGooeyTabbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A535FB7FF000DF9614349E816D94E23 /* Build configuration list for PBXNativeTarget "TtroGooeyTabbar" */;
+			buildPhases = (
+				858D7287E704594D4349A437AC6E0654 /* Sources */,
+				48F9DF5408EFD506F73C6F817712CF1D /* Frameworks */,
+				B11E57C576878603CED88D70E630C0BC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				604BD25B52B1F122F153CF12108F6339 /* PBXTargetDependency */,
+				2B317CEAC20DFA9992C71C87E231420A /* PBXTargetDependency */,
+				8580BF480ADB82851AF81E26F44E160E /* PBXTargetDependency */,
+				EFCB216983D9D47456C641FED310DE47 /* PBXTargetDependency */,
+			);
+			name = TtroGooeyTabbar;
+			productName = TtroGooeyTabbar;
+			productReference = EE694A88432814102CBFA5D01BB86A48 /* TtroGooeyTabbar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0010BDB5A9EE9086CA2AB7377D5C9BBF /* Build configuration list for PBXNativeTarget "SwiftyButton" */;
+			buildPhases = (
+				96DDFC36ED330E997929F26B0AC71305 /* Sources */,
+				5D939A1EB1BEFBABFB75E708B18E7236 /* Frameworks */,
+				AC7388E8E7113394B81E7D98615C0DFC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77A8343AB2BE21B223E4B320FA8444F9 /* PBXTargetDependency */,
+			);
+			name = SwiftyButton;
+			productName = SwiftyButton;
+			productReference = 5EA284D750F175D0B3C5B8EFC0C602E8 /* SwiftyButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3EDFE4052B5DE7D509935AC0774CB135 /* NVActivityIndicatorView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35DF108162D4FB76F4C98C08DEA245C3 /* Build configuration list for PBXNativeTarget "NVActivityIndicatorView" */;
+			buildPhases = (
+				39CB1D83E4502874B6CA315A7053B40B /* Sources */,
+				AD4FD8B5704F3E7D5A8921AAF44650CB /* Frameworks */,
+				A013C4F3B47D24CD642642008BB80561 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NVActivityIndicatorView;
+			productName = NVActivityIndicatorView;
+			productReference = 4367D77C4265302EE142C3693EB29699 /* NVActivityIndicatorView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60DAEEB1932B65A1B49F4B4E7B0C0048 /* PayWandBasicElements */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D866DA0B0F9751548F96DDEB8965D20 /* Build configuration list for PBXNativeTarget "PayWandBasicElements" */;
+			buildPhases = (
+				624A0C866B232AD1F51BA064EEE38AD8 /* Sources */,
+				707AC0B1B4461CE6629737959E76E959 /* Frameworks */,
+				0BE1B5EDE8487171034827BA4CB48963 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79AD0339D04477A5D1935F0BDBACE967 /* PBXTargetDependency */,
+				1F820B878316AFE4D911138077A85C87 /* PBXTargetDependency */,
+				A042BEA8DC5021C5995EB5DF49109C70 /* PBXTargetDependency */,
+			);
+			name = PayWandBasicElements;
+			productName = PayWandBasicElements;
+			productReference = D7D59531BDDE08ACB94341544ACBC949 /* PayWandBasicElements.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		74B491776FD29FB4995459DB10041B08 /* SwiftDate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFB993777BB9F47EABCD86792718D900 /* Build configuration list for PBXNativeTarget "SwiftDate" */;
+			buildPhases = (
+				79A8550A57F49E73B0771C2ECAE5BF20 /* Sources */,
+				F30D1FC5FCB7A69A1AC25D0903C71774 /* Frameworks */,
+				30CDFF9F986AFF520FADFFD8B9847CE0 /* Resources */,
+				02FA6CE2BF1FA52BD4B617F95C0C6B57 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftDate;
+			productName = SwiftDate;
+			productReference = FA2EA40D91D398FC7EB27F39CC19CE77 /* SwiftDate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5E209CC24F5AD89AB9E769E0EF11BE /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */;
+			buildPhases = (
+				BFB883DB86401115C4F30712B7666575 /* Sources */,
+				22E64FA70E9DF60DB7FCCA890CCF0879 /* Frameworks */,
+				0EA9E9AE5BBCDE4EB1F4BB86D9717E2B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIColor_Hex_Swift;
+			productName = UIColor_Hex_Swift;
+			productReference = 39149035DD818C8226C24978F56A8781 /* UIColor_Hex_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09077C94E191775E258073FA5A3C405C /* Build configuration list for PBXNativeTarget "EasyPeasy" */;
+			buildPhases = (
+				BEE1CD701E167910F30CCB5D80ED2743 /* Sources */,
+				DC24EEEE83FF68090FE613948B95942A /* Frameworks */,
+				6A997E6E8C8D90774BDD7E72EB07D7E1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyPeasy;
+			productName = EasyPeasy;
+			productReference = 5B292B7CBD1DE402F928F5C86C43288A /* EasyPeasy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9AE5A1DEE9A4D0E1C2EA362FE045145 /* TtroAlertViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2584C1EA0B48B17C39642CCEF016117A /* Build configuration list for PBXNativeTarget "TtroAlertViewController" */;
+			buildPhases = (
+				7E31AAFF06CDB804B33F62C4E9F84C71 /* Sources */,
+				DC2DD4AA33F5E949187AC5B06D5F0F6C /* Frameworks */,
+				813B7DC066ED432F7C367CA4D0CFA65B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF5D5590706314443EECBF2B80BC2C22 /* PBXTargetDependency */,
+				4846D372071504A3D60947209D7F8A20 /* PBXTargetDependency */,
+				FE9D7F9F6155BEFE4402052C49206E1F /* PBXTargetDependency */,
+				4DB30A5E2752118DE600686AC67D761E /* PBXTargetDependency */,
+			);
+			name = TtroAlertViewController;
+			productName = TtroAlertViewController;
+			productReference = 83178BB5A1F1F84A227186396E46CDB1 /* TtroAlertViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4253F87176115CA05D9012798046971 /* PureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E944E25CB18BDFFA85241F0E5A26793E /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildPhases = (
+				1D0EAA61C79F44C87927B181AE2EB344 /* Sources */,
+				988FD6C0DD546C6385D6558B885773F6 /* Frameworks */,
+				FB861304A039E9D83854859B951AEBE9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PureLayout;
+			productName = PureLayout;
+			productReference = 858FD944B5F6DEC63503150C876E98FF /* PureLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E3B277CA95E0FC5B113F1C65969F34BE /* Pods-PayWandGenericViewControllers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 713413FBEA45D3F07DB3B98A25557CE8 /* Build configuration list for PBXNativeTarget "Pods-PayWandGenericViewControllers" */;
+			buildPhases = (
+				A5DBD46362A45A845475AF897CBA3C91 /* Sources */,
+				EF817CC7EF332F9E5DF4F2953E2DAB6B /* Frameworks */,
+				67A3A3EAADC03BFD6E429CCE6A00E02A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0977F8B79AEDC381EDF3C34C15CB42E5 /* PBXTargetDependency */,
+				70AE51EC0E229A36699FC3AF569B63B2 /* PBXTargetDependency */,
+				AF6AE794F746DB31BB98613A4E68EE70 /* PBXTargetDependency */,
+				39AF6689EC731633F51310783C942FA8 /* PBXTargetDependency */,
+				99B1AF49EDE4E382BD5522C2B2A00181 /* PBXTargetDependency */,
+				1E2E77F48688633B9644F2C8CED9DE65 /* PBXTargetDependency */,
+				AF990569B9F27272E410E436F37AC2B2 /* PBXTargetDependency */,
+				4334BA0D155645B493F6EB02139B0D0D /* PBXTargetDependency */,
+				E536F51FEEC0D3498659FA74B39C2BDF /* PBXTargetDependency */,
+			);
+			name = "Pods-PayWandGenericViewControllers";
+			productName = "Pods-PayWandGenericViewControllers";
+			productReference = 645878F2620306D45FCF90EB543FCC69 /* Pods_PayWandGenericViewControllers.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FAE947C2E0019B77BAA6B22AE3B4B877 /* Pods-PayWandGenericViewControllersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91851E3FD953884B56F4BC5ADA7DB16B /* Build configuration list for PBXNativeTarget "Pods-PayWandGenericViewControllersTests" */;
+			buildPhases = (
+				2D365CF8BC2BFBF96F601F8E14F8EBF5 /* Sources */,
+				08A7DEFC5F82D1DCE00A44243CD1AF93 /* Frameworks */,
+				A189265578FBB97CA462B08E44D4AAC3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1E5A13066E63E86BCA2540D164798A7 /* PBXTargetDependency */,
+				7B2F190AB6397CD3FB958E3BBBD1741D /* PBXTargetDependency */,
+				7D8FDD25E75E878E9A771E265F3F8A30 /* PBXTargetDependency */,
+				02723A891B7CC05BE036AEA6D12EBFEB /* PBXTargetDependency */,
+				5F7E4A115C5795DC631AD757535278C4 /* PBXTargetDependency */,
+				C8C37431AC076F06DD3BB761DFDC119A /* PBXTargetDependency */,
+				281E78BFFFC06128182DDC95C5FD6528 /* PBXTargetDependency */,
+				980A22E6A5C2DECC50089B6A9F0842DB /* PBXTargetDependency */,
+				F528967389D60C33124CAF7A805455AD /* PBXTargetDependency */,
+			);
+			name = "Pods-PayWandGenericViewControllersTests";
+			productName = "Pods-PayWandGenericViewControllersTests";
+			productReference = 02A19496E7B43142E881F9B60F2A63CD /* Pods_PayWandGenericViewControllersTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 97CA5AA8BBED5DA66DF6A00A4DB62E02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */,
+				3EDFE4052B5DE7D509935AC0774CB135 /* NVActivityIndicatorView */,
+				60DAEEB1932B65A1B49F4B4E7B0C0048 /* PayWandBasicElements */,
+				E3B277CA95E0FC5B113F1C65969F34BE /* Pods-PayWandGenericViewControllers */,
+				FAE947C2E0019B77BAA6B22AE3B4B877 /* Pods-PayWandGenericViewControllersTests */,
+				D4253F87176115CA05D9012798046971 /* PureLayout */,
+				74B491776FD29FB4995459DB10041B08 /* SwiftDate */,
+				1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */,
+				C9AE5A1DEE9A4D0E1C2EA362FE045145 /* TtroAlertViewController */,
+				10CF6CBE738F59AB055523E3AEA5F33D /* TtroGooeyTabbar */,
+				76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30CDFF9F986AFF520FADFFD8B9847CE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81625BA0A685D5A3C4CCC99DA3F3E42E /* SwiftDate.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D0EAA61C79F44C87927B181AE2EB344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648EFEC4186BA6BA3818656A4969416A /* ALView+PureLayout.m in Sources */,
+				0DD46A9876D07B79D473C6D3FC4946D2 /* NSArray+PureLayout.m in Sources */,
+				F39915BF9B78F9A7F550FC6775A4BD4A /* NSLayoutConstraint+PureLayout.m in Sources */,
+				D83409947752D7FCDAAE8B5F7734875D /* PureLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D365CF8BC2BFBF96F601F8E14F8EBF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D532B7890FDE784E73634DD54BFF824 /* Pods-PayWandGenericViewControllersTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39CB1D83E4502874B6CA315A7053B40B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3680F12DE1E444D4312F4113E6366EE /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
+				9907E9EF4FDDA27EAF8B0267299A12E0 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */,
+				B9729ABF7B34465ACDF3622F299AF463 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */,
+				2EA20B5C8416D7B2825E0E7ED81B46AC /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */,
+				20954D57A9A0A2CCE608530975BD9880 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */,
+				3BF00FC98DC28EB65FD64CD61CBE469F /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */,
+				6151CAD1CAD7F34BFD688580ABA02686 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */,
+				92A34DDF760EF960F95C39C8618BA1A9 /* NVActivityIndicatorAnimationBallPulse.swift in Sources */,
+				8AE014E6246D550FF0290C45D4821F22 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */,
+				57D46053523694399834EA1172A911CE /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */,
+				6103E9903EB4E06491FC5DCF246FCAA5 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */,
+				A40733D4BB77E3F0309F8A46A034A250 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */,
+				ED5BE9F3F74614A80C0AF064BB9C1D2A /* NVActivityIndicatorAnimationBallScale.swift in Sources */,
+				F74A71F0DE9D10DC638F244189B10DF0 /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
+				F7D73313DFD7F85D77D06156C5B80895 /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */,
+				FB0599825B1BF01C9DFB01081C2708AC /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
+				D7C7525D0BC01EDCE9F5F1D81145280E /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */,
+				B820EB8902E948072290C657D8B1C3BE /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
+				20F2F8B31260F2869F2502026771BF8C /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */,
+				76DBBB98A6C38DCC9255A58F686144F3 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,
+				2B2323F72B3257C9E64E4C464430805A /* NVActivityIndicatorAnimationBlank.swift in Sources */,
+				05316E7D30AA2C9EFCB992BABF8EDF54 /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */,
+				D043585B57EB4F52A3E8DC796E938B6E /* NVActivityIndicatorAnimationDelegate.swift in Sources */,
+				66A1D1994E2DA7303C41872B5E0C05A8 /* NVActivityIndicatorAnimationLineScale.swift in Sources */,
+				CD21360061606DF7E88CFBE52894E97E /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */,
+				8F79989E412A5B21058E3B6A137B2968 /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */,
+				8EB0AD01FFFBD40A81836BFFC0D94416 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */,
+				734896A911D37758CC661CBAAD673DA1 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
+				0AEDBAA7547F9D40C010EA3BFFEE78D2 /* NVActivityIndicatorAnimationOrbit.swift in Sources */,
+				D19EE707FE40D8B0E4C006D4517C7C17 /* NVActivityIndicatorAnimationPacman.swift in Sources */,
+				B1D8105FDFFB088D18B64B0D40C32378 /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */,
+				EEE1478B79092EB209968D14D213C2F9 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */,
+				A28BC96BFBF5928CFD4C70A1314A5901 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */,
+				1FD494199615D5ED85E3D06DE5C5982F /* NVActivityIndicatorPresenter.swift in Sources */,
+				82182CE8F228C83F26CA94BE11C2B17A /* NVActivityIndicatorShape.swift in Sources */,
+				4D7F64AC19454C57F7C900664F31EC04 /* NVActivityIndicatorView-dummy.m in Sources */,
+				9976DCB033041F8981560B850E5EF434 /* NVActivityIndicatorView.swift in Sources */,
+				AB7C2D179D130003609035B8F38C3B45 /* NVActivityIndicatorViewable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624A0C866B232AD1F51BA064EEE38AD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030D441EF7561E9AEEF329E3C0434D2B /* APCustomBlurView.swift in Sources */,
+				1EFA38A9B401515DEA501D1CDC0A8EB9 /* Extensions.swift in Sources */,
+				C95C8312DBA615BA67B27518E9F5A0A5 /* PayWandBasicElements-dummy.m in Sources */,
+				E02861D212636F4FE44250C89EB0F20A /* TtroButton.swift in Sources */,
+				EE3F7936D0001C21F6125A3A0D1F33FF /* TtroDigitEntry.swift in Sources */,
+				5AC48C172934C77A2C2F6B8E9186CDB2 /* TtroLabel.swift in Sources */,
+				E8988848228638F22718E81F898BF7AE /* TtroTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A8550A57F49E73B0771C2ECAE5BF20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C428A9586858A60A1E8B89C86189426A /* CalendarName.swift in Sources */,
+				EDBF36EADC92B724658C64FCE5437B63 /* Commons.swift in Sources */,
+				17A000C589618A2BC6ED15BF231A665D /* Date+Compare.swift in Sources */,
+				CF4FAB8A8102DC7EDBE53F8772A339ED /* Date+Components.swift in Sources */,
+				0345FC782F90E9DF2F086973F44E216B /* Date+Formatter.swift in Sources */,
+				BDE08CF39E2681D22406774048A18217 /* Date+Math.swift in Sources */,
+				559F0FFA9CD1EB4EC8C4CE76B0A80C1A /* DateComponents+Extension.swift in Sources */,
+				B8D6F5B87E52645970B4CA522592E3C0 /* DateInRegion+Compare.swift in Sources */,
+				75D31E92C41C3783E9EBDC4944412FE9 /* DateInRegion+Components.swift in Sources */,
+				53E4F34CD1AEA9C02BD27EB54488E897 /* DateInRegion+Formatter.swift in Sources */,
+				8096DA33029663AFC5436E6CF17B5EBA /* DateInRegion+Math.swift in Sources */,
+				11CC870D7575EA847C0D48375B771336 /* DateInRegion.swift in Sources */,
+				4341A0D36B4C3BB7A1CBEA1F64666C97 /* DateInRegionFormatter.swift in Sources */,
+				1CE392132BD0722143A8E38F4152188B /* DateTimeInterval.swift in Sources */,
+				D3FE0105D139D86B7B459747B5D3A895 /* Extensions.swift in Sources */,
+				7FB6D10DAFAFA9B6B0AFDF8B7114A133 /* ISO8601DateTimeFormatter.swift in Sources */,
+				DF266AFDAF2AE528FF2DBB02057F705C /* LocaleName.swift in Sources */,
+				D15B0B69C3600211D70274089BD59AFF /* Region.swift in Sources */,
+				40BA887491B7F50E505A97278EC207FA /* SwiftDate-dummy.m in Sources */,
+				CF4F24D1BAD0B2CE716F6202195EDB8F /* TimeInterval+Extensions.swift in Sources */,
+				C734A10BCD08D18C493E0687344EA257 /* TimeZoneName.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E31AAFF06CDB804B33F62C4E9F84C71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF15CB2E0C6D3037138FA70AC7DAE23D /* Animator.swift in Sources */,
+				F5C1F19D5C37890DB4E19D515DD56EAC /* TtroAlertPage.swift in Sources */,
+				87239F28D8164CD4C545459F1CFD12A9 /* TtroAlertViewController-dummy.m in Sources */,
+				494F9E381DBFBC086109B616B3809F29 /* TtroAlertViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		858D7287E704594D4349A437AC6E0654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D0B1FCC5EAABEAE01151A65B9F4D897 /* AnimatedButton.swift in Sources */,
+				4527D8AEC05B5154B1BA9ACE37141D5C /* GooeyTabbarMenuItem.swift in Sources */,
+				263FEC4C14F5C7F2E27DB414EB60B6BB /* TabbarMenu.swift in Sources */,
+				113B38FE7FFB4D6CACE050EED89870C3 /* TtroGooeyTabbar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96DDFC36ED330E997929F26B0AC71305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61A54646708C458650EC61D0B0D6512 /* SwiftyButton+ResizableImage.swift in Sources */,
+				55B877E31E2CC41C2E0DC6F73D0451B3 /* SwiftyButton-dummy.m in Sources */,
+				6AFB4E22A96B1FD008C5720D8E6EAEED /* SwiftyButton.swift in Sources */,
+				8E9360C02A77DCA0D1F9D8415CF059AF /* SwiftyCustomContentButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DBD46362A45A845475AF897CBA3C91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1611B76B1C12381A7D139F7C1CFD4140 /* Pods-PayWandGenericViewControllers-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE1CD701E167910F30CCB5D80ED2743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3474E4E655382B527D799C55021A3567 /* Attribute.swift in Sources */,
+				31F60DBB6662B43BB7182A94B1063E40 /* CompoundAttribute.swift in Sources */,
+				44B2644538FBA736963EE6D7FC685A1A /* Constant.swift in Sources */,
+				D26ECF6D846C3291E945D1FD1165D4DD /* Context.swift in Sources */,
+				BBDD5A2F124A7538D60BFC9B9B91C0EB /* DimensionAttribute+AppKit.swift in Sources */,
+				584B53C655CCC4AF7C7F44A174D34F40 /* DimensionAttribute+UIKit.swift in Sources */,
+				0E4D484CDC66423F39D398ED28B9A37F /* DimensionAttribute.swift in Sources */,
+				238EDC1AB26BE7C697EF58F21B949C88 /* EasyPeasy-dummy.m in Sources */,
+				55C78A8925CC7E1F2B5194398B914833 /* Item+AppKit.swift in Sources */,
+				BC5AB76802C3AF039CFB6102E2E89AD7 /* Item+UIKit.swift in Sources */,
+				1D2FF4D810821FA697B82E9BE08B029F /* Item.swift in Sources */,
+				9053EBA2CB510BFE30A7B32C12B8070E /* Node.swift in Sources */,
+				C3F1CF25A547A3761DD89DB494CECF60 /* NSLayoutGuide+Easy.swift in Sources */,
+				FE600361B8F8D819D07EE55AD1BA9BCF /* NSView+Easy.swift in Sources */,
+				1F98403FA7386FBD5C04706DA198E178 /* PositionAttribute+AppKit.swift in Sources */,
+				CCF8C5BDA51404F535B734C8FD7A5B0D /* PositionAttribute+UIKit.swift in Sources */,
+				42DDC034671649DDD83A834774825CBB /* PositionAttribute.swift in Sources */,
+				9D5800496526AA7608455476C53AE0A6 /* Priority.swift in Sources */,
+				7FD80237B2B9D85C9B5FAA2B95DADF7F /* ReferenceAttribute.swift in Sources */,
+				8E0E660019420B111D1B730A20D55AAE /* UILayoutGuide+Easy.swift in Sources */,
+				48AD84F7956F1A5E5DABAD3114576032 /* UIView+Easy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFB883DB86401115C4F30712B7666575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C860DF1DA2767DC93B882EED79A30518 /* UIColor_Hex_Swift-dummy.m in Sources */,
+				1C3BF79F0332D9CD83DE6E2B37941C6D /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02723A891B7CC05BE036AEA6D12EBFEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = D4253F87176115CA05D9012798046971 /* PureLayout */;
+			targetProxy = 8C162FF9DEAF359D14D698EFD2E66B29 /* PBXContainerItemProxy */;
+		};
+		0977F8B79AEDC381EDF3C34C15CB42E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyPeasy;
+			target = B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */;
+			targetProxy = C462F63A57863F53D9F2F021CCE311CB /* PBXContainerItemProxy */;
+		};
+		1E2E77F48688633B9644F2C8CED9DE65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyButton;
+			target = 1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */;
+			targetProxy = 982F3E0AAD0EC84F798A1D8B1978BC9C /* PBXContainerItemProxy */;
+		};
+		1F820B878316AFE4D911138077A85C87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyButton;
+			target = 1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */;
+			targetProxy = 8F37468D736D124ACC8CB10737DC5D9E /* PBXContainerItemProxy */;
+		};
+		281E78BFFFC06128182DDC95C5FD6528 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TtroAlertViewController;
+			target = C9AE5A1DEE9A4D0E1C2EA362FE045145 /* TtroAlertViewController */;
+			targetProxy = 3B36174A727993E3B0842135C4FF0D5A /* PBXContainerItemProxy */;
+		};
+		2B317CEAC20DFA9992C71C87E231420A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PayWandBasicElements;
+			target = 60DAEEB1932B65A1B49F4B4E7B0C0048 /* PayWandBasicElements */;
+			targetProxy = A2A60C9BB58E0EE97051F88A50AA39FF /* PBXContainerItemProxy */;
+		};
+		39AF6689EC731633F51310783C942FA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = D4253F87176115CA05D9012798046971 /* PureLayout */;
+			targetProxy = 5EC84F5A8D2A06878A65F32A089C7F4F /* PBXContainerItemProxy */;
+		};
+		4334BA0D155645B493F6EB02139B0D0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TtroGooeyTabbar;
+			target = 10CF6CBE738F59AB055523E3AEA5F33D /* TtroGooeyTabbar */;
+			targetProxy = FE1EADD6B32AC500C98E3A020780330A /* PBXContainerItemProxy */;
+		};
+		4846D372071504A3D60947209D7F8A20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PayWandBasicElements;
+			target = 60DAEEB1932B65A1B49F4B4E7B0C0048 /* PayWandBasicElements */;
+			targetProxy = 8563BA1C68605DF414082E3816C711F4 /* PBXContainerItemProxy */;
+		};
+		4DB30A5E2752118DE600686AC67D761E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */;
+			targetProxy = C9D19947698D2A0FCCA83EC7458F8870 /* PBXContainerItemProxy */;
+		};
+		5F7E4A115C5795DC631AD757535278C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftDate;
+			target = 74B491776FD29FB4995459DB10041B08 /* SwiftDate */;
+			targetProxy = 11E281619C3633462CD0672CBEA3155A /* PBXContainerItemProxy */;
+		};
+		604BD25B52B1F122F153CF12108F6339 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyPeasy;
+			target = B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */;
+			targetProxy = 888C37957DB63FD77FF19E24FE3CFF79 /* PBXContainerItemProxy */;
+		};
+		70AE51EC0E229A36699FC3AF569B63B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NVActivityIndicatorView;
+			target = 3EDFE4052B5DE7D509935AC0774CB135 /* NVActivityIndicatorView */;
+			targetProxy = 3B6DDB49470C873778F0B71641CAB1BC /* PBXContainerItemProxy */;
+		};
+		77A8343AB2BE21B223E4B320FA8444F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = D4253F87176115CA05D9012798046971 /* PureLayout */;
+			targetProxy = 79D05CA56F3371BF2DA41F0E991FC7B1 /* PBXContainerItemProxy */;
+		};
+		79AD0339D04477A5D1935F0BDBACE967 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyPeasy;
+			target = B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */;
+			targetProxy = 12209939F82AFC6E53A18F9850C4D1CB /* PBXContainerItemProxy */;
+		};
+		7B2F190AB6397CD3FB958E3BBBD1741D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NVActivityIndicatorView;
+			target = 3EDFE4052B5DE7D509935AC0774CB135 /* NVActivityIndicatorView */;
+			targetProxy = BCCF435F528E763F2851D92E7F320838 /* PBXContainerItemProxy */;
+		};
+		7D8FDD25E75E878E9A771E265F3F8A30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PayWandBasicElements;
+			target = 60DAEEB1932B65A1B49F4B4E7B0C0048 /* PayWandBasicElements */;
+			targetProxy = D264F26F69EACAB07D36158808621137 /* PBXContainerItemProxy */;
+		};
+		8580BF480ADB82851AF81E26F44E160E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyButton;
+			target = 1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */;
+			targetProxy = 33A3084F8F165E9B4099619044E63639 /* PBXContainerItemProxy */;
+		};
+		980A22E6A5C2DECC50089B6A9F0842DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TtroGooeyTabbar;
+			target = 10CF6CBE738F59AB055523E3AEA5F33D /* TtroGooeyTabbar */;
+			targetProxy = C4811D7591595C3E55A8F4F0A1F16F0C /* PBXContainerItemProxy */;
+		};
+		99B1AF49EDE4E382BD5522C2B2A00181 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftDate;
+			target = 74B491776FD29FB4995459DB10041B08 /* SwiftDate */;
+			targetProxy = 284BE5C6406440CDE57F342000FDF30E /* PBXContainerItemProxy */;
+		};
+		A042BEA8DC5021C5995EB5DF49109C70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */;
+			targetProxy = C7906B8AD5A90A941DF42BD072DD3BF8 /* PBXContainerItemProxy */;
+		};
+		AF6AE794F746DB31BB98613A4E68EE70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PayWandBasicElements;
+			target = 60DAEEB1932B65A1B49F4B4E7B0C0048 /* PayWandBasicElements */;
+			targetProxy = FB7A1EB12B206D07FB6709246A02638E /* PBXContainerItemProxy */;
+		};
+		AF990569B9F27272E410E436F37AC2B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TtroAlertViewController;
+			target = C9AE5A1DEE9A4D0E1C2EA362FE045145 /* TtroAlertViewController */;
+			targetProxy = F2E5C3B4736DB3093FF12A6A4F0F9788 /* PBXContainerItemProxy */;
+		};
+		C8C37431AC076F06DD3BB761DFDC119A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyButton;
+			target = 1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */;
+			targetProxy = E34D71214092E78EDF25794E9F58D367 /* PBXContainerItemProxy */;
+		};
+		D1E5A13066E63E86BCA2540D164798A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyPeasy;
+			target = B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */;
+			targetProxy = EA5B379EB9F754B0A4CE012750A01B4D /* PBXContainerItemProxy */;
+		};
+		E536F51FEEC0D3498659FA74B39C2BDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */;
+			targetProxy = 5A551B50205EB09B300ECEF4A4558F9F /* PBXContainerItemProxy */;
+		};
+		EFCB216983D9D47456C641FED310DE47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */;
+			targetProxy = FD59A796B5C2BC80307347D6F2657113 /* PBXContainerItemProxy */;
+		};
+		F528967389D60C33124CAF7A805455AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */;
+			targetProxy = 244B1085EDFEDE7E06B25B3C33DEE300 /* PBXContainerItemProxy */;
+		};
+		FE9D7F9F6155BEFE4402052C49206E1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyButton;
+			target = 1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */;
+			targetProxy = FB73965606FEDAC19345DCFBDA15ACB4 /* PBXContainerItemProxy */;
+		};
+		FF5D5590706314443EECBF2B80BC2C22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyPeasy;
+			target = B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */;
+			targetProxy = F3B477C4F0B5C1F7E655460C9BBAA4A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03E5A17600B23CFD1E10833E7982A0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6ECE8119A6AE70F9357EE7E7FD4595A /* PayWandBasicElements.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PayWandBasicElements/PayWandBasicElements-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PayWandBasicElements/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PayWandBasicElements/PayWandBasicElements.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PayWandBasicElements;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1EDFFAF4F723EEF2516361B1F8B77B9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F64DB8BB8A0FB94044627E4D7D41002D /* TtroAlertViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TtroAlertViewController/TtroAlertViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TtroAlertViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TtroAlertViewController/TtroAlertViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TtroAlertViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29A5AE945091B6A4E8A1E9840EEA2FEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC489B2790090CCFF37111299E06965D /* SwiftDate.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDate/SwiftDate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftDate/SwiftDate.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftDate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		311FD15C4B8F642406CF3986EDDC48E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ADBA7AF9E8C73C7D0D9219506C3AC42 /* Pods-PayWandGenericViewControllers.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PayWandGenericViewControllers/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PayWandGenericViewControllers/Pods-PayWandGenericViewControllers.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PayWandGenericViewControllers;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		31CDC30198B48C5C456D39F35840D7ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4C4AD685AE212343BA4E19890FC0B24 /* EasyPeasy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = EasyPeasy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		47F099A0367C98D29E3462DE6E488077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02AC08203214D1904420738D8E8025F7 /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		48043D7587A64E662D4BDF2A61C54E34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6ECE8119A6AE70F9357EE7E7FD4595A /* PayWandBasicElements.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PayWandBasicElements/PayWandBasicElements-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PayWandBasicElements/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PayWandBasicElements/PayWandBasicElements.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PayWandBasicElements;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4C38DFCCACE2953ACDD9CB1A6FA601D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC489B2790090CCFF37111299E06965D /* SwiftDate.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDate/SwiftDate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftDate/SwiftDate.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftDate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		506AF2D1B3064CB0895B84E13D456873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4C4AD685AE212343BA4E19890FC0B24 /* EasyPeasy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EasyPeasy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5C40DAD5CF10E35CA68DFF67759B85F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F64DB8BB8A0FB94044627E4D7D41002D /* TtroAlertViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TtroAlertViewController/TtroAlertViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TtroAlertViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TtroAlertViewController/TtroAlertViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TtroAlertViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6AF4316603E3C54D8C88415E7BBF3CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91F18DCC8BA59851B0983D2103249756 /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6B18562E69B88A228891590CA062D3F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2CCA7CB892D0F83D3878F6AEE9D3DF0 /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B847F47FB5CEF3BBD9CAD5FA6504FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A05183295577E8331E8AB3483682B56 /* NVActivityIndicatorView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NVActivityIndicatorView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NVActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		759E219C10CCBC56B207F2F44DFF9732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F69A2E1B7F2DD85EE4116A23C918B5B /* Pods-PayWandGenericViewControllersTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PayWandGenericViewControllersTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PayWandGenericViewControllersTests/Pods-PayWandGenericViewControllersTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PayWandGenericViewControllersTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		75D9BC340450DAE8D73D6E02DBA3E506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 004529F1068F78DFD73350BA1F7FE614 /* Pods-PayWandGenericViewControllersTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PayWandGenericViewControllersTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PayWandGenericViewControllersTests/Pods-PayWandGenericViewControllersTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PayWandGenericViewControllersTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		76E77D241AA76390B48C5B6A49DF3CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 779DB185B438931662AE549E67EF3B83 /* TtroGooeyTabbar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TtroGooeyTabbar/TtroGooeyTabbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TtroGooeyTabbar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TtroGooeyTabbar/TtroGooeyTabbar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TtroGooeyTabbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E4E3D77D61939FA43831A972E7CFE54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 779DB185B438931662AE549E67EF3B83 /* TtroGooeyTabbar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TtroGooeyTabbar/TtroGooeyTabbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TtroGooeyTabbar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TtroGooeyTabbar/TtroGooeyTabbar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TtroGooeyTabbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A1FF4282BBFBABBDE54F548574E169B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02AC08203214D1904420738D8E8025F7 /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF5E21903D1AC4ED0C77D22AE34A4BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2CCA7CB892D0F83D3878F6AEE9D3DF0 /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B21BCAB483C0341D014BC1044D77B44C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0C0AB42FEA8269A5F59AFACAAA76843 /* Pods-PayWandGenericViewControllers.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PayWandGenericViewControllers/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PayWandGenericViewControllers/Pods-PayWandGenericViewControllers.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PayWandGenericViewControllers;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F11B974E67D3A4314D988D86E1962357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91F18DCC8BA59851B0983D2103249756 /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F37C64362172087D131FEEAD10E60CE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A05183295577E8331E8AB3483682B56 /* NVActivityIndicatorView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NVActivityIndicatorView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NVActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0010BDB5A9EE9086CA2AB7377D5C9BBF /* Build configuration list for PBXNativeTarget "SwiftyButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5E21903D1AC4ED0C77D22AE34A4BBE /* Debug */,
+				6B18562E69B88A228891590CA062D3F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09077C94E191775E258073FA5A3C405C /* Build configuration list for PBXNativeTarget "EasyPeasy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506AF2D1B3064CB0895B84E13D456873 /* Debug */,
+				31CDC30198B48C5C456D39F35840D7ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A535FB7FF000DF9614349E816D94E23 /* Build configuration list for PBXNativeTarget "TtroGooeyTabbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76E77D241AA76390B48C5B6A49DF3CB5 /* Debug */,
+				9E4E3D77D61939FA43831A972E7CFE54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2584C1EA0B48B17C39642CCEF016117A /* Build configuration list for PBXNativeTarget "TtroAlertViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EDFFAF4F723EEF2516361B1F8B77B9C /* Debug */,
+				5C40DAD5CF10E35CA68DFF67759B85F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D866DA0B0F9751548F96DDEB8965D20 /* Build configuration list for PBXNativeTarget "PayWandBasicElements" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48043D7587A64E662D4BDF2A61C54E34 /* Debug */,
+				03E5A17600B23CFD1E10833E7982A0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35DF108162D4FB76F4C98C08DEA245C3 /* Build configuration list for PBXNativeTarget "NVActivityIndicatorView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F37C64362172087D131FEEAD10E60CE4 /* Debug */,
+				6B847F47FB5CEF3BBD9CAD5FA6504FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		713413FBEA45D3F07DB3B98A25557CE8 /* Build configuration list for PBXNativeTarget "Pods-PayWandGenericViewControllers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311FD15C4B8F642406CF3986EDDC48E3 /* Debug */,
+				B21BCAB483C0341D014BC1044D77B44C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91851E3FD953884B56F4BC5ADA7DB16B /* Build configuration list for PBXNativeTarget "Pods-PayWandGenericViewControllersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D9BC340450DAE8D73D6E02DBA3E506 /* Debug */,
+				759E219C10CCBC56B207F2F44DFF9732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFB993777BB9F47EABCD86792718D900 /* Build configuration list for PBXNativeTarget "SwiftDate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C38DFCCACE2953ACDD9CB1A6FA601D7 /* Debug */,
+				29A5AE945091B6A4E8A1E9840EEA2FEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5E209CC24F5AD89AB9E769E0EF11BE /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47F099A0367C98D29E3462DE6E488077 /* Debug */,
+				A1FF4282BBFBABBDE54F548574E169B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E944E25CB18BDFFA85241F0E5A26793E /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AF4316603E3C54D8C88415E7BBF3CAB /* Debug */,
+				F11B974E67D3A4314D988D86E1962357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

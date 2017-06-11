@@ -1,0 +1,30 @@
+{
+  "name": "TtroAlertViewController",
+  "version": "0.0.1",
+  "summary": "Alert View Controller desinged for PayWand",
+  "description": "Alert View Controller desinged for PayWand, gestures should be added later!",
+  "homepage": "https://github.com/faraxnak/TtroAlertViewController",
+  "license": {
+    "type": "MIT",
+    "file": "MIT License"
+  },
+  "authors": {
+    "faraxnak": "mf.azampour@gmail.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/faraxnak/TtroAlertViewController.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "TtroAlertViewController",
+  "dependencies": {
+    "EasyPeasy": [
+
+    ],
+    "PayWandBasicElements": [
+
+    ]
+  }
+}

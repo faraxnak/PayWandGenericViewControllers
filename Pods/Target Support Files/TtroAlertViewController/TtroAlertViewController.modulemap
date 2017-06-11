@@ -1,0 +1,6 @@
+framework module TtroAlertViewController {
+  umbrella header "TtroAlertViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

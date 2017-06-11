@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7551FE5F1EED32D900AB5A49 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551FE5E1EED32D900AB5A49 /* Animator.swift */; };
 		75F52F731E1409630098ED68 /* PayWandGenericViewControllers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F52F691E1409630098ED68 /* PayWandGenericViewControllers.framework */; };
 		75F52F781E1409630098ED68 /* PayWandGenericViewControllersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F52F771E1409630098ED68 /* PayWandGenericViewControllersTests.swift */; };
 		75F52F7A1E1409630098ED68 /* PayWandGenericViewControllers.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F52F6C1E1409630098ED68 /* PayWandGenericViewControllers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75F52F891E1409900098ED68 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F52F831E1409900098ED68 /* GenericViewController.swift */; };
+		75F52F8A1E1409900098ED68 /* TopDownGenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F52F841E1409900098ED68 /* TopDownGenericViewController.swift */; };
+		75F52F8B1E1409900098ED68 /* SlidingGenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F52F851E1409900098ED68 /* SlidingGenericViewController.swift */; };
+		75F52F8C1E1409900098ED68 /* SlidingActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F52F861E1409900098ED68 /* SlidingActionViewController.swift */; };
+		75F52F8E1E1409900098ED68 /* GooeyTabbarGenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F52F881E1409900098ED68 /* GooeyTabbarGenericViewController.swift */; };
+		75F52FC01E14224A0098ED68 /* TtroActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F52FBF1E14224A0098ED68 /* TtroActivityIndicatorView.swift */; };
+		C0C2587566DD7B65AC2605B9 /* Pods_PayWandGenericViewControllers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A0AF32D22208B8E5E15BAF /* Pods_PayWandGenericViewControllers.framework */; };
+		EFBFBD83675FD843395DE4FD /* Pods_PayWandGenericViewControllersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9ECD8B9E91C9444C2333FA9 /* Pods_PayWandGenericViewControllersTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +32,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28A0AF32D22208B8E5E15BAF /* Pods_PayWandGenericViewControllers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayWandGenericViewControllers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A21E4DA3AC21E78A5EEA93 /* Pods-PayWandGenericViewControllersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayWandGenericViewControllersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PayWandGenericViewControllersTests/Pods-PayWandGenericViewControllersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7551FE5E1EED32D900AB5A49 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		75F52F691E1409630098ED68 /* PayWandGenericViewControllers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PayWandGenericViewControllers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F52F6C1E1409630098ED68 /* PayWandGenericViewControllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayWandGenericViewControllers.h; sourceTree = "<group>"; };
 		75F52F6D1E1409630098ED68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75F52F721E1409630098ED68 /* PayWandGenericViewControllersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayWandGenericViewControllersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F52F771E1409630098ED68 /* PayWandGenericViewControllersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWandGenericViewControllersTests.swift; sourceTree = "<group>"; };
 		75F52F791E1409630098ED68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F52F831E1409900098ED68 /* GenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
+		75F52F841E1409900098ED68 /* TopDownGenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopDownGenericViewController.swift; sourceTree = "<group>"; };
+		75F52F851E1409900098ED68 /* SlidingGenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingGenericViewController.swift; sourceTree = "<group>"; };
+		75F52F861E1409900098ED68 /* SlidingActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingActionViewController.swift; sourceTree = "<group>"; };
+		75F52F881E1409900098ED68 /* GooeyTabbarGenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooeyTabbarGenericViewController.swift; sourceTree = "<group>"; };
+		75F52FBF1E14224A0098ED68 /* TtroActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TtroActivityIndicatorView.swift; sourceTree = "<group>"; };
+		9A94C63F7DEE947643B51164 /* Pods-PayWandGenericViewControllers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayWandGenericViewControllers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PayWandGenericViewControllers/Pods-PayWandGenericViewControllers.debug.xcconfig"; sourceTree = "<group>"; };
+		A9ECD8B9E91C9444C2333FA9 /* Pods_PayWandGenericViewControllersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayWandGenericViewControllersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD2ED2B38BC49CAE676CBAD /* Pods-PayWandGenericViewControllersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayWandGenericViewControllersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PayWandGenericViewControllersTests/Pods-PayWandGenericViewControllersTests.release.xcconfig"; sourceTree = "<group>"; };
+		E966B528C1309A518A693106 /* Pods-PayWandGenericViewControllers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayWandGenericViewControllers.release.xcconfig"; path = "Pods/Target Support Files/Pods-PayWandGenericViewControllers/Pods-PayWandGenericViewControllers.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C2587566DD7B65AC2605B9 /* Pods_PayWandGenericViewControllers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +67,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				75F52F731E1409630098ED68 /* PayWandGenericViewControllers.framework in Frameworks */,
+				EFBFBD83675FD843395DE4FD /* Pods_PayWandGenericViewControllersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19BB206F237DFE4F8627D9D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AF32D22208B8E5E15BAF /* Pods_PayWandGenericViewControllers.framework */,
+				A9ECD8B9E91C9444C2333FA9 /* Pods_PayWandGenericViewControllersTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		75F52F5F1E1409630098ED68 = {
 			isa = PBXGroup;
 			children = (
 				75F52F6B1E1409630098ED68 /* PayWandGenericViewControllers */,
 				75F52F761E1409630098ED68 /* PayWandGenericViewControllersTests */,
 				75F52F6A1E1409630098ED68 /* Products */,
+				E9F75DE70D36CC290B16175F /* Pods */,
+				19BB206F237DFE4F8627D9D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,7 +107,14 @@
 			isa = PBXGroup;
 			children = (
 				75F52F6C1E1409630098ED68 /* PayWandGenericViewControllers.h */,
+				75F52F831E1409900098ED68 /* GenericViewController.swift */,
+				75F52F841E1409900098ED68 /* TopDownGenericViewController.swift */,
+				75F52F851E1409900098ED68 /* SlidingGenericViewController.swift */,
+				75F52F861E1409900098ED68 /* SlidingActionViewController.swift */,
+				75F52F881E1409900098ED68 /* GooeyTabbarGenericViewController.swift */,
+				75F52FBF1E14224A0098ED68 /* TtroActivityIndicatorView.swift */,
 				75F52F6D1E1409630098ED68 /* Info.plist */,
+				7551FE5E1EED32D900AB5A49 /* Animator.swift */,
 			);
 			path = PayWandGenericViewControllers;
 			sourceTree = "<group>";
@@ -84,6 +126,17 @@
 				75F52F791E1409630098ED68 /* Info.plist */,
 			);
 			path = PayWandGenericViewControllersTests;
+			sourceTree = "<group>";
+		};
+		E9F75DE70D36CC290B16175F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A94C63F7DEE947643B51164 /* Pods-PayWandGenericViewControllers.debug.xcconfig */,
+				E966B528C1309A518A693106 /* Pods-PayWandGenericViewControllers.release.xcconfig */,
+				53A21E4DA3AC21E78A5EEA93 /* Pods-PayWandGenericViewControllersTests.debug.xcconfig */,
+				CAD2ED2B38BC49CAE676CBAD /* Pods-PayWandGenericViewControllersTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75F52F7D1E1409630098ED68 /* Build configuration list for PBXNativeTarget "PayWandGenericViewControllers" */;
 			buildPhases = (
+				946F30908CCB634663D84A72 /* [CP] Check Pods Manifest.lock */,
 				75F52F641E1409630098ED68 /* Sources */,
 				75F52F651E1409630098ED68 /* Frameworks */,
 				75F52F661E1409630098ED68 /* Headers */,
 				75F52F671E1409630098ED68 /* Resources */,
+				9DDF0FA38E865A54A6D2B757 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75F52F801E1409630098ED68 /* Build configuration list for PBXNativeTarget "PayWandGenericViewControllersTests" */;
 			buildPhases = (
+				96A1C10500815DBDB316234C /* [CP] Check Pods Manifest.lock */,
 				75F52F6E1E1409630098ED68 /* Sources */,
 				75F52F6F1E1409630098ED68 /* Frameworks */,
 				75F52F701E1409630098ED68 /* Resources */,
+				5BFBBD6C1F98CF26DF0DD61A /* [CP] Embed Pods Frameworks */,
+				D7AB81386C01D1327955E745 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +207,7 @@
 					75F52F681E1409630098ED68 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = F53V3ZJV96;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					75F52F711E1409630098ED68 = {
@@ -193,11 +252,96 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5BFBBD6C1F98CF26DF0DD61A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PayWandGenericViewControllersTests/Pods-PayWandGenericViewControllersTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		946F30908CCB634663D84A72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96A1C10500815DBDB316234C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9DDF0FA38E865A54A6D2B757 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PayWandGenericViewControllers/Pods-PayWandGenericViewControllers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7AB81386C01D1327955E745 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PayWandGenericViewControllersTests/Pods-PayWandGenericViewControllersTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75F52F641E1409630098ED68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F52F8A1E1409900098ED68 /* TopDownGenericViewController.swift in Sources */,
+				75F52F8C1E1409900098ED68 /* SlidingActionViewController.swift in Sources */,
+				75F52F891E1409900098ED68 /* GenericViewController.swift in Sources */,
+				75F52F8B1E1409900098ED68 /* SlidingGenericViewController.swift in Sources */,
+				7551FE5F1EED32D900AB5A49 /* Animator.swift in Sources */,
+				75F52FC01E14224A0098ED68 /* TtroActivityIndicatorView.swift in Sources */,
+				75F52F8E1E1409900098ED68 /* GooeyTabbarGenericViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +465,9 @@
 		};
 		75F52F7E1E1409630098ED68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A94C63F7DEE947643B51164 /* Pods-PayWandGenericViewControllers.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F53V3ZJV96;
@@ -330,17 +476,21 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = PayWandGenericViewControllers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ParsPay.PayWandGenericViewControllers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		75F52F7F1E1409630098ED68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E966B528C1309A518A693106 /* Pods-PayWandGenericViewControllers.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F53V3ZJV96;
@@ -349,6 +499,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = PayWandGenericViewControllers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ParsPay.PayWandGenericViewControllers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,7 +510,9 @@
 		};
 		75F52F811E1409630098ED68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53A21E4DA3AC21E78A5EEA93 /* Pods-PayWandGenericViewControllersTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = F53V3ZJV96;
 				INFOPLIST_FILE = PayWandGenericViewControllersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -371,7 +524,9 @@
 		};
 		75F52F821E1409630098ED68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAD2ED2B38BC49CAE676CBAD /* Pods-PayWandGenericViewControllersTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = F53V3ZJV96;
 				INFOPLIST_FILE = PayWandGenericViewControllersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +555,7 @@
 				75F52F7F1E1409630098ED68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75F52F801E1409630098ED68 /* Build configuration list for PBXNativeTarget "PayWandGenericViewControllersTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +564,7 @@
 				75F52F821E1409630098ED68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

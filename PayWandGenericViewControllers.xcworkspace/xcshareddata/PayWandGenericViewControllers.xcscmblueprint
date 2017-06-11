@@ -1,0 +1,36 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8D2D75E1AA0E181F828F2ED5900FC3876DB45392" : 9223372036854775807,
+    "6D3BD2D4A45788AE542AB8D05BFFDFEE6DF74688" : 9223372036854775807,
+    "6783A3F7619B302666B70654FFB259D4B407A23D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A0F76DF7-D1AF-43E1-A57D-21A5FE412CA2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8D2D75E1AA0E181F828F2ED5900FC3876DB45392" : "PayWandBasicElements\/",
+    "6D3BD2D4A45788AE542AB8D05BFFDFEE6DF74688" : "TtroAlertViewController\/",
+    "6783A3F7619B302666B70654FFB259D4B407A23D" : "TtroGooeyTabbar\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PayWandGenericViewControllers",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PayWandGenericViewControllers.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/faraxnak\/TtroGooeyTabbar.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6783A3F7619B302666B70654FFB259D4B407A23D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/faraxnak\/TtroAlertViewController.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6D3BD2D4A45788AE542AB8D05BFFDFEE6DF74688"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/faraxnak\/PayWandBasicElements",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D2D75E1AA0E181F828F2ED5900FC3876DB45392"
+    }
+  ]
+}

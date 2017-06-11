@@ -1,0 +1,52 @@
+PODS:
+  - EasyPeasy (1.4)
+  - NVActivityIndicatorView (3.1)
+  - PayWandBasicElements (0.0.6):
+    - EasyPeasy (~> 1.4)
+    - SwiftyButton (~> 0.5.0)
+    - UIColor_Hex_Swift
+  - PureLayout (3.0.2)
+  - SwiftDate (4.0.10)
+  - SwiftyButton (0.5.0):
+    - SwiftyButton/CustomContent (= 0.5.0)
+  - SwiftyButton/CustomContent (0.5.0):
+    - PureLayout (~> 3.0)
+  - TtroAlertViewController (0.0.1):
+    - EasyPeasy
+    - PayWandBasicElements
+  - TtroGooeyTabbar (0.0.1):
+    - EasyPeasy
+    - PayWandBasicElements
+  - UIColor_Hex_Swift (3.0.2)
+
+DEPENDENCIES:
+  - EasyPeasy
+  - NVActivityIndicatorView
+  - PayWandBasicElements (from `../PayWandBasicElements/`)
+  - SwiftDate
+  - TtroAlertViewController (from `../TtroAlertViewController/`)
+  - TtroGooeyTabbar (from `../TtroGooeyTabbar/`)
+  - UIColor_Hex_Swift
+
+EXTERNAL SOURCES:
+  PayWandBasicElements:
+    :path: ../PayWandBasicElements/
+  TtroAlertViewController:
+    :path: ../TtroAlertViewController/
+  TtroGooeyTabbar:
+    :path: ../TtroGooeyTabbar/
+
+SPEC CHECKSUMS:
+  EasyPeasy: c2e49ceb822edc0a5fffefd66240fff10129047d
+  NVActivityIndicatorView: 9f47e8a4affb860ef729aeec99b1550219e6c233
+  PayWandBasicElements: dcf2939ad4bc331baaa1285ca2c1a34fc3abf6e5
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  SwiftDate: efdff69cf3750c2e4ef4fb9f0461e22b40c4c942
+  SwiftyButton: 7f1c7774a0aa721cbb6ea287742198ea0ee50c05
+  TtroAlertViewController: 11a0e15181d9af475ccd4bdc3ddc073321bc3a91
+  TtroGooeyTabbar: 20ff9c36c97675ee71fea91fdd6cb3d660d48bfd
+  UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
+
+PODFILE CHECKSUM: 19e5c6a8a90979dffc15154422aefb7c82370d2a
+
+COCOAPODS: 1.2.0.beta.1
