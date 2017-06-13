@@ -55,8 +55,8 @@ public class SlidingActionViewController: SlidingGenericViewController {
         view.addSubview(slidingView)
         //slidingView.translatesAutoresizingMaskIntoConstraints = false
         slidingView <- [
-            Width(*0.8).like(self.view).with(Priority.customPriority(999)),
-            Width(<=min(400, view.frame.width)).with(Priority.customPriority(1000)),
+            Width(*0.8).like(self.view).with(Priority.custom(999)),
+            Width(<=min(400, view.frame.width)).with(Priority.custom(1000)),
             Height(*0.5).like(self.view),
         ]
         

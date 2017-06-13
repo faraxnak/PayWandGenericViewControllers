@@ -14,17 +14,17 @@ import NVActivityIndicatorView
 import TtroAlertViewController
 import PayWandBasicElements
 
-public class GenericViewController: UIViewController, UITextFieldDelegate {
+open class GenericViewController: UIViewController, UITextFieldDelegate {
     
-    var activityIndicatorParentView : UIView!
+    public var activityIndicatorParentView : UIView!
     //    var activityIndicatorView : UIActivityIndicatorView!
-    var activityDescriptionLabel : UILabel!
+    public var activityDescriptionLabel : UILabel!
     //let spinner = ALThreeCircleSpinner(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
-    let nvActivityIndicatorView = TtroActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50), type: .ballPulse, color: UIColor.TtroColors.cyan.color, padding: 5)
+    public let nvActivityIndicatorView = TtroActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50), type: .ballPulse, color: UIColor.TtroColors.cyan.color, padding: 5)
     //    let nvActivityIndicatorView = TtroActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 150, height: 40), config: TKRubberPageControlConfig())
-    var bottomView : UIView!
+    public var bottomView : UIView!
     
-    override public func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
         initActivityIndicator()
@@ -35,7 +35,7 @@ public class GenericViewController: UIViewController, UITextFieldDelegate {
     }
     
     //Changing Status Bar
-    public override var preferredStatusBarStyle : UIStatusBarStyle {
+    open override var preferredStatusBarStyle : UIStatusBarStyle {
         //super.preferredStatusBarStyle()
         //LightContent
         return UIStatusBarStyle.lightContent
@@ -45,7 +45,7 @@ public class GenericViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    func setUIElements(){
+    open func setUIElements(){
         UIGraphicsBeginImageContext(self.view.frame.size)
         UIImage(named: "bg")?.draw(in: self.view.bounds)
         
@@ -56,7 +56,7 @@ public class GenericViewController: UIViewController, UITextFieldDelegate {
         self.view.backgroundColor = UIColor(patternImage: image)
     }
     
-    func initActivityIndicator(){
+    public func initActivityIndicator(){
         activityIndicatorParentView = UIView()//UIVisualEffectView(effect: UIBlurEffect(style: .Light))
         activityIndicatorParentView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(activityIndicatorParentView)
@@ -96,16 +96,16 @@ public class GenericViewController: UIViewController, UITextFieldDelegate {
         bottomView.heightAnchor.constraint(equalToConstant: 46).isActive = true
     }
     
-    public override func didReceiveMemoryWarning() {
+    open override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func initBottomView(){
+    open func initBottomView(){
         
     }
     
-    func showActivityIndicator(){
+    public func showActivityIndicator(){
         view.addSubview(activityIndicatorParentView!)
         activityIndicatorParentView.layer.masksToBounds = true
         //activityIndicatorBlurView.layer.cornerRadius = 10
@@ -119,7 +119,7 @@ public class GenericViewController: UIViewController, UITextFieldDelegate {
         view.layoutIfNeeded()
     }
     
-    func hideActivityIndicator(){
+    public func hideActivityIndicator(){
         nvActivityIndicatorView.stopAnimation()
         UIView.animate(withDuration: 0.4, animations: {
             self.activityIndicatorParentView!.alpha = 0
@@ -129,13 +129,13 @@ public class GenericViewController: UIViewController, UITextFieldDelegate {
         })
     }
     
-    public func textFieldDidBeginEditing(_ textField: UITextField) {
+    open func textFieldDidBeginEditing(_ textField: UITextField) {
         if let tf = textField as? TtroTextField {
             tf.setToNormalState()
         }
     }
     
-    func findViewById(view: UIView, identifier : String) -> UIView? {
+    open func findViewById(view: UIView, identifier : String) -> UIView? {
         if view.accessibilityIdentifier?.compare(identifier, options: String.CompareOptions.caseInsensitive) == .orderedSame {
             return view
         }
@@ -167,7 +167,7 @@ extension GenericViewController : TtroAlertViewControllerDelegate {
         return snapshot ?? UIView(frame: view.frame)
     }
     
-    func createAlert(title: String, message : String, type : TtroAlertType) -> TtroAlertViewController{
+    public func createAlert(title: String, message : String, type : TtroAlertType) -> TtroAlertViewController{
         let alertController = TtroAlertViewController(title: title, message: message, type: type)
         alertController.delegate = self
         alertController.view.layoutIfNeeded()

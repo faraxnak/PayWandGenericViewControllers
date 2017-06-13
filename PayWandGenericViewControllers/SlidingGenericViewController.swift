@@ -41,7 +41,7 @@ public class SlidingGenericViewController: TopDownGenericViewController, UIViewC
         // Dispose of any resources that can be recreated.
     }
     
-    override func setUIElements(){
+    override public func setUIElements(){
         UIGraphicsBeginImageContext(self.view.frame.size)
         UIImage(named: "bgDark")?.draw(in: self.view.bounds)
         
