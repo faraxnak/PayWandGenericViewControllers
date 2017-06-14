@@ -9,19 +9,20 @@
 import UIKit
 import EasyPeasy
 
+
 public protocol SlidingActionViewControllerDelegate : class {
     func actionType() -> SlidingActionViewController.ActionType
 }
 
-public class SlidingActionViewController: SlidingGenericViewController {
+open class SlidingActionViewController: SlidingGenericViewController {
     
     fileprivate var logoView : UIView!
     
-    var cancelButton : UIButton!
+    public var cancelButton : UIButton!
     
-    var presenterViewController : GenericViewController!
+    public var presenterViewController : GenericViewController!
     
-    var type = ActionType.Topup
+    public var type = ActionType.Topup
 
     public enum ActionType : String {
         case Topup = "Top Up"
@@ -30,27 +31,28 @@ public class SlidingActionViewController: SlidingGenericViewController {
         case Send
         case Search
         case BankAccount = "Bank Account"
+        case Information
     }
     
-    var typeDelegate : SlidingActionViewControllerDelegate!
+    public var typeDelegate : SlidingActionViewControllerDelegate!
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
     }
     
-    public override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         UIApplication.shared.isStatusBarHidden = true
     }
     
-    public override func viewWillDisappear(_ animated: Bool) {
+    open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         UIApplication.shared.isStatusBarHidden = false
     }
     
-    override func initElements(){
+    open override func initElements(){
         slidingView = UIView()
         view.addSubview(slidingView)
         //slidingView.translatesAutoresizingMaskIntoConstraints = false
@@ -126,18 +128,19 @@ public class SlidingActionViewController: SlidingGenericViewController {
 //        fatalError("override in child class")
 //    }
     
-    func onCancel(_ sender : UIButton) {
+    open func onCancel(_ sender : UIButton) {
 //        self.transitioningDelegate = presenterViewController
+        self.transitioningDelegate = presenterViewController as! UIViewControllerTransitioningDelegate?
         dismiss(animated: true, completion: nil)
     }
 }
 
-class ScrollSlidingActionViewController: SlidingActionViewController {
+open class ScrollSlidingActionViewController: SlidingActionViewController {
     
-    var stackView : UIStackView!
-    var scrollView : UIScrollView!
+    public var stackView : UIStackView!
+    public var scrollView : UIScrollView!
     
-    override func initElements() {
+    open override func initElements() {
         super.initElements()
         
         scrollView = UIScrollView()
@@ -158,7 +161,7 @@ class ScrollSlidingActionViewController: SlidingActionViewController {
         
     }
     
-    override func viewDidLayoutSubviews() {
+    open override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         if (scrollView != nil){
             scrollView.contentSize = CGSize(width: stackView.frame.width, height: stackView.frame.height)

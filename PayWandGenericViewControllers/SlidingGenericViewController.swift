@@ -9,16 +9,18 @@
 import UIKit
 import EasyPeasy
 
-public class SlidingGenericViewController: TopDownGenericViewController, UIViewControllerTransitioningDelegate {
+open class SlidingGenericViewController: TopDownGenericViewController, UIViewControllerTransitioningDelegate {
 
-    var slidingView : UIView!
-    var middleXConst : NSLayoutConstraint!
-    var presenetViewControllerSlidingFromLeft : Bool = false
+    public var slidingView : UIView!
+    public var middleXConst : NSLayoutConstraint!
+    public var presenetViewControllerSlidingFromLeft : Bool = false
     
     fileprivate let slidingShowTransitionAnimation = SlidingShowTransitionAnimation()
     fileprivate let slidingDismissTransitionAnimation = SlidingDismissTransitionAnimation()
     
-    public override func viewDidLoad() {
+    public let slideInteractionController = SlideInteractionController()
+    
+    open override func viewDidLoad() {
         super.viewDidLoad()
         initElements()
         setConstraints()
@@ -32,16 +34,11 @@ public class SlidingGenericViewController: TopDownGenericViewController, UIViewC
         }
     }
     
-    func initElements(){
+    open func initElements(){
         fatalError("override in child class")
     }
-
-    public override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-    override public func setUIElements(){
+    override open func setUIElements(){
         UIGraphicsBeginImageContext(self.view.frame.size)
         UIImage(named: "bgDark")?.draw(in: self.view.bounds)
         
@@ -52,7 +49,7 @@ public class SlidingGenericViewController: TopDownGenericViewController, UIViewC
         self.view.backgroundColor = UIColor(patternImage: image)
     }
     
-    public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    open func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         if (presenetViewControllerSlidingFromLeft){
             presenetViewControllerSlidingFromLeft = false
             return slidingDismissTransitionAnimation
@@ -61,20 +58,24 @@ public class SlidingGenericViewController: TopDownGenericViewController, UIViewC
         }
     }
     
-    public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    open func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return slidingDismissTransitionAnimation
+    }
+    
+    open func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return slideInteractionController.interactionInProgress ? slideInteractionController : nil
     }
 }
 
-class SlidingAccountSetupViewController: SlidingGenericViewController {
+open class SlidingAccountSetupViewController: SlidingGenericViewController {
     fileprivate var logoView : UIView!
     
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-    override func initElements(){
+    open override func initElements(){
         
         slidingView = UIView()
         view.addSubview(slidingView)

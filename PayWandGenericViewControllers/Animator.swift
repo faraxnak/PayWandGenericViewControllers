@@ -23,11 +23,11 @@ class SlidingShowTransitionAnimation: NSObject, UIViewControllerAnimatedTransiti
         } else if let _ = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) as? SlidingGenericViewController,
             let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) as? GooeyTabbarGeneric {
             slideTransitionToGooeyTabbar(transitionContext: transitionContext, toVC: toVC, containerView: containerView)
-//        }
-//        else if let fromVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) as? PINEntryViewController,
-//            let middleVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) as? UITabBarController,
-//            let toVC =  middleVC.selectedViewController as? AccountInfoViewController {
-//            slideToAccountState(transitionContext: transitionContext, fromVC: fromVC, middleVC: middleVC, toVC: toVC, containerView: containerView)
+        }
+        else if let fromVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) as? SlidingGenericViewController,
+            let middleVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) as? UITabBarController,
+            let toVC =  middleVC.selectedViewController as? GenericViewController {
+            slideToAccountState(transitionContext: transitionContext, fromVC: fromVC, middleVC: middleVC, toVC: toVC, containerView: containerView)
         } else if let _ = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from),
             let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to){
             simpleTransition(transitionContext: transitionContext, toVC: toVC, containerView: containerView)
@@ -98,44 +98,44 @@ class SlidingShowTransitionAnimation: NSObject, UIViewControllerAnimatedTransiti
         })
     }
     
-//    func slideToAccountState(transitionContext : UIViewControllerContextTransitioning, fromVC : PINEntryViewController, middleVC : UITabBarController ,toVC : AccountInfoViewController, containerView : UIView){
-//        //2
-//        let finalFrameForVC = transitionContext.finalFrame(for: middleVC)
-//        let bounds = UIScreen.main.bounds
-//        //toVC.view.frame = CGRectOffset(finalFrameForVC, bounds.size.width, 0)
-//        //containerView.addSubview(toVC.view)
-//        let snapshot = toVC.view.snapshotView(afterScreenUpdates: true)
-//        snapshot?.frame = finalFrameForVC.offsetBy(dx: 0, dy: -bounds.size.height)
-//        print(snapshot?.frame ?? CGRect.zero)
-//        containerView.insertSubview(snapshot!, aboveSubview: fromVC.view)
-//        
-//        middleVC.view.frame = finalFrameForVC.offsetBy(dx: 0, dy: middleVC.tabBar.frame.height)
-//        containerView.addSubview(middleVC.view)
-//        //middleVC.view.alpha = 0
-//        toVC.view.alpha = 0
-//        
-//        //3
-//        let duration = transitionDuration(using: transitionContext)
-//        containerView.layoutIfNeeded()
-//        
-//        //4
-//        UIView.animate(withDuration: duration/2, animations: {
-//            snapshot?.frame = finalFrameForVC.offsetBy(dx: 0, dy: 0)
-//            containerView.layoutIfNeeded()
-//        }, completion: {
-//            finished in
-//            UIView.animate(withDuration: duration/2, animations: {
-//                
-//                middleVC.view.frame = finalFrameForVC.offsetBy(dx: 0, dy: 0)
-//                containerView.layoutIfNeeded()
-//            }, completion: {
-//                finished in
-//                toVC.view.alpha = 1
-//                snapshot?.removeFromSuperview()
-//                transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
-//            })
-//        })
-//    }
+    func slideToAccountState(transitionContext : UIViewControllerContextTransitioning, fromVC : SlidingGenericViewController, middleVC : UITabBarController ,toVC : GenericViewController, containerView : UIView){
+        //2
+        let finalFrameForVC = transitionContext.finalFrame(for: middleVC)
+        let bounds = UIScreen.main.bounds
+        //toVC.view.frame = CGRectOffset(finalFrameForVC, bounds.size.width, 0)
+        //containerView.addSubview(toVC.view)
+        let snapshot = toVC.view.snapshotView(afterScreenUpdates: true)
+        snapshot?.frame = finalFrameForVC.offsetBy(dx: 0, dy: -bounds.size.height)
+        print(snapshot?.frame ?? CGRect.zero)
+        containerView.insertSubview(snapshot!, aboveSubview: fromVC.view)
+        
+        middleVC.view.frame = finalFrameForVC.offsetBy(dx: 0, dy: middleVC.tabBar.frame.height)
+        containerView.addSubview(middleVC.view)
+        //middleVC.view.alpha = 0
+        toVC.view.alpha = 0
+        
+        //3
+        let duration = transitionDuration(using: transitionContext)
+        containerView.layoutIfNeeded()
+        
+        //4
+        UIView.animate(withDuration: duration/2, animations: {
+            snapshot?.frame = finalFrameForVC.offsetBy(dx: 0, dy: 0)
+            containerView.layoutIfNeeded()
+        }, completion: {
+            finished in
+            UIView.animate(withDuration: duration/2, animations: {
+                
+                middleVC.view.frame = finalFrameForVC.offsetBy(dx: 0, dy: 0)
+                containerView.layoutIfNeeded()
+            }, completion: {
+                finished in
+                toVC.view.alpha = 1
+                snapshot?.removeFromSuperview()
+                transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+            })
+        })
+    }
     
     func simpleTransition(transitionContext : UIViewControllerContextTransitioning ,toVC : UIViewController, containerView : UIView){
         let finalFrameForVC = transitionContext.finalFrame(for: toVC)
@@ -202,5 +202,65 @@ class SlidingDismissTransitionAnimation: NSObject, UIViewControllerAnimatedTrans
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         })
         
+    }
+}
+
+public class SlideInteractionController: UIPercentDrivenInteractiveTransition {
+    public var interactionInProgress = false
+    private var shouldCompleteTransition = false
+    private weak var viewController: SlidingGenericViewController?
+    
+    public func wireToViewController(viewController: SlidingGenericViewController?) {
+        self.viewController = viewController
+        prepareGestureRecognizerInView(view: viewController?.view)
+    }
+    
+    private func prepareGestureRecognizerInView(view: UIView?) {
+        let gesture = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handleGesture(gestureRecognizer:)))
+        gesture.edges = UIRectEdge.left
+        view?.addGestureRecognizer(gesture)
+    }
+    
+    public func handleGesture(gestureRecognizer: UIScreenEdgePanGestureRecognizer) {
+        
+        guard viewController != nil else {
+            interactionInProgress = false
+            return
+        }
+        
+        // 1
+        let translation = gestureRecognizer.translation(in: gestureRecognizer.view!.superview!)
+        var progress = (translation.x / 200)
+        progress = CGFloat(fminf(fmaxf(Float(progress), 0.0), 1.0))
+        
+        switch gestureRecognizer.state {
+        case .began:
+            // 2
+            interactionInProgress = true
+            viewController!.dismiss(animated: true, completion: nil)
+            
+        case .changed:
+            // 3
+            shouldCompleteTransition = progress > 0.5
+            update(progress)
+            
+        case .cancelled:
+            // 4
+            interactionInProgress = false
+            cancel()
+            
+        case .ended:
+            // 5
+            interactionInProgress = false
+            
+            if !shouldCompleteTransition {
+                cancel()
+            } else {
+                finish()
+            }
+            
+        default:
+            print("Unsupported")
+        }
     }
 }

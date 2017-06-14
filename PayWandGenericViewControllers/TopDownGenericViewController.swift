@@ -10,31 +10,31 @@ import UIKit
 import PayWandBasicElements
 import EasyPeasy
 
-public class TopDownGenericViewController: GenericViewController {
+open class TopDownGenericViewController: GenericViewController {
     
     fileprivate var middleViewCenterYOffset : CGFloat = 0
     fileprivate var topViewTopConstraint : NSLayoutConstraint?
     
-    var middleViewCenterYConstraint : NSLayoutConstraint?
+    public var middleViewCenterYConstraint : NSLayoutConstraint?
     
-    var topView : UIView?
-    var middleView : UIView?
+    public var topView : UIView?
+    public var middleView : UIView?
     
-    var currentState : State = .down
-    var nextState : State = .none
+    public var currentState : State = .down
+    public var nextState : State = .none
     
-    var tapGestureRecognizer : UITapGestureRecognizer!
+    public var tapGestureRecognizer : UITapGestureRecognizer!
     
-    var currentTextField : UITextField?
+    public var currentTextField : UITextField?
     
-    enum State {
+    public enum State {
         case up
         case down
         case transient
         case none
     }
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         let bckgrndView = UIView()
         view.addSubview(bckgrndView)
         bckgrndView <- Edges()
@@ -44,16 +44,16 @@ public class TopDownGenericViewController: GenericViewController {
         super.viewDidLoad()
     }
     
-    public override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil);
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil);
     }
     
-    public override func viewWillDisappear(_ animated: Bool) {
+    open override func viewWillDisappear(_ animated: Bool) {
         NotificationCenter.default.removeObserver(self)
     }
     
-    func setView(_ topView : UIView?, middleView : UIView?, offset : CGFloat = 0){
+    public func setView(_ topView : UIView?, middleView : UIView?, offset : CGFloat = 0){
         self.topView = topView
         self.middleView = middleView
         view.layoutIfNeeded()
@@ -74,7 +74,7 @@ public class TopDownGenericViewController: GenericViewController {
         middleViewCenterYOffset = middleView!.frame.height/4
     }
     
-    func keyboardWillShow(_ notification: Notification) {
+    open func keyboardWillShow(_ notification: Notification) {
         if (nextState == .up && currentState == .down){
             interactWithKeyboardState(true, notification: notification)
         } else if (nextState == .down && currentState == .up) {
@@ -92,7 +92,7 @@ public class TopDownGenericViewController: GenericViewController {
         }
     }
     
-    func interactWithKeyboardState(_ willShow : Bool, notification: Notification){
+    open func interactWithKeyboardState(_ willShow : Bool, notification: Notification){
         
         let keyboardAnimationDetail = (notification as NSNotification).userInfo!
         let duration = keyboardAnimationDetail[UIKeyboardAnimationDurationUserInfoKey] as? Double
@@ -147,7 +147,7 @@ public class TopDownGenericViewController: GenericViewController {
         return true
     }
     
-    public override func textFieldDidBeginEditing(_ textField: UITextField) {
+    open override func textFieldDidBeginEditing(_ textField: UITextField) {
         super.textFieldDidBeginEditing(textField)
         currentTextField = textField
     }
@@ -169,7 +169,7 @@ public class TopDownGenericViewController: GenericViewController {
         return ttroTextField.checkInputCharacters(shouldChangeCharactersIn: range, replacementString: string)
     }
     
-    func handleTap(_ recognizer: UITapGestureRecognizer){
+    open func handleTap(_ recognizer: UITapGestureRecognizer){
         view.endEditing(false)
     }
 }
