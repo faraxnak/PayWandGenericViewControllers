@@ -144,6 +144,10 @@ open class GenericViewController: UIViewController, UITextFieldDelegate {
         }
         return nil
     }
+    
+    deinit {
+        print("deinitailizing ", self)
+    }
 }
 
 // MARK : Create a Ttro alert view controller
