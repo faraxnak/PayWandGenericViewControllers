@@ -45,6 +45,12 @@ open class GenericViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    override open var prefersStatusBarHidden : Bool {
+        get {
+            return false
+        }
+    }
+    
     open func setUIElements(){
         UIGraphicsBeginImageContext(self.view.frame.size)
         UIImage(named: "bg")?.draw(in: self.view.bounds)
