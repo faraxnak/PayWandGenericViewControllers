@@ -33,6 +33,7 @@ open class SlidingActionViewController: SlidingGenericViewController {
         case BankAccount = "Bank Account"
         case Information
         case TouristCard = "Add Card"
+        case FAQ
     }
     
     public var typeDelegate : SlidingActionViewControllerDelegate!

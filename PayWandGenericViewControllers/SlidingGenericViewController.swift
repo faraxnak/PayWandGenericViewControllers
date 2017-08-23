@@ -103,7 +103,7 @@ open class SlidingAccountSetupViewController: SlidingGenericViewController {
         logoView.addSubview(logoLabel)
         logoLabel.textColor = UIColor.TtroColors.white.color
         logoLabel.font = UIFont.TtroFonts.regular(size: 50).font
-        logoLabel.text = "PayWand"
+        logoLabel.text = "Daric"
         logoLabel <- [
             CenterY(20),
             CenterX().to(logoView, .centerX)
