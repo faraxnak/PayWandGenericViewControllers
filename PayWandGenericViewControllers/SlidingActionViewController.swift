@@ -20,7 +20,7 @@ open class SlidingActionViewController: SlidingGenericViewController {
     
     public var cancelButton : UIButton!
     
-    public var presenterViewController : GenericViewController!
+    public weak var presenterViewController : GenericViewController!
     
     public var type = ActionType.Topup
 
@@ -33,6 +33,7 @@ open class SlidingActionViewController: SlidingGenericViewController {
         case BankAccount = "Bank Account"
         case Information
         case TouristCard = "Add Card"
+        case BlockCard = "Block Card"
         case FAQ
     }
     

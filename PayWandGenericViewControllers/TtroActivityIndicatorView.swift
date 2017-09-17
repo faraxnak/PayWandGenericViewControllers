@@ -31,23 +31,27 @@ public class TtroActivityIndicatorView: UIView {
     }
     public func startAnimation() {
         finished = false
+        isHidden = true
         Timer.scheduledTimer(timeInterval: delay, target: self, selector: #selector(self.delayedAnimation), userInfo: nil, repeats: false)
     }
     
     public func delayedAnimation() {
         if !finished {
+            isHidden = false
             activityViewer.startAnimating()
         }
     }
     
     public func stopAnimation() {
         finished = true
+        isHidden = false
         activityViewer.stopAnimating()
-        UIView.animate(withDuration: 0.4, animations: {
-            self.alpha = 0
-        }, completion: {_ in
-            self.removeFromSuperview()
-            self.alpha = 1
-        })
+        removeFromSuperview()
+//        UIView.animate(withDuration: 0.4, animations: {
+//            self.alpha = 0
+//        }, completion: {_ in
+//            self.removeFromSuperview()
+//            self.alpha = 1
+//        })
     }
 }
