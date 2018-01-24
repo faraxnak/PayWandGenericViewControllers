@@ -46,7 +46,7 @@ public class TtroActivityIndicatorView: UIView {
         finished = true
         isHidden = false
         activityViewer.stopAnimating()
-        removeFromSuperview()
+        //removeFromSuperview()
 //        UIView.animate(withDuration: 0.4, animations: {
 //            self.alpha = 0
 //        }, completion: {_ in

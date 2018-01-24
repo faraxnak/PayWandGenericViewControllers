@@ -64,11 +64,15 @@ open class GenericViewController: UIViewController, UITextFieldDelegate {
     
     public func initActivityIndicator(){
         activityIndicatorParentView = UIView()//UIVisualEffectView(effect: UIBlurEffect(style: .Light))
-        activityIndicatorParentView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(activityIndicatorParentView)
+        activityIndicatorParentView.layer.masksToBounds = true
+        activityIndicatorParentView <- [
+            Center(),
+            Width().like(view),
+            Height(60)
+        ]
         
         activityIndicatorParentView.addSubview(nvActivityIndicatorView)
-        nvActivityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
         nvActivityIndicatorView <- [
             Center(),
             Width(60),
@@ -77,12 +81,12 @@ open class GenericViewController: UIViewController, UITextFieldDelegate {
         
         activityDescriptionLabel = UILabel()
         activityIndicatorParentView.addSubview(activityDescriptionLabel)
-        activityDescriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         activityDescriptionLabel <- [
             Top(5),
             CenterX()
         ]
         activityDescriptionLabel.textColor = UIColor.darkGray
+        
     }
     
     func setBottomViewConstraints(){
@@ -112,26 +116,19 @@ open class GenericViewController: UIViewController, UITextFieldDelegate {
     }
     
     public func showActivityIndicator(){
-        view.addSubview(activityIndicatorParentView!)
-        activityIndicatorParentView.layer.masksToBounds = true
-        //activityIndicatorBlurView.layer.cornerRadius = 10
-        activityIndicatorParentView <- [
-            Center(),
-            Width().like(view),
-            Height(60)
-        ]
-        //spinner.startAnimating()
+        view.bringSubview(toFront: activityIndicatorParentView)
+        activityIndicatorParentView.isHidden = false
         nvActivityIndicatorView.startAnimation()
-        view.layoutIfNeeded()
     }
     
     public func hideActivityIndicator(){
         nvActivityIndicatorView.stopAnimation()
-        UIView.animate(withDuration: 0.4, animations: {
-            self.activityIndicatorParentView!.alpha = 0
-        }, completion: {_ in
-            self.activityIndicatorParentView.removeFromSuperview()
-            self.activityIndicatorParentView.alpha = 1
+        UIView.animate(withDuration: 0.4, animations: { [weak self] in
+            self?.activityIndicatorParentView!.alpha = 0
+        }, completion: { [weak self] _ in
+            //self.activityIndicatorParentView.removeFromSuperview()
+            self?.activityIndicatorParentView.isHidden = true
+            self?.activityIndicatorParentView.alpha = 1
         })
     }
     
