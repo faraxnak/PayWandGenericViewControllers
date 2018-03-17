@@ -142,7 +142,13 @@ open class TopDownGenericViewController: GenericViewController {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         if !textField.isKind(of: TtroTextField.self) ||
             (textField as? TtroTextField)?.shouldMoveUpOnBeginEdit == true {
-            nextState = .up
+            if #available(iOS 11.0, *) {
+                if (currentState != .up){
+                    nextState = .up
+                }
+            } else {
+                nextState = .up
+            }
         }
         return true
     }

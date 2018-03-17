@@ -14,15 +14,22 @@ public protocol SlidingActionViewControllerDelegate : class {
     func actionType() -> SlidingActionViewController.ActionType
 }
 
+public protocol SlidingViewHeightDelegate : class {
+    func heightCoeff() -> CGFloat
+}
+
 open class SlidingActionViewController: SlidingGenericViewController {
     
-    fileprivate var logoView : UIView!
+//    fileprivate var logoView : UIView!
     
     public var cancelButton : UIButton!
     
     public weak var presenterViewController : GenericViewController!
     
     public var type = ActionType.Topup
+    
+    public var actionIconView : UIImageView!
+    public var actionLabel : UILabel!
 
     public enum ActionType : String {
         case Topup = "Top Up"
@@ -32,13 +39,23 @@ open class SlidingActionViewController: SlidingGenericViewController {
         case Search
         case BankAccount = "Bank Account"
         case Information
-        case TouristCard = "Add Card"
+        case TouristCard = "Tourist Card"
         case BlockCard = "Block Card"
+        case ReissueCard = "Reissue Card"
         case FAQ
         case Pay = "Purchase"
+        case Hotel
+        case Airline
+        case Insurance
+        case SimCard
+        case Restaurant
+        case Transportation
+        case Taxi
+        case Tour
     }
     
     public var typeDelegate : SlidingActionViewControllerDelegate!
+    public var heightDelegate : SlidingViewHeightDelegate?
     
     open override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,82 +77,91 @@ open class SlidingActionViewController: SlidingGenericViewController {
         slidingView = UIView()
         view.addSubview(slidingView)
         //slidingView.translatesAutoresizingMaskIntoConstraints = false
-        slidingView <- [
+        let heightCoeff : CGFloat = heightDelegate?.heightCoeff() ?? 0.5
+        slidingView.easy.layout([
             Width(*0.8).like(self.view).with(Priority.custom(999)),
             Width(<=min(400, view.frame.width)).with(Priority.custom(1000)),
-            Height(*0.5).like(self.view),
-        ]
+            Height(*heightCoeff).like(self.view),
+        ])
         
         middleXConst = slidingView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         middleXConst.isActive = true
         
-        //slidingView.backgroundColor = UIColor.orangeColor()
-        
-        logoView = UIView()
-        logoView.translatesAutoresizingMaskIntoConstraints = false
+        setView(initLogoView(), middleView: slidingView) //, offset: view.frame.height/10
+    }
+    
+    open func onCancel(_ sender : UIButton) {
+        self.transitioningDelegate = presenterViewController as? UIViewControllerTransitioningDelegate
+        var pVC = presenterViewController
+        while pVC is SlidingActionViewController {
+            if let vc = (pVC as? SlidingActionViewController)?.presenterViewController {
+                pVC = vc
+            }
+        }
+        pVC?.dismiss(animated: true, completion: nil)
+    }
+    
+    open func initLogoView() -> UIView{
+        let logoView = UIView()
         view.addSubview(logoView)
-        logoView <- [
-            Width(*0.8).like(view),
-            //Height(*0.3).like(view),
+        logoView.easy.layout([
+            Width(*0.9).like(view),
             CenterX().to(view),
-            Bottom().to(slidingView, .top)
-        ]
+            Bottom().to(slidingView, .top),
+            ])
         
-        //setActionNameIcon()
+        let typeView = UIView()
+        logoView.addSubview(typeView)
+        typeView.easy.layout([
+            Center(),
+            Height().like(logoView),
+            Width(<=0*0.8).like(logoView)
+            ])
+        
         type = typeDelegate.actionType()
         
-        let actionLabel = UILabel()
-        actionLabel.translatesAutoresizingMaskIntoConstraints = false
-        logoView.addSubview(actionLabel)
+        actionLabel = UILabel()
+        
+        typeView.addSubview(actionLabel)
         actionLabel.textColor = UIColor.TtroColors.white.color
         actionLabel.font = UIFont.TtroPayWandFonts.regular4.font
         actionLabel.text = type.rawValue
-        actionLabel <- [
-            CenterY(),
-            CenterX().to(logoView, .centerX)
-        ]
+        actionLabel.easy.layout([
+            Center(),
+    
+            Right()
+            ])
         actionLabel.textColor = UIColor.TtroColors.cyan.color
-        view.layoutIfNeeded()
+        actionLabel.adjustsFontSizeToFitWidth = true
         
-        let actionIconView = UIImageView(image: UIImage(named: type.rawValue + "Icon"))
-        actionIconView.translatesAutoresizingMaskIntoConstraints = false
-        logoView.addSubview(actionIconView)
+        
+        actionIconView = UIImageView(image: UIImage(named: type.rawValue + "Icon"))
+        typeView.addSubview(actionIconView)
         actionIconView.contentMode = .scaleAspectFit
-        actionIconView <- [
+        actionIconView.easy.layout([
             CenterY().to(actionLabel),
             Right(5).to(actionLabel, .left),
             Height(35),
-            Width().like(actionIconView, .height)
-        ]
+            Width().like(actionIconView, .height),
+            Left()
+            ])
         actionIconView.image? = (actionIconView.image?.withRenderingMode(.alwaysTemplate))!
         
         actionIconView.tintColor = UIColor.TtroColors.cyan.color
         
         
         cancelButton = UIButton(type: .system)
-        cancelButton.translatesAutoresizingMaskIntoConstraints = false
         logoView.addSubview(cancelButton)
-        cancelButton <- [
+        cancelButton.easy.layout([
             Right(),
             Top(),
             Height(35),
             Width(38)
-        ]
+            ])
         cancelButton.tintColor = UIColor.TtroColors.white.color
         cancelButton.setImage(UIImage(named: "closeIcon"), for: UIControlState())
         cancelButton.addTarget(self, action: #selector(self.onCancel(_:)), for: .touchUpInside)
-        
-        setView(logoView, middleView: slidingView) //, offset: view.frame.height/10
-    }
-    
-//    func setActionNameIcon() {
-//        fatalError("override in child class")
-//    }
-    
-    open func onCancel(_ sender : UIButton) {
-//        self.transitioningDelegate = presenterViewController
-        self.transitioningDelegate = presenterViewController as! UIViewControllerTransitioningDelegate?
-        dismiss(animated: true, completion: nil)
+        return logoView
     }
 }
 
