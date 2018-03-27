@@ -15,13 +15,7 @@ public protocol SlidingActionViewControllerDelegate : class {
     func actionType() -> SlidingActionViewController.ActionType
 }
 
-public protocol SlidingViewHeightDelegate : class {
-    func heightCoeff() -> CGFloat
-}
-
 open class SlidingActionViewController: SlidingGenericViewController {
-    
-//    fileprivate var logoView : UIView!
     
     public var cancelButton : UIButton!
     
@@ -32,8 +26,7 @@ open class SlidingActionViewController: SlidingGenericViewController {
     public var actionIconView : UIImageView!
     public var actionLabel : UILabel!
     
-    open override var slidingViewHeightCoeff: CGFloat { return heightDelegate?.heightCoeff() ?? 0.5
-    }
+    open override var slidingViewHeightCoeff: CGFloat { return 0.5 }
 
     public enum ActionType : String {
         case Topup = "Top Up"
@@ -59,7 +52,7 @@ open class SlidingActionViewController: SlidingGenericViewController {
     }
     
     public var typeDelegate : SlidingActionViewControllerDelegate!
-    public var heightDelegate : SlidingViewHeightDelegate?
+//    public var heightDelegate : SlidingViewHeightDelegate?
     
     open override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,38 +70,6 @@ open class SlidingActionViewController: SlidingGenericViewController {
         UIApplication.shared.isStatusBarHidden = false
     }
     
-    open override func initElements(){
-        super.initElements()
-//        slidingView = UIView()
-//        view.addSubview(slidingView)
-        //slidingView.translatesAutoresizingMaskIntoConstraints = false
-//        let heightCoeff : CGFloat = 0.5
-//        if let coeff = heightDelegate?.heightCoeff() {
-//            heightCoeff = coeff
-//        } else if (DeviceType.IS_IPHONE_6){
-//            heightCoeff = 0.7
-////            offset = 40
-//        } else if (DeviceType.IS_IPHONE_6P ||
-//            DeviceType.IS_IPAD) {
-//            heightCoeff = 0.8
-//        } else {
-//            heightCoeff = 0.5
-//        }
-        
-//        let heightCoeff : CGFloat = heightDelegate?.heightCoeff() ?? 0.5
-//
-//        slidingView.easy.layout([
-//            Width(*0.8).like(self.view).with(Priority.custom(999)),
-//            Width(<=min(400, view.frame.width)).with(Priority.custom(1000)),
-//            Height(*heightCoeff).like(self.view),
-//        ])
-//
-//        middleXConst = slidingView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-//        middleXConst.isActive = true
-        
-        setView(initLogoView(), middleView: slidingView, middleViewHeightCoeff: slidingViewHeightCoeff) //, offset: view.frame.height/10
-    }
-    
     open func onCancel(_ sender : UIButton) {
         self.transitioningDelegate = presenterViewController as? UIViewControllerTransitioningDelegate
         var pVC = presenterViewController
@@ -120,13 +81,14 @@ open class SlidingActionViewController: SlidingGenericViewController {
         pVC?.dismiss(animated: true, completion: nil)
     }
     
-    open func initLogoView() -> UIView{
+    override open func initLogoView() -> UIView{
         let logoView = UIView()
         view.addSubview(logoView)
         logoView.easy.layout([
             Width(*0.9).like(view),
             CenterX().to(view),
-            Bottom().to(slidingView, .top),
+            Bottom().to(slidingView, .top).with(Priority.medium),
+            Height(<=(-20)*0.2).like(view)
             ])
         
         let typeView = UIView()
@@ -147,7 +109,6 @@ open class SlidingActionViewController: SlidingGenericViewController {
         actionLabel.text = type.rawValue
         actionLabel.easy.layout([
             Center(),
-    
             Right()
             ])
         actionLabel.textColor = UIColor.TtroColors.cyan.color
@@ -189,7 +150,7 @@ open class ScrollSlidingActionViewController: SlidingActionViewController {
     public var stackView : UIStackView!
     public var scrollView : UIScrollView!
     
-    
+    open override var slidingViewHeightCoeff: CGFloat { return 0.6 }
     
     open override func initElements() {
         super.initElements()

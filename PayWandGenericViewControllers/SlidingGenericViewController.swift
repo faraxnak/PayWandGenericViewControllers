@@ -40,23 +40,20 @@ open class SlidingGenericViewController: TopDownGenericViewController, UIViewCon
         slidingView = UIView()
         view.addSubview(slidingView)
         slidingView.translatesAutoresizingMaskIntoConstraints = false
+        let heightCoeff = min(slidingViewHeightCoeff, 0.6) /// maxmimum amount of height coeff considering logo view and bottom view is 0.65
         slidingView.easy.layout([
             Width(*0.8).like(self.view).with(Priority.custom(999)),
             Width(<=min(400, view.frame.width)),
-            Height(*slidingViewHeightCoeff).like(self.view),
+            Height(*heightCoeff).like(self.view),
             ])
         middleXConst = slidingView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         middleXConst.isActive = true
         
-//        logoView = UIView()
-//        logoView.translatesAutoresizingMaskIntoConstraints = false
-//        view.addSubview(logoView)
-//        logoView.easy.layout([
-//            Width(*0.8).like(view),
-//            //Height(*0.3).like(view),
-//            CenterX().to(view),
-//            Bottom().to(slidingView, .top)
-//            ])
+        setView(initLogoView(), middleView: slidingView, middleViewHeightCoeff: heightCoeff)
+    }
+    
+    open func initLogoView() -> UIView {
+        fatalError("Should override in inherited class")
     }
     
     override open func setUIElements(){
@@ -89,26 +86,14 @@ open class SlidingGenericViewController: TopDownGenericViewController, UIViewCon
 }
 
 open class SlidingAccountSetupViewController: SlidingGenericViewController {
-    open override var slidingViewHeightCoeff: CGFloat { return 0.45}
+    open override var slidingViewHeightCoeff: CGFloat { return 0.45 }
     
     open override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-    open override func initElements(){
-        super.initElements()
-//        slidingView = UIView()
-//        view.addSubview(slidingView)
-//        slidingView.translatesAutoresizingMaskIntoConstraints = false
-//        slidingView.easy.layout([
-//            Width(*0.8).like(self.view).with(Priority.mediumPriority),
-//            Width(<=400),
-//            Height(*0.45).like(self.view),
-//        ])
-//        middleXConst = slidingView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-//        middleXConst.isActive = true
-        
+    override open func initLogoView() -> UIView {
         var logoView : UIView!
         logoView = UIView()
         logoView.translatesAutoresizingMaskIntoConstraints = false
@@ -118,7 +103,7 @@ open class SlidingAccountSetupViewController: SlidingGenericViewController {
             //Height(*0.3).like(view),
             CenterX().to(view),
             Bottom().to(slidingView, .top)
-        ])
+            ])
         
         let logoLabel = UILabel()
         logoLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -129,8 +114,7 @@ open class SlidingAccountSetupViewController: SlidingGenericViewController {
         logoLabel.easy.layout([
             CenterY(), //20
             CenterX().to(logoView, .centerX)
-        ])
-        
-        setView(logoView, middleView: slidingView, middleViewHeightCoeff: slidingViewHeightCoeff)
+            ])
+        return logoView
     }
 }
