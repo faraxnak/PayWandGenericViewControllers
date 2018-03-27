@@ -23,6 +23,7 @@ open class GenericViewController: UIViewController, UITextFieldDelegate {
     public let nvActivityIndicatorView = TtroActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50), type: .ballPulse, color: UIColor.TtroColors.cyan.color, padding: 5)
     //    let nvActivityIndicatorView = TtroActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 150, height: 40), config: TKRubberPageControlConfig())
     public var bottomView : UIView!
+    public var bottomViewHeightCoeff : CGFloat = 0.15
     
     open override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,25 +67,25 @@ open class GenericViewController: UIViewController, UITextFieldDelegate {
         activityIndicatorParentView = UIView()//UIVisualEffectView(effect: UIBlurEffect(style: .Light))
         view.addSubview(activityIndicatorParentView)
         activityIndicatorParentView.layer.masksToBounds = true
-        activityIndicatorParentView <- [
+        activityIndicatorParentView.easy.layout([
             Center(),
             Width().like(view),
             Height(60)
-        ]
+        ])
         
         activityIndicatorParentView.addSubview(nvActivityIndicatorView)
-        nvActivityIndicatorView <- [
+        nvActivityIndicatorView.easy.layout([
             Center(),
             Width(60),
             Height(60)
-        ]
+        ])
         
         activityDescriptionLabel = UILabel()
         activityIndicatorParentView.addSubview(activityDescriptionLabel)
-        activityDescriptionLabel <- [
+        activityDescriptionLabel.easy.layout([
             Top(5),
             CenterX()
-        ]
+        ])
         activityDescriptionLabel.textColor = UIColor.darkGray
         
     }
@@ -92,18 +93,28 @@ open class GenericViewController: UIViewController, UITextFieldDelegate {
     func setBottomViewConstraints(){
         guard bottomView != nil else {
             return
-        }
-        view.addSubview(bottomView)
+        }        
+//        if let offset = self.tabBarController?.tabBar.frame.height {
+//            bottomView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -1 * offset - 30).isActive = true
+//        } else {
+//            bottomView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
+//        }
+        let dummyView = UIView()
+        view.addSubview(dummyView)
+        dummyView.easy.layout([
+            CenterX(),
+            Width().like(view),
+            Height(*0.15).like(view),
+            Bottom()
+            ])
+        
+        dummyView.addSubview(bottomView)
         bottomView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(bottomView)
-        if let offset = self.tabBarController?.tabBar.frame.height {
-            bottomView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -1 * offset - 30).isActive = true
-        } else {
-            bottomView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50).isActive = true
-        }
-        bottomView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        bottomView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        bottomView.heightAnchor.constraint(equalToConstant: 46).isActive = true
+        bottomView.easy.layout([
+            Center(),
+            Width().like(view),
+            Height(46)
+            ])
     }
     
     open override func didReceiveMemoryWarning() {

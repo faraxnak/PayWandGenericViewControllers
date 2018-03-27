@@ -14,6 +14,8 @@ open class SlidingGenericViewController: TopDownGenericViewController, UIViewCon
     public var slidingView : UIView!
     public var middleXConst : NSLayoutConstraint!
     public var presenetViewControllerSlidingFromLeft : Bool = false
+    open var slidingViewHeightCoeff : CGFloat { return 0 }
+//    fileprivate var logoView : UIView!
     
     fileprivate let slidingShowTransitionAnimation = SlidingShowTransitionAnimation()
     fileprivate let slidingDismissTransitionAnimation = SlidingDismissTransitionAnimation()
@@ -35,7 +37,26 @@ open class SlidingGenericViewController: TopDownGenericViewController, UIViewCon
     }
     
     open func initElements(){
-        fatalError("override in child class")
+        slidingView = UIView()
+        view.addSubview(slidingView)
+        slidingView.translatesAutoresizingMaskIntoConstraints = false
+        slidingView.easy.layout([
+            Width(*0.8).like(self.view).with(Priority.custom(999)),
+            Width(<=min(400, view.frame.width)),
+            Height(*slidingViewHeightCoeff).like(self.view),
+            ])
+        middleXConst = slidingView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        middleXConst.isActive = true
+        
+//        logoView = UIView()
+//        logoView.translatesAutoresizingMaskIntoConstraints = false
+//        view.addSubview(logoView)
+//        logoView.easy.layout([
+//            Width(*0.8).like(view),
+//            //Height(*0.3).like(view),
+//            CenterX().to(view),
+//            Bottom().to(slidingView, .top)
+//            ])
     }
     
     override open func setUIElements(){
@@ -68,7 +89,7 @@ open class SlidingGenericViewController: TopDownGenericViewController, UIViewCon
 }
 
 open class SlidingAccountSetupViewController: SlidingGenericViewController {
-    fileprivate var logoView : UIView!
+    open override var slidingViewHeightCoeff: CGFloat { return 0.45}
     
     open override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,27 +97,28 @@ open class SlidingAccountSetupViewController: SlidingGenericViewController {
     }
     
     open override func initElements(){
+        super.initElements()
+//        slidingView = UIView()
+//        view.addSubview(slidingView)
+//        slidingView.translatesAutoresizingMaskIntoConstraints = false
+//        slidingView.easy.layout([
+//            Width(*0.8).like(self.view).with(Priority.mediumPriority),
+//            Width(<=400),
+//            Height(*0.45).like(self.view),
+//        ])
+//        middleXConst = slidingView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+//        middleXConst.isActive = true
         
-        slidingView = UIView()
-        view.addSubview(slidingView)
-        slidingView.translatesAutoresizingMaskIntoConstraints = false
-        slidingView <- [
-            Width(*0.8).like(self.view).with(Priority.mediumPriority),
-            Width(<=400).with(Priority.highPriority),
-            Height(*0.45).like(self.view),
-        ]
-        middleXConst = slidingView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        middleXConst.isActive = true
-        
+        var logoView : UIView!
         logoView = UIView()
         logoView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(logoView)
-        logoView <- [
+        logoView.easy.layout([
             Width(*0.8).like(view),
             //Height(*0.3).like(view),
             CenterX().to(view),
             Bottom().to(slidingView, .top)
-        ]
+        ])
         
         let logoLabel = UILabel()
         logoLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -104,11 +126,11 @@ open class SlidingAccountSetupViewController: SlidingGenericViewController {
         logoLabel.textColor = UIColor.TtroColors.white.color
         logoLabel.font = UIFont.TtroFonts.regular(size: 50).font
         logoLabel.text = Bundle.main.infoDictionary![kCFBundleNameKey as String] as? String
-        logoLabel <- [
-            CenterY(20),
+        logoLabel.easy.layout([
+            CenterY(), //20
             CenterX().to(logoView, .centerX)
-        ]
+        ])
         
-        setView(logoView, middleView: slidingView)
+        setView(logoView, middleView: slidingView, middleViewHeightCoeff: slidingViewHeightCoeff)
     }
 }

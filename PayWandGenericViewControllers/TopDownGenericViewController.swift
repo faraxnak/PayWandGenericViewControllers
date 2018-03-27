@@ -16,6 +16,8 @@ open class TopDownGenericViewController: GenericViewController {
     fileprivate var topViewTopConstraint : NSLayoutConstraint?
     
     public var middleViewCenterYConstraint : NSLayoutConstraint?
+    fileprivate var middleViewHeightCoeff : CGFloat = 0
+    fileprivate var shouldHideTopViewOnKeyboard : Bool = false
     
     public var topView : UIView?
     public var middleView : UIView?
@@ -47,15 +49,20 @@ open class TopDownGenericViewController: GenericViewController {
     open override func viewWillAppear(_ animated: Bool) {
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil);
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil);
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.keyboardWillChangeFrame(_:)),
+                                               name: NSNotification.Name.UIKeyboardWillChangeFrame,
+                                               object: nil)
     }
     
     open override func viewWillDisappear(_ animated: Bool) {
         NotificationCenter.default.removeObserver(self)
     }
     
-    public func setView(_ topView : UIView?, middleView : UIView?, offset : CGFloat = 0){
+    public func setView(_ topView : UIView?, middleView : UIView?, middleViewHeightCoeff : CGFloat, offset : CGFloat = 0){
         self.topView = topView
         self.middleView = middleView
+        self.middleViewHeightCoeff = middleViewHeightCoeff
         view.layoutIfNeeded()
         keyboardAlignment(offset: offset)
     }
@@ -71,7 +78,7 @@ open class TopDownGenericViewController: GenericViewController {
         middleViewCenterYConstraint = middleView!.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant : constant)
         
         middleViewCenterYConstraint?.isActive = true
-        middleViewCenterYOffset = middleView!.frame.height/4
+        middleViewCenterYOffset = view.frame.height/8
     }
     
     open func keyboardWillShow(_ notification: Notification) {
@@ -92,29 +99,79 @@ open class TopDownGenericViewController: GenericViewController {
         }
     }
     
+    func keyboardWillChangeFrame(_ notification: NSNotification) {
+        let minimumTopViewHeight : CGFloat = 50
+        if let userInfo = notification.userInfo ,
+            let endFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            let endFrameY = endFrame.origin.y
+            if endFrameY >= view.frame.height * (1 - bottomViewHeightCoeff) {
+                /// no need to move the sliding view up
+//                self.keyboardHeightLayoutConstraint?.constant = 0.0
+            } else {
+                let deltaY = max(view.frame.height * 0.5 * (1 + middleViewHeightCoeff) - endFrameY, 0)
+                print(deltaY)
+                if currentState == .down {
+                    middleViewCenterYOffset = deltaY
+                    if (view.frame.height * middleViewHeightCoeff + minimumTopViewHeight) > endFrameY {
+                        print("Should hide topview")
+                        shouldHideTopViewOnKeyboard = true
+                    }
+                } else if currentState == .up {
+                    if (deltaY != middleViewCenterYOffset){
+                        let duration:TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
+                        let animationCurveRawNSN = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber
+                        let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIViewAnimationOptions.curveEaseInOut.rawValue
+                        let animationCurve: UIViewAnimationOptions = UIViewAnimationOptions(rawValue: animationCurveRaw)
+                        middleViewCenterYConstraint!.constant -= (deltaY - middleViewCenterYOffset)
+                        middleViewCenterYOffset = deltaY
+                        UIView.animate(withDuration: duration,
+                                       delay: TimeInterval(0),
+                                       options: animationCurve,
+                                       animations: { self.view.layoutIfNeeded() },
+                                       completion: nil)
+                    }
+                }
+//                self.keyboardHeightLayoutConstraint?.constant = endFrame?.size.height ?? 0.0
+            }
+//            UIView.animate(withDuration: duration,
+//                           delay: TimeInterval(0),
+//                           options: animationCurve,
+//                           animations: { self.view.layoutIfNeeded() },
+//                           completion: nil)
+        }
+    }
+    
     open func interactWithKeyboardState(_ willShow : Bool, notification: Notification){
         
         let keyboardAnimationDetail = (notification as NSNotification).userInfo!
         let duration = keyboardAnimationDetail[UIKeyboardAnimationDurationUserInfoKey] as? Double
         let curve = keyboardAnimationDetail[UIKeyboardAnimationCurveUserInfoKey] as? UInt
-        UIView.animate(withDuration: duration!, delay: 0, options: UIViewAnimationOptions(rawValue: curve!), animations: {
-            self.currentState = .transient
+        UIView.animate(withDuration: duration!, delay: 0, options: UIViewAnimationOptions(rawValue: curve!), animations: { [weak self] in
+            guard self != nil else {
+                return
+            }
+            self!.currentState = .transient
             if (willShow){
-                self.topView!.alpha = 0.5
-                self.middleViewCenterYConstraint!.constant -= self.middleViewCenterYOffset
+                if (self!.shouldHideTopViewOnKeyboard){
+                    self!.shouldHideTopViewOnKeyboard = false
+                    self!.topView!.alpha = 0
+                } else {
+                    self!.topView!.alpha = 0.5
+                }
+                self!.middleViewCenterYConstraint!.constant -= self!.middleViewCenterYOffset
             } else {
-                self.topView!.alpha = 1
-                self.middleViewCenterYConstraint!.constant += self.middleViewCenterYOffset
+                self!.topView!.alpha = 1
+                self!.middleViewCenterYConstraint!.constant += self!.middleViewCenterYOffset
             }
-            self.view.setNeedsUpdateConstraints()
-            self.view.layoutIfNeeded()
-        }, completion: {_ in
+            self!.view.setNeedsUpdateConstraints()
+            self!.view.layoutIfNeeded()
+        }, completion: { [weak self] _ in
             if (willShow) {
-                self.currentState = .up
+                self?.currentState = .up
             } else {
-                self.currentState = .down
+                self?.currentState = .down
             }
-            self.nextState = .none
+            self?.nextState = .none
         })
         
     }

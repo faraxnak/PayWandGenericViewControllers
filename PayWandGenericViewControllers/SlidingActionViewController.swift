@@ -8,6 +8,7 @@
 
 import UIKit
 import EasyPeasy
+import PayWandBasicElements
 
 
 public protocol SlidingActionViewControllerDelegate : class {
@@ -30,6 +31,9 @@ open class SlidingActionViewController: SlidingGenericViewController {
     
     public var actionIconView : UIImageView!
     public var actionLabel : UILabel!
+    
+    open override var slidingViewHeightCoeff: CGFloat { return heightDelegate?.heightCoeff() ?? 0.5
+    }
 
     public enum ActionType : String {
         case Topup = "Top Up"
@@ -74,20 +78,35 @@ open class SlidingActionViewController: SlidingGenericViewController {
     }
     
     open override func initElements(){
-        slidingView = UIView()
-        view.addSubview(slidingView)
+        super.initElements()
+//        slidingView = UIView()
+//        view.addSubview(slidingView)
         //slidingView.translatesAutoresizingMaskIntoConstraints = false
-        let heightCoeff : CGFloat = heightDelegate?.heightCoeff() ?? 0.5
-        slidingView.easy.layout([
-            Width(*0.8).like(self.view).with(Priority.custom(999)),
-            Width(<=min(400, view.frame.width)).with(Priority.custom(1000)),
-            Height(*heightCoeff).like(self.view),
-        ])
+//        let heightCoeff : CGFloat = 0.5
+//        if let coeff = heightDelegate?.heightCoeff() {
+//            heightCoeff = coeff
+//        } else if (DeviceType.IS_IPHONE_6){
+//            heightCoeff = 0.7
+////            offset = 40
+//        } else if (DeviceType.IS_IPHONE_6P ||
+//            DeviceType.IS_IPAD) {
+//            heightCoeff = 0.8
+//        } else {
+//            heightCoeff = 0.5
+//        }
         
-        middleXConst = slidingView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        middleXConst.isActive = true
+//        let heightCoeff : CGFloat = heightDelegate?.heightCoeff() ?? 0.5
+//
+//        slidingView.easy.layout([
+//            Width(*0.8).like(self.view).with(Priority.custom(999)),
+//            Width(<=min(400, view.frame.width)).with(Priority.custom(1000)),
+//            Height(*heightCoeff).like(self.view),
+//        ])
+//
+//        middleXConst = slidingView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+//        middleXConst.isActive = true
         
-        setView(initLogoView(), middleView: slidingView) //, offset: view.frame.height/10
+        setView(initLogoView(), middleView: slidingView, middleViewHeightCoeff: slidingViewHeightCoeff) //, offset: view.frame.height/10
     }
     
     open func onCancel(_ sender : UIButton) {
@@ -170,13 +189,22 @@ open class ScrollSlidingActionViewController: SlidingActionViewController {
     public var stackView : UIStackView!
     public var scrollView : UIScrollView!
     
+    
+    
     open override func initElements() {
         super.initElements()
         
         scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         slidingView.addSubview(scrollView)
-        scrollView <- Edges()
+//        scrollView.easy.layout(Edges())
+        scrollView.easy.layout([
+            Leading(),
+            Trailing(),
+            Top(>=0),
+            Bottom(<=0),
+            CenterY(),
+            ])
         
         stackView = UIStackView()
         stackView.alignment = .fill
@@ -184,17 +212,28 @@ open class ScrollSlidingActionViewController: SlidingActionViewController {
         stackView.distribution = .fill
         stackView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(stackView)
-        stackView <- Edges()
-        stackView <- [
-            Width().like(slidingView)
-        ]
+//        stackView.easy.layout(Edges())
+        stackView.easy.layout([
+            Leading(),
+            Trailing(),
+            Top(),
+            Bottom(),
+            Width().like(scrollView),
+            Height().like(scrollView).with(Priority.medium)
+        ])
         
     }
     
     open override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        if (scrollView != nil){
-            scrollView.contentSize = CGSize(width: stackView.frame.width, height: stackView.frame.height)
+        if (scrollView != nil &&
+            stackView != nil){
+            scrollView.contentSize = CGSize(width: stackView.frame.width,
+                                            height: stackView.frame.height)
+            
+//            scrollView.frame = CGRect(origin: scrollView.frame.origin,
+//                                      size: CGSize(width: scrollView.frame.width,
+//                                                   height: min(stackView.frame.height, view.frame.height)))
         }
     }
 }
