@@ -39,7 +39,7 @@ open class TopDownGenericViewController: GenericViewController {
     open override func viewDidLoad() {
         let bckgrndView = UIView()
         view.addSubview(bckgrndView)
-        bckgrndView <- Edges()
+        bckgrndView.easy.layout(Edges())
         let bckgrndTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
         bckgrndView.addGestureRecognizer(bckgrndTapGestureRecognizer)
         
@@ -109,36 +109,49 @@ open class TopDownGenericViewController: GenericViewController {
 //                self.keyboardHeightLayoutConstraint?.constant = 0.0
             } else {
                 let deltaY = max(view.frame.height * 0.5 * (1 + middleViewHeightCoeff) - endFrameY, 0)
-                print(deltaY)
+//                print(deltaY)
                 if currentState == .down {
-                    middleViewCenterYOffset = deltaY
                     if (view.frame.height * middleViewHeightCoeff + minimumTopViewHeight) > endFrameY {
                         print("Should hide topview")
                         shouldHideTopViewOnKeyboard = true
                     }
+                    middleViewCenterYOffset = deltaY
                 } else if currentState == .up {
                     if (deltaY != middleViewCenterYOffset){
-                        let duration:TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
-                        let animationCurveRawNSN = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber
-                        let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIViewAnimationOptions.curveEaseInOut.rawValue
-                        let animationCurve: UIViewAnimationOptions = UIViewAnimationOptions(rawValue: animationCurveRaw)
-                        middleViewCenterYConstraint!.constant -= (deltaY - middleViewCenterYOffset)
-                        middleViewCenterYOffset = deltaY
-                        UIView.animate(withDuration: duration,
-                                       delay: TimeInterval(0),
-                                       options: animationCurve,
-                                       animations: { self.view.layoutIfNeeded() },
-                                       completion: nil)
+                        updateKeyboardHeight(userInfo,
+                                             minimumTopViewHeight: minimumTopViewHeight,
+                                             endFrameY: endFrameY,
+                                             deltaY: deltaY)
                     }
                 }
-//                self.keyboardHeightLayoutConstraint?.constant = endFrame?.size.height ?? 0.0
             }
-//            UIView.animate(withDuration: duration,
-//                           delay: TimeInterval(0),
-//                           options: animationCurve,
-//                           animations: { self.view.layoutIfNeeded() },
-//                           completion: nil)
         }
+    }
+    
+    open func updateKeyboardHeight(_ userInfo: [AnyHashable : Any],
+                                   minimumTopViewHeight : CGFloat, endFrameY : CGFloat, deltaY: CGFloat){
+        if (view.frame.height * middleViewHeightCoeff + minimumTopViewHeight) > endFrameY {
+            print("Should hide topview")
+            shouldHideTopViewOnKeyboard = true
+        }
+        let duration:TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
+        let animationCurveRawNSN = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber
+        let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIViewAnimationOptions.curveEaseInOut.rawValue
+        let animationCurve: UIViewAnimationOptions = UIViewAnimationOptions(rawValue: animationCurveRaw)
+        middleViewCenterYConstraint!.constant -= (deltaY - middleViewCenterYOffset)
+        middleViewCenterYOffset = deltaY
+        UIView.animate(withDuration: duration,
+                       delay: TimeInterval(0),
+                       options: animationCurve,
+                       animations: { [weak self] in
+                        self?.view.layoutIfNeeded()
+                        if (self?.shouldHideTopViewOnKeyboard ?? false) {
+                            self?.shouldHideTopViewOnKeyboard = false
+                            self?.topView?.alpha = 0
+                        } else {
+                            self?.topView?.alpha = 0.5
+                        }
+            }, completion: nil)
     }
     
     open func interactWithKeyboardState(_ willShow : Bool, notification: Notification){

@@ -35,7 +35,8 @@ open class SlidingActionViewController: SlidingGenericViewController {
         case Send
         case Search
         case BankAccount = "Bank Account"
-        case Information
+//        case Information
+        case Document
         case TouristCard = "Tourist Card"
         case BlockCard = "Block Card"
         case ReissueCard = "Reissue Card"
@@ -165,6 +166,7 @@ open class ScrollSlidingActionViewController: SlidingActionViewController {
             Top(>=0),
             Bottom(<=0),
             CenterY(),
+            Top(>=0).to(view, .top)
             ])
         
         stackView = UIStackView()
