@@ -50,6 +50,7 @@ open class SlidingActionViewController: SlidingGenericViewController {
         case Transportation
         case Taxi
         case Tour
+        case Support
     }
     
     public var typeDelegate : SlidingActionViewControllerDelegate!
@@ -72,14 +73,19 @@ open class SlidingActionViewController: SlidingGenericViewController {
     }
     
     open func onCancel(_ sender : UIButton) {
-        self.transitioningDelegate = presenterViewController as? UIViewControllerTransitioningDelegate
-        var pVC = presenterViewController
-        while pVC is SlidingActionViewController {
-            if let vc = (pVC as? SlidingActionViewController)?.presenterViewController {
-                pVC = vc
+        if presenterViewController != nil {
+            self.transitioningDelegate = presenterViewController as? UIViewControllerTransitioningDelegate
+            var pVC = presenterViewController
+            pVC?.shouldUpdateDataFromServer = false
+            while pVC is SlidingActionViewController {
+                if let vc = (pVC as? SlidingActionViewController)?.presenterViewController {
+                    pVC = vc
+                }
             }
+            pVC?.dismiss(animated: true, completion: nil)
+        } else {
+            dismiss(animated: true, completion: nil)
         }
-        pVC?.dismiss(animated: true, completion: nil)
     }
     
     override open func initLogoView() -> UIView{

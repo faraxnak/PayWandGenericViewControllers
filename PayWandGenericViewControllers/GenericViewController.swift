@@ -25,6 +25,8 @@ open class GenericViewController: UIViewController, UITextFieldDelegate {
     public var bottomView : UIView!
     public var bottomViewHeightCoeff : CGFloat = 0.15
     
+    public var shouldUpdateDataFromServer : Bool = true
+    
     open override func viewDidLoad() {
         super.viewDidLoad()
         
