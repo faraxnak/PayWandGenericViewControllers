@@ -30,7 +30,7 @@ open class SlidingActionViewController: SlidingGenericViewController {
 
     public enum ActionType : String {
         case Topup = "Top Up"
-        case Cashout = "Cash Out"
+        case Cashout = "Bank Transfer"
         case Exchange
         case Send
         case Search
