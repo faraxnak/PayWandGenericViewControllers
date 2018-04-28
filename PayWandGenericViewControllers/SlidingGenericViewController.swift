@@ -13,7 +13,7 @@ open class SlidingGenericViewController: TopDownGenericViewController, UIViewCon
 
     public var slidingView : UIView!
     public var middleXConst : NSLayoutConstraint!
-    public var presenetViewControllerSlidingFromLeft : Bool = false
+    public var presentViewControllerSlidingFromLeft : Bool = false
     open var slidingViewHeightCoeff : CGFloat { return 0 }
 //    fileprivate var logoView : UIView!
     
@@ -68,8 +68,8 @@ open class SlidingGenericViewController: TopDownGenericViewController, UIViewCon
     }
     
     open func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        if (presenetViewControllerSlidingFromLeft){
-            presenetViewControllerSlidingFromLeft = false
+        if (presentViewControllerSlidingFromLeft){
+            presentViewControllerSlidingFromLeft = false
             return slidingDismissTransitionAnimation
         } else {
             return slidingShowTransitionAnimation

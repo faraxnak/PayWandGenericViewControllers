@@ -8,13 +8,13 @@
 
 import Foundation
 
-class SlidingShowTransitionAnimation: NSObject, UIViewControllerAnimatedTransitioning {
+public class SlidingShowTransitionAnimation: NSObject, UIViewControllerAnimatedTransitioning {
     
-    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+    public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 1
     }
     
-    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         // 1
         let containerView = transitionContext.containerView
         if let fromVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) as? SlidingGenericViewController,
@@ -158,13 +158,13 @@ class SlidingShowTransitionAnimation: NSObject, UIViewControllerAnimatedTransiti
     }
 }
 
-class SlidingDismissTransitionAnimation: NSObject, UIViewControllerAnimatedTransitioning {
+public class SlidingDismissTransitionAnimation: NSObject, UIViewControllerAnimatedTransitioning {
     
-    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+    public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 1
     }
     
-    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         // 1
         guard let fromVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) as? SlidingGenericViewController,
             let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) as? SlidingGenericViewController else {
