@@ -83,6 +83,11 @@ open class SlidingGenericViewController: TopDownGenericViewController, UIViewCon
     open func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
         return slideInteractionController.interactionInProgress ? slideInteractionController : nil
     }
+    
+    open func onBack(_ sender : UIButton) {
+//        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
+    }
 }
 
 open class SlidingAccountSetupViewController: SlidingGenericViewController {

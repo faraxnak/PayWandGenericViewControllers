@@ -178,9 +178,12 @@ extension GenericViewController : TtroAlertViewControllerDelegate {
         if let tb = self.tabBarController {
             snapshot = tb.view.snapshotView(afterScreenUpdates: false)
             //snapshot.backgroundColor = UIColor.TtroColors.DarkBlue.color
-        } else if let gooey = presentingViewController?.presentedViewController as? GooeyTabbarGeneric{
+        } else if let gooey = presentingViewController?.presentedViewController as? GooeyTabbarGeneric {
             snapshot = gooey.view.snapshotView(afterScreenUpdates: false)
-        } else {
+        } else if navigationController != nil,
+            let gooey = navigationController?.visibleViewController as? GooeyTabbarGeneric {
+            snapshot = gooey.view.snapshotView(afterScreenUpdates: false)
+        }  else {
             snapshot = view.snapshotView(afterScreenUpdates: true)
         }
         

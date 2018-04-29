@@ -65,6 +65,7 @@ public class SlidingShowTransitionAnimation: NSObject, UIViewControllerAnimatedT
                 UIView.animate(withDuration: duration/3, animations: {
                     toVC.gooeyTabbar.alpha = 1
                 }, completion: { finished in
+                    containerView.addSubview(toVC.view) 
                     curtain.removeFromSuperview()
                     transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
                 })
