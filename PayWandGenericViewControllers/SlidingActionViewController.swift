@@ -64,7 +64,9 @@ open class SlidingActionViewController: SlidingGenericViewController {
     
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        UIApplication.shared.isStatusBarHidden = true
+        if (UIApplication.shared.statusBarFrame.height <= 20){
+            UIApplication.shared.isStatusBarHidden = true
+        }
     }
     
     open override func viewWillDisappear(_ animated: Bool) {
@@ -73,7 +75,23 @@ open class SlidingActionViewController: SlidingGenericViewController {
     }
     
     open func onCancel(_ sender : UIButton) {
-        if presenterViewController != nil {
+        if navigationController != nil {
+            for vc in navigationController!.viewControllers {
+                if vc is GenericViewController,
+                    !(vc is SlidingGenericViewController) { /// vc is base view controller
+                    navigationController?.popToViewController(vc, animated: true)
+                    return
+                }
+            }
+            navigationController?.popViewController(animated: true)
+//            if presenterViewController != nil {
+//                presenterViewController.shouldUpdateDataFromServer = false
+//                navigationController?.popToViewController(presenterViewController, animated: true)
+//            } else {
+//                navigationController?.popViewController(animated: true)
+//            }
+        }
+        else if presenterViewController != nil {
             self.transitioningDelegate = presenterViewController as? UIViewControllerTransitioningDelegate
             var pVC = presenterViewController
             pVC?.shouldUpdateDataFromServer = false
@@ -86,6 +104,17 @@ open class SlidingActionViewController: SlidingGenericViewController {
         } else {
             dismiss(animated: true, completion: nil)
         }
+//        if let vcs = navigationController?.viewControllers {
+//            for vc in vcs {
+//                if vc is GooeyTabbarGeneric {
+//                    navigationController?.popToViewController(vc, animated: true)
+//                    break
+//                }
+//            }
+//
+//        } else {
+//            dismiss(animated: true, completion: nil)
+//        }
     }
     
     override open func initLogoView() -> UIView{

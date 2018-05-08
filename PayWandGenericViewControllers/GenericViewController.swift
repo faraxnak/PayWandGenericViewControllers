@@ -178,10 +178,13 @@ extension GenericViewController : TtroAlertViewControllerDelegate {
         if let tb = self.tabBarController {
             snapshot = tb.view.snapshotView(afterScreenUpdates: false)
             //snapshot.backgroundColor = UIColor.TtroColors.DarkBlue.color
-        } else if let gooey = presentingViewController?.presentedViewController as? GooeyTabbarGeneric{
+        } else if let gooey = presentingViewController?.presentedViewController as? GooeyTabbarGeneric {
             snapshot = gooey.view.snapshotView(afterScreenUpdates: false)
-        } else {
-            snapshot = view.snapshotView(afterScreenUpdates: true)
+        } else if navigationController != nil,
+            let gooey = navigationController?.visibleViewController as? GooeyTabbarGeneric {
+            snapshot = gooey.view.snapshotView(afterScreenUpdates: false)
+        }  else {
+            snapshot = view.snapshotView(afterScreenUpdates: false)
         }
         
         return snapshot ?? UIView(frame: view.frame)
@@ -192,5 +195,13 @@ extension GenericViewController : TtroAlertViewControllerDelegate {
         alertController.delegate = self
         alertController.view.layoutIfNeeded()
         return alertController
+    }
+    
+    public func presentAlert(alertVC : TtroAlertViewController){
+        if let navigationController = navigationController {
+            navigationController.pushViewController(alertVC, animated: true)
+        } else {
+            present(alertVC, animated: true, completion: nil)
+        }
     }
 }
