@@ -10,6 +10,7 @@ target 'PayWandGenericViewControllers' do
   pod 'UIColor_Hex_Swift'
   pod 'NVActivityIndicatorView'
   pod 'SwiftDate'
+  pod 'lottie-ios'
   pod 'PayWandBasicElements', :path => '../PayWandBasicElements/'
   pod 'TtroGooeyTabbar', :path => '../TtroGooeyTabbar/'
   pod 'TtroAlertViewController', :path => '../TtroAlertViewController/'

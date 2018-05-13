@@ -137,6 +137,7 @@ Pod::Spec.new do |s|
   s.dependency 'UIColor_Hex_Swift'
   s.dependency 'NVActivityIndicatorView'
   s.dependency 'SwiftDate'
+  s.dependency 'lottie-ios'
   s.dependency 'PayWandBasicElements'
   s.dependency 'TtroGooeyTabbar'
   s.dependency 'TtroAlertViewController'

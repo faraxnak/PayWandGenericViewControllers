@@ -12,7 +12,7 @@
     "faraxnak": "mf.azampour@gmail.com"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "10.0"
   },
   "source": {
     "git": "https://github.com/faraxnak/TtroAlertViewController.git",

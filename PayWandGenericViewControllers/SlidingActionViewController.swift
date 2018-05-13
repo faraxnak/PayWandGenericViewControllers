@@ -9,7 +9,7 @@
 import UIKit
 import EasyPeasy
 import PayWandBasicElements
-
+import Lottie
 
 public protocol SlidingActionViewControllerDelegate : class {
     func actionType() -> SlidingActionViewController.ActionType
@@ -186,6 +186,10 @@ open class ScrollSlidingActionViewController: SlidingActionViewController {
     public var stackView : UIStackView!
     public var scrollView : UIScrollView!
     
+    public var scrollAnimationView : LOTAnimationView!
+    public var scrollAnimationPlayedOnce : Bool = false
+    public var shouldPlayScrollAnimation : Bool = false
+    
     open override var slidingViewHeightCoeff: CGFloat { return 0.6 }
     
     open override func initElements() {
@@ -219,7 +223,27 @@ open class ScrollSlidingActionViewController: SlidingActionViewController {
             Width().like(scrollView),
             Height().like(scrollView).with(Priority.medium)
         ])
+        scrollView.delegate = self
         
+        scrollAnimationView = LOTAnimationView(name: "scrollable.json")
+//        scrollAnimationView.animationSpeed = 2
+        self.view.addSubview(scrollAnimationView)
+        scrollAnimationView.isUserInteractionEnabled = false
+        scrollAnimationView.easy.layout(Edges())
+    }
+    
+    override open func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if !scrollAnimationPlayedOnce &&
+            shouldPlayScrollAnimation {
+            shouldPlayScrollAnimation = false
+            scrollAnimationPlayedOnce = true
+            scrollAnimationView.play { [weak self](_) in
+                self?.scrollAnimationView.isHidden = true
+            }
+        } else {
+            scrollAnimationView.isHidden = true
+        }
     }
     
     open override func viewDidLayoutSubviews() {
@@ -228,10 +252,28 @@ open class ScrollSlidingActionViewController: SlidingActionViewController {
             stackView != nil){
             scrollView.contentSize = CGSize(width: stackView.frame.width,
                                             height: stackView.frame.height)
-            
-//            scrollView.frame = CGRect(origin: scrollView.frame.origin,
-//                                      size: CGSize(width: scrollView.frame.width,
-//                                                   height: min(stackView.frame.height, view.frame.height)))
+            if scrollView.contentSize.height > scrollView.frame.height {
+                shouldPlayScrollAnimation = true
+//                if isViewLoaded &&
+//                    view.window != nil &&
+//                    !scrollAnimationPlayedOnce {
+//                    scrollAnimationView.play { [weak self](_) in
+//                        self?.scrollAnimationView.isHidden = true
+//                    }
+//                    scrollAnimationPlayedOnce = true
+//                } else {
+//                    shouldPlayScrollAnimation = true
+//                }
+            }
         }
+    }
+}
+
+extension ScrollSlidingActionViewController : UIScrollViewDelegate {
+    open func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        shouldPlayScrollAnimation = false
+        scrollAnimationPlayedOnce = true
+        scrollAnimationView.stop()
+        scrollAnimationView.isHidden = true
     }
 }
